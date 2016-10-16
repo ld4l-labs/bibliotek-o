@@ -139,37 +139,45 @@
     <skos:definition>Resource that is intended for manipulation by a computer, accessed either directly or remotely.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- START HERE -->
+  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Note">
     <rdfs:label>Note</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Information, usually in textual form, on attributes of a resource or some aspect of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Identifier">
     <rdfs:label>Identifier</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Token or name that is associated with a resource, such as a URI or an ISBN.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  <!-- TBD
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Unit">
     <rdfs:label>Unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Units in which a value is expressed.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
+  <!-- TBD Adopt bf:Source or mint ld4l:Source?
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Source">
     <rdfs:label>Source</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Resource from which value or label came or was derived.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
+  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Status">
     <rdfs:label>Status</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Designation of the validity or position of something, e.g., whether something is incorrect or available.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
+  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Agent">
     <rdfs:label>Agent</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
@@ -177,24 +185,30 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-05-13 (New subclass)</dcterms:modified>
   </owl:Class>
+  -->
+  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Person">
     <rdfs:label>Person</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <skos:definition>Individual or identity established by an individual (either alone or in collaboration with one or more other individuals).</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Family">
     <rdfs:label>Family</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <skos:definition>Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Organization">
     <rdfs:label>Organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <skos:definition>Corporation or group of persons and/or organizations that acts, or may act, as a unit.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
+  <!-- START HERE -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Jurisdiction">
     <rdfs:label>Jurisdiction</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
