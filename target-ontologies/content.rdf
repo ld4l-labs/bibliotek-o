@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:cnt="http://www.w3.org/2011/content#" 
 	xmlns="http://www.w3.org/2011/content#"
 	xml:base="http://www.w3.org/2011/content"
 >
+	
+	<owl:Ontology rdf:about="">
+		<rdfs:label xml:lang="en">Representing Content in RDF</rdfs:label>
+		<rdfs:comment xml:lang="en">Representing Content in RDF as defined by http://www.w3.org/TR/Content-in-RDF/</rdfs:comment>
+		<owl:versionInfo xml:lang="en">Working Draft 29 April 2011</owl:versionInfo>
+		<rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/Content-in-RDF/" />
+	</owl:Ontology>
 
 	<!-- Classes -->
 
