@@ -58,6 +58,43 @@
     
     
     
+    <!-- NAMED INDIVIDUALS -->
+    
+    <!-- Question: Do we want to use any of the OA motivations? -->
+    
+    <!-- http://bib.ld4l.org/ontology/reviewing -->
+    
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/reviewing">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:label xml:lang="en-us">reviewing</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The motivation that represents a reviewing  of the target resource.</rdfs:comment>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://bib.ld4l.org/ontology/stackViewScoring -->
+    
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/stackViewScoring">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:label xml:lang="en-us">stack view scoring</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The motivation that represents assigning a stack view score to the target resource.</rdfs:comment>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    
+    
+    
+    <!-- http://bib.ld4l.org/ontology/summarizing -->
+    
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/summarizing">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:label xml:lang="en-us">summarizing</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The motivation that represents a summarizing of the target resource.</rdfs:comment>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    
+    
+    
     
 </rdf:RDF>
 
