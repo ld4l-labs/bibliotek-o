@@ -8,7 +8,7 @@
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 >
   
-  <!-- If the LD4L title recommendation doesn't get reviewed, we will use
+  <!-- TODO If the LD4L title recommendation doesn't get reviewed, we will use
     BF2 title classes and properties instead. -->
   <owl:Class rdf:about="http://www.loc.gov/mads/rdf/v1#MainTitleElement">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main Title Element</rdfs:label>
@@ -46,7 +46,7 @@
     <rdfs:subClassOf rdf:resource="http://www.loc.gov/mads/rdf/v1#Element"/>
   </owl:Class>
 
-  <!-- I think we are abandoning all use of authorities, but need to check. 
+  <!-- TODO I think we are abandoning all use of authorities, but need to check. 
   <owl:Class rdf:about="http://www.loc.gov/mads/rdf/v1#Authority">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A concept with a controlled label.</rdfs:comment>
