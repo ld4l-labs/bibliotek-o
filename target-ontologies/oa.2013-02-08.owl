@@ -182,8 +182,108 @@ Each Annotation SHOULD have at least one oa:motivatedBy relationship to an insta
         <rdfs:comment xml:lang="en">The concept scheme for Open Annotation Motivations</rdfs:comment>
     </owl:NamedIndividual>
     
-
+    <!-- QUESTION: Do we want to include any of these motivations? They could 
+        be relevant to marginalia, for example. -->
     
+    <!-- http://www.w3.org/ns/oa#classifying -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;classifying">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents the assignment of a classification type, typically from a controlled vocabulary, to the target resource(s). For example to classify an Image resource as a Portrait.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">classifying</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->
+    
+    
+    <!-- http://www.w3.org/ns/oa#commenting -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;commenting">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents a commentary about or review of the target resource(s). For example to provide a commentary about a particular PDF.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">commenting</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->   
+    
+    
+    <!-- http://www.w3.org/ns/oa#describing -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;describing">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents a description of the target resource(s), as opposed to a comment about them. For example describing the above PDF&apos;s contents, rather than commenting on their accuracy.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">describing</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->    
+    
+    
+    <!-- http://www.w3.org/ns/oa#editing -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;editing">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents a request for a modification or edit to the target resource. For example, an Annotation that requests a typo to be corrected.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">editing</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->   
+    
+    
+    <!-- http://www.w3.org/ns/oa#highlighting -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;highlighting">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents a highlighted section of the target resource or segment. For example to draw attention to the selected text that the annotator disagrees with. A Highlight may or may not have a Body resource</rdfs:comment>
+        <skos:prefLabel xml:lang="en">highlighting</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->    
+    
+    
+    <!-- http://www.w3.org/ns/oa#identifying -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;identifying">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents the assignment of an identity to the target resource(s). For example, annotating the name of a city in a string of text with the URI that identifies it.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">identifying</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->   
+    
+    
+    
+    <!-- http://www.w3.org/ns/oa#moderating -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;moderating">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents an assignment of value or quality to the target resource(s). For example annotating an Annotation to moderate it up in a trust network or threaded discussion.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">moderating</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->    
+    
+    
+    <!-- http://www.w3.org/ns/oa#questioning -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;questioning">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents asking a question about the target resource(s). For example to ask for assistance with a particular section of text, or question its veracity.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">questioning</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->   
+    
+    
+    <!-- http://www.w3.org/ns/oa#replying -->
+    <!--
+    <owl:NamedIndividual rdf:about="&oa;replying">
+        <rdf:type rdf:resource="&oa;Motivation"/>
+        <rdfs:comment xml:lang="en">The motivation that represents a reply to a previous statement, either an Annotation or another resource. For example providing the assistance requested in the above.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">replying</skos:prefLabel>
+        <skos:inScheme rdf:resource="&oa;motivationScheme"/>
+    </owl:NamedIndividual>
+    -->    
+
 
 </rdf:RDF>
 
