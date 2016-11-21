@@ -35,7 +35,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
     </rdf:Description>
     
-    <!-- Did we want to keep this for a property chain axiom 
+    <!-- TODO Did we want to keep this for a property chain axiom 
         ld4l:hasActivity / ld4l:isAgentOf? Issues:
         - Range of dcterms:contributor
         - Remove subPropery assertion
@@ -68,7 +68,7 @@
         <!-- <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/> -->
     </rdf:Description>
     
-    <!-- We are most likely going to use dcterms:source for Title sources as 
+    <!-- TODO We are most likely going to use dcterms:source for Title sources as 
         well as sources of other types of entities, though not yet definite.  
     -->
     <rdf:Description rdf:about="http://purl.org/dc/terms/source">
@@ -98,7 +98,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
     </rdf:Description>
     
-    <!-- Still up for discussion in the Relations recommendation.
+    <!-- TODO Still up for discussion in the Relations recommendation.
     <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
         <rdfs:label xml:lang="en">Relation</rdfs:label>
         <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
@@ -122,12 +122,6 @@
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <!-- RY Not sure if we should keep the subproperty declaration here, 
-            since it then brings the other term into the LD4L context. But
-            following the link to the full property definition will bring them
-            in anyway.
-        -->
-        <!-- <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/> -->
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
     
@@ -140,15 +134,8 @@
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <!-- RY Not sure if we should keep the subproperty declaration here, 
-            since it then brings the other term into the LD4L context. But
-            following the link to the full property definition will bring them
-            in anyway.
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/> 
-        -->
-        <!-- Still up for discussion in the Relations recommendation. 
+        <!-- TODO Still up for discussion in the Relations recommendation. -->
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-        -->
     </rdf:Description>
     
     <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
@@ -160,16 +147,10 @@
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasPart-003"/>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <!-- RY Not sure if we should keep the subproperty declaration here, 
-            since it then brings the other term into the LD4L context. But
-            following the link to the full property definition will bring them
-            in anyway.
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/> 
-        -->
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     </rdf:Description>
     
-    <!-- We are suggesting that BF2 define bf:UsageAndAccessPolicy as a subclass
+    <!-- TODO We are suggesting that BF2 define bf:UsageAndAccessPolicy as a subclass
         of dcterms:Policy. But since we will use the former in any case, we 
         will not include it here.  
     <rdf:Description rdf:about="http://purl.org/dc/terms/Policy">
