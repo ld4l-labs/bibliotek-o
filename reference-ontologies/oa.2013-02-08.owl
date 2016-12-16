@@ -17,6 +17,7 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
+<!-- TODO REPLACE WITH WEB ANNOTATION!! -->
 
 <rdf:RDF xmlns="http://www.w3.org/ns/oa"
      xml:base="http://www.w3.org/ns/oa"
