@@ -22,38 +22,33 @@
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dcterms:modified>
     </rdf:Description>
     
-    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
-        <rdfs:label xml:lang="en">Subject</rdfs:label>
-        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
-        <dcterms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</dcterms:description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dcterms:modified>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subjectT-002"/>
-        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#created-003"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
     
-    <!-- TODO Did we want to keep this for a property chain axiom 
-        ld4l:hasActivity / ld4l:isAgentOf? Issues:
-        - Range of dcterms:contributor
-        - Remove subPropery assertion
-        - Do we want it to apply to any Activity, not just contributions? The
-          property chain axiom does not allow this degree of specificity.
-    <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:label xml:lang="en">Contributor</rdfs:label>
-        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
-        <dcterms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service.</dcterms:description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service.</dcterms:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributorT-001"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creatorT-002"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
-    </rdf:Description>  
-    -->
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/maker"/>
+    </rdf:Description>
     
     <rdf:Description rdf:about="http://purl.org/dc/terms/date">
         <rdfs:label xml:lang="en">Date</rdfs:label>
@@ -68,23 +63,31 @@
         <!-- <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/> -->
     </rdf:Description>
     
-    <!-- TODO We are most likely going to use dcterms:source for Title sources as 
-        well as sources of other types of entities, though not yet definite.  
-    -->
-    <rdf:Description rdf:about="http://purl.org/dc/terms/source">
-        <rdfs:label xml:lang="en">Source</rdfs:label>
-        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
-        <dcterms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</dcterms:description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+        <rdfs:label xml:lang="en">Has Part</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#sourceT-001"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasPart-003"/>
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     </rdf:Description>
     
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </rdf:Description>
+
+    <!-- Needs group review
     <rdf:Description rdf:about="http://purl.org/dc/terms/language">
         <rdfs:label xml:lang="en">Language</rdfs:label>
         <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
@@ -97,8 +100,9 @@
         <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
     </rdf:Description>
+    -->
     
-    <!-- TODO Still up for discussion in the Relations recommendation.
+    <!-- Not sure
     <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
         <rdfs:label xml:lang="en">Relation</rdfs:label>
         <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
@@ -113,53 +117,18 @@
     </rdf:Description>
     -->
     
-    <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
-        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    </rdf:Description>
-    
-    <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
-        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
-        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#isPartOf-003"/>
-        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <!-- TODO Still up for discussion in the Relations recommendation. -->
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-    </rdf:Description>
-    
-    <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
-        <rdfs:label xml:lang="en">Has Part</rdfs:label>
-        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#hasPart-003"/>
-        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-    </rdf:Description>
-    
-    <!-- TODO We are suggesting that BF2 define bf:UsageAndAccessPolicy as a subclass
-        of dcterms:Policy. But since we will use the former in any case, we 
-        will not include it here.  
-    <rdf:Description rdf:about="http://purl.org/dc/terms/Policy">
-        <rdfs:label xml:lang="en">Policy</rdfs:label>
-        <rdfs:comment xml:lang="en">A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.</rdfs:comment>
+    <!-- Needs group review
+    <rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <dcterms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</dcterms:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:issued>
-        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#Policy-001"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</dcterms:modified>
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subjectT-002"/>
+        <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
     </rdf:Description>
     -->
 
