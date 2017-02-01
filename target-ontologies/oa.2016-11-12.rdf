@@ -84,30 +84,24 @@ oa<?xml version="1.0" encoding="utf-8"?>
     <rdfs:label>assessing</rdfs:label>
     <rdfs:comment>The motivation for when the user intends to provide an assessment about the Target resource.</rdfs:comment>
   </oa:Motivation>
-
-  <!-- Could this be useful? 
+  
   <oa:Motivation rdf:about="http://www.w3.org/ns/oa#commenting">
     <rdfs:comment>The motivation for when the user intends to comment about the Target.</rdfs:comment>
     <rdfs:label>commenting</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
   </oa:Motivation>
-  -->
 
-  <!-- Could this be useful? 
   <oa:Motivation rdf:about="http://www.w3.org/ns/oa#classifying">
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
     <rdfs:label>classifying</rdfs:label>
     <rdfs:comment>The motivation for when the user intends to that classify the Target as something.</rdfs:comment>
   </oa:Motivation>
-  -->
-  
-  <!-- Could this be useful?  
+   
   <oa:Motivation rdf:about="http://www.w3.org/ns/oa#identifying">
     <rdfs:comment>The motivation for when the user intends to assign an identity to the Target or identify what is being depicted or described in the Target.</rdfs:comment>
     <rdfs:label>identifying</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
   </oa:Motivation>
-  -->
-  
+
 
 </rdf:RDF>
