@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:msg0="http://web.resource.org/cc/">
+
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dct:title xml:lang="en">VANN: A vocabulary for annotating vocabulary descriptions</dct:title>
+    <dct:date>2010-06-07</dct:date>
+    <dct:description xml:lang="en">This document describes a vocabulary for annotating descriptions of vocabularies with examples and usage notes.</dct:description>
+    <dct:identifier>http://purl.org/vocab/vann/vann-vocab-20050401</dct:identifier>
+    <dct:isVersionOf rdf:resource="http://purl.org/vocab/vann/"/>
+    <dct:replaces rdf:resource="http://purl.org/vocab/vann/vann-vocab-20040305"/>
+    <dct:creator rdf:resource="http://iandavis.com/id/me"/>
+    <dct:rights>Copyright © 2005 Ian Davis</dct:rights>
+    <vann:preferredNamespaceUri>http://purl.org/vocab/vann/</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>vann</vann:preferredNamespacePrefix>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label xml:lang="en">Preferred Namespace Prefix</rdfs:label>
+    <rdfs:comment xml:lang="en">The preferred namespace prefix to use when using terms from this vocabulary in an XML document.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+  </rdf:Description>
+
+</rdf:RDF>
