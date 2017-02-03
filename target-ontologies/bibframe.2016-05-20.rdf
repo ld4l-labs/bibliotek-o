@@ -14,19 +14,16 @@
   </owl:Ontology>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Work">
     <rdfs:label>Work</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Resource reflecting a conceptual essence of a cataloging resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Instance">
     <rdfs:label>Instance</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Resource reflecting an individual, material embodiment of a Work.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Item">
     <rdfs:label>Item</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Single example of an Instance.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -91,14 +88,6 @@
     <skos:definition>Resource in a form intended to be perceived visually in three-dimensions. Includes man-made objects such as models, sculptures, clothing, and toys, as well as naturally occurring objects such as specimens mounted for viewing.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!--
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Multimedia">
-    <rdfs:label>Software or multimedia</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <skos:definition>Electronic resource that is a computer program (i.e., digitally encoded instructions intended to be processed and performed by a computer) or which consists of multiple media types that are software driven, such as videogames.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MixedMaterial">
     <rdfs:label>Mixed material</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -125,21 +114,8 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   -->
-  <!-- TBD LD4L recommends Tactile be subclass of Work. If LC rejects, LD4L will ignore bf:Tactile and mint ld4l:Tactile subclass of bf:Work.
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Tactile">
-    <rdfs:label>Tactile material</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <skos:definition>Resource that is intended to be perceived by touch.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
-  <!-- Does not subclass bf:Work: some collections are Works and others are not -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Collection">
     <rdfs:label>Collection</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Aggregation of resources, generally gathered together artificially.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -152,80 +128,31 @@
   <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Note">
     <rdfs:label>Note</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Information, usually in textual form, on attributes of a resource or some aspect of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Identifier">
     <rdfs:label>Identifier</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Token or name that is associated with a resource, such as a URI or an ISBN.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Dimension pattern recommendation never completed; follow BF2 for now -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Unit">
     <rdfs:label>Unit</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Units in which a value is expressed.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Source">
-    <rdfs:label>Source</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
-    <skos:definition>Resource from which value or label came or was derived.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-
-  <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Status">
     <rdfs:label>Status</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Designation of the validity or position of something, e.g., whether something is incorrect or available.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  -->
-  <!-- Will use foaf:Agent
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Agent">
-    <rdfs:label>Agent</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <skos:definition>Entity having a role in a resource, such as a person or organization.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-05-13 (New subclass)</dcterms:modified>
-  </owl:Class>
-  -->
-  <!-- LD4L will use foaf:Person
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Person">
-    <rdfs:label>Person</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Individual or identity established by an individual (either alone or in collaboration with one or more other individuals).</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Family">
     <rdfs:label>Family</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <skos:definition>Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- LD4L will use foaf:Organization
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Organization">
-    <rdfs:label>Organization</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Corporation or group of persons and/or organizations that acts, or may act, as a unit.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
-  <!-- TBD LC has clarified difference between Jurisdiction and Place/Location. I believe we have agreed to use it.  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Jurisdiction">
     <rdfs:label>Jurisdiction</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -240,51 +167,14 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   -->
-  <!--
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Topic">
-    <rdfs:label>Topic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Concept or area of knowledge.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Temporal">
     <rdfs:label>Temporal concept</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Chronological period.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Will use prov:Location with subclass ld4l:GeographicLocation
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Place">
-    <rdfs:label>Place</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Geographic location.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
-  <!-- 
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Event">
-    <rdfs:label>Event entity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Something that happens at a certain time and location, such as a performance, speech, or athletic event, that is documented by a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
-  <!--
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Contribution">
-    <rdfs:label>Contribution</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Agent and role with respect to the resource being described.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Content">
     <rdfs:label>Content type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Categorization reflecting the fundamental form of communication in which the content is expressed and the human sense through which it is intended to be perceived.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -292,7 +182,6 @@
   <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Media">
     <rdfs:label>Media type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Categorization reflecting the general type of intermediation device required to view, play, run, etc., the content of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -300,7 +189,6 @@
   <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Carrier">
     <rdfs:label>Carrier type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Categorization reflecting the format of the storage medium and housing of a carrier.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -308,74 +196,18 @@
   <!--
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/GenreForm">
     <rdfs:label>Genre/form</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Characteristics of works with similar plots, themes, settings, etc. (e.g., westerns, thrillers), or with a particular format of purpose (e.g., animation, short), or a combination (e.g., horror film where horror is the genre and film is the form).</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Title">
     <rdfs:label>Title entity</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Title information relating to a resource: mail title, translated title, or variant form of title.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!--
-  -->
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/WorkTitle">
-    <rdfs:label>Work title</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <skos:definition>Title or form of title chosen to identify the work, such as a preferred title, preferred title with additions, uniform title, etc.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <!--
-  -->
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/InstanceTitle">
-    <rdfs:label>Instance title</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <skos:definition>Title chosen as the name of an Instance, sometimes called "title proper" and often transcribed from the instance.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <!--
-  -->
-  <!-- LD4L rejects bf:VariantTitle, so must define its own versions of the VariantTitle types.
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/VariantTitle">
-    <rdfs:label>Title variation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <skos:definition>Title associated with the resource that is different from the Work or Instance title.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/KeyTitle">
-    <rdfs:label>Key title</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
-    <skos:definition>Unique title for a continuing resource that is assigned by the ISSN International Center in conjunction with an ISSN.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle">
-    <rdfs:label>Abbreviated title</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
-    <skos:definition>Title as abbreviated for citation, indexing, and/or identification.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ParallelTitle">
-    <rdfs:label>Parallel title proper</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
-    <skos:definition>Title in another language and/or script.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/CollectiveTitle">
-    <rdfs:label>Collective title</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
-    <skos:definition>Title for a compilation of resources.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <!-- LD4L will use lingvo:Lingvoj.
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Language">
-    <rdfs:label>Language entity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:label>Language entity</rdfs:label>   
     <skos:definition>Language entity.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -383,25 +215,25 @@
   <!-- Leave following to Performed Music Ontology Extension
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicMedium">
     <rdfs:label>Music medium information</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Summary statement of the medium for a musical work.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicInstrument">
     <rdfs:label>Musical instrument</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Instrument for which a musical work is appropriate.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicEnsemble">
     <rdfs:label>Music ensemble</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Ensemble for which a musical work is appropriate.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicVoice">
     <rdfs:label>Music voice</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Voice for which a musical work is appropriate.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -409,7 +241,6 @@
   <!-- Use schema:Audience?
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/IntendedAudience">
     <rdfs:label>Intended audience information</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Information that identifies the specific intended or target audience or intellectual level for which the content described is considered appropriate. Also used to record interest and motivation levels and special learner characteristics.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -417,46 +248,21 @@
   <!-- LD4L has made no formal recommendation, so will use this term for now? -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Arrangement">
     <rdfs:label>Organization of materials information</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information about the organization and arrangement of a collection of items. For instance, for computer files, organization and arrangement information may be the file structure and sort sequence of a file; for visual materials, this information may be how a collection is arranged.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Dissertation">
     <rdfs:label>Dissertation information</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information about a work presented as part of the formal requirements for an academic degree.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Will LD4L use this to type Annotation bodies? -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Summary">
     <rdfs:label>Summary</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Description of the content of a resource, such as an abstract, summary, etc..</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Will use ld4l:CaptureActivity. 
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Capture">
-    <rdfs:label>Capture of content</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Information about place and date associated with the capture (i.e., recording, filming, etc.) of the content of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Notation">
     <rdfs:label>Notation</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information on the alphabet, script, or symbol system used to convey the content of the resource, including specialized scripts, typefaces, tactile notation, movement notation, and musical notation.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -487,57 +293,35 @@
   <!-- Not clear; spreadsheet suggests using. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Illustration">
     <rdfs:label>Illustrative content</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information about content intended to illustrate a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <!-- Not clear; spreadsheet suggests using. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/SupplementaryContent">
     <rdfs:label>Supplementary material</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Index, bibliography, appendix, etc. intended to supplement the primary content of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <!-- Not clear; spreadsheet suggests using. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ColorContent">
     <rdfs:label>Color content</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Color characteristics of a resource, e.g., black and white, multicolored, etc.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <!-- Not clear; spreadsheet suggests using. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/SoundContent">
     <rdfs:label>Sound content</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Indication of whether the production of sound is an integral part of the resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Dimensions recommendation incomplete. Will use this. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AspectRatio">
     <rdfs:label>Aspect ratio</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Proportional relationship between an image's width and its height.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <!-- Leave to Performed Music Ontology Extension
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicFormat">
     <rdfs:label>Notated music format</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Layout for content of a resource that is presented in the form of musical notation.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -545,7 +329,7 @@
   <!-- Assert properties directly on the Cartography (Work) entity.
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Cartographic">
     <rdfs:label>Cartographic information</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Content that represents the whole or part of the earth, any celestial body, or imaginary place at any scale.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -554,10 +338,6 @@
   <!-- Classifications: LD4L retains all -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Classification">
     <rdfs:label>Classification entity</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>System of coding and organizing materials according to their subject.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -587,163 +367,118 @@
   </owl:Class>
   <!-- End Classifications -->
   
-  <!-- Serials recommendation incomplete, so use this for now. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Frequency">
     <rdfs:label>Frequency</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information about intervals at which the parts of a serially produced resource or the updates to an integrating resource are issued.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Serials recommendation incomplete, so use this for now. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Issuance">
     <rdfs:label>Mode of issuance</rdfs:label>
-    <!-- 
-      LD4L proposes deleting all subclass of rdfs:Resource assertions 
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    -->
     <skos:definition>Information about whether a resource is issued in one or more parts, the way it is updated, and its intended termination.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   
-  <!-- LD4L uses Activity and drops ProvisionActivity. Therefore must redefine all ProvisionActivity subclasses as 
-    Activity subclasses. -->
-  <!--
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ProvisionActivity">
-    <rdfs:label>Provider entity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <skos:definition>Information about the agent or place relating to the publication, printing, distribution, issue, release, or production of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Distribution">
-    <rdfs:label>Distributor</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProvisionActivity"/>
-    <skos:definition>Information relating to distribution of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Manufacture">
-    <rdfs:label>Manufacturer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProvisionActivity"/>
-    <skos:definition>Information relating to manufacture of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Publication">
-    <rdfs:label>Publisher</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProvisionActivity"/>
-    <skos:definition>Information relating to publication of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Production">
-    <rdfs:label>Producer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProvisionActivity"/>
-    <skos:definition>Information relating to production of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
+
   
   <!-- NOT DONE -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/CopyrightRegistration">
     <rdfs:label>Copyright registration</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Copyright or Legal Deposit registration information</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-05-04 (Class name corrected)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/CoverArt">
     <rdfs:label>Cover art</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Cover illustration of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Review">
     <rdfs:label>Review</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Review of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/TableOfContents">
     <rdfs:label>Table of contents</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Table of contents of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Extent">
-    <rdfs:label>Extent</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:label>Extent</rdfs:label>  
     <skos:definition>Number and type of units and/or subunits making up a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/BaseMaterial">
     <rdfs:label>Base material</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Underlying physical material of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AppliedMaterial">
     <rdfs:label>Applied material</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Physical or chemical substance applied to a base material of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Emulsion">
     <rdfs:label>Emulsion</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Suspension of light-sensitive chemicals used as a coating on a microfilm or microfiche, e.g., silver halide.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Mount">
     <rdfs:label>Mount</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Physical material used for the support or backing to which the base material of a resource has been attached.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ProductionMethod">
     <rdfs:label>Production method</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Process used to produce a resource</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Generation">
     <rdfs:label>Generation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Relationship between an original carrier and the carrier of a reproduction made from the original.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Layout">
     <rdfs:label>Layout</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Arrangement of text, images, tactile notation, etc., in a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/BookFormat">
     <rdfs:label>Book format</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Result of folding a printed sheet to form a gathering of leaves.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/FontSize">
     <rdfs:label>Font size</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Size of the type used to represent the characters and symbols in a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Polarity">
     <rdfs:label>Polarity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Relationship of the colors and tones in an image to the colors and tones of the object reproduced.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ReductionRatio">
     <rdfs:label>Reduction ratio</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Size of a micro-image in relation to the original from which it was produced.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic">
     <rdfs:label>Sound characteristic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Technical specification relating to the encoding of sound in a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -798,7 +533,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic">
     <rdfs:label>Projection characteristic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Technical specification relating to the projection of a motion picture film.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -816,7 +551,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/VideoCharacteristic">
     <rdfs:label>Video characteristic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Technical specification relating to the encoding of video images in a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -834,7 +569,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic">
     <rdfs:label>Digital characteristic</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Technical specification relating to the digital encoding of text, image, audio, video, and other types of data in a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -894,7 +629,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology">
     <rdfs:label>Enumeration and chronology</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Numbering or other enumeration and dates associated with issues or items held.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -912,7 +647,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Sublocation">
     <rdfs:label>Sublocation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Specific place within the holding entity where the item is located or made available.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -960,7 +695,7 @@
   <!-- NOT DONE -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy">
     <rdfs:label>Use and access conditions</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>General statement of allowances and restrictions on access to a resource, including retention, reproduction, access, and lending.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -1200,7 +935,7 @@
   <!-- NOT DONE -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AdminMetadata">
     <rdfs:label>Administrative metadata</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
     <skos:definition>Metadata about the metadata, especially provenance information.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -1309,16 +1044,16 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
   
-  <!-- LC has agreed to remove range specification -->
+  <!-- LC may agree to remove range specification. If not, LD4L will not use -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/source">
-    <!-- <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/> -->
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/> 
     <skos:definition>Resource from which value or label came or was derived, such as the formal source/scheme from which a classification number is taken or derived, list from which an agent name is taken or derived, source within which an identifier is unique.</skos:definition>
     <rdfs:comment>Used with Unspecified</rdfs:comment>
     <rdfs:label>Source</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
   
-  <!-- NOT DONE (see Notes and Annotations recommendation -->
+  <!-- NOT DONE (see Notes and Annotations recommendation) -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/note">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Note"/>
     <skos:definition>General textual information relating to a resource, such as Information about a specific copy of a resource or information about a particular attribute of a resource.</skos:definition>
@@ -1337,17 +1072,8 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
   
-  <!-- LD4L uses dcterms:hasPart
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/part">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Part of a resource to which information applies.</skos:definition>
-    <rdfs:comment>Used with Unspecified</rdfs:comment>
-    <rdfs:label>Part</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  -->
   
-  <!-- LD4L uses lingvo:Lingvoj 
+  <!-- LD4L uses lingvo:Lingvoj? 
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/language">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Language"/>
     <skos:definition>Language associated with a resource or its parts.</skos:definition>
@@ -1391,48 +1117,22 @@
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/title">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
     <skos:definition>Name given to a resource.</skos:definition>
+    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/titleOf"/>
     <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
     <rdfs:label>Title resource</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
   
-  <!-- LD4L uses dcterms:hasPart with TitleElement resources 
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/mainTitle">
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/titleOf">
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/title"/>
+    <skos:definition>Resource of which the described title is the title.</skos:definition>
+    <rdfs:comment>Expected value Work, Instance or Item</rdfs:comment>
+    <rdfs:label>Title of</rdfs:label>
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Title being addressed. Possible title component.</skos:definition>
-    <rdfs:label>Main title</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/subtitle">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Word, character, or group of words and/or characters that contains the remainder of the title after the main title. Possible title component.</skos:definition>
-    <rdfs:label>Subtitle</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/partNumber">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Part or section enumeration of a title. Possible title component.</skos:definition>
-    <rdfs:label>Part number</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/partName">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Part or section name of a title. Possible title component.</skos:definition>
-    <rdfs:label>Part title</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/variantType">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Type of title variation, e.g., acronym, cover, spine, earlier, later, series version.</skos:definition>
-    <rdfs:label>Variant title type</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
-  -->
+  </owl:ObjectProperty>
+  
+
   
   <!-- NOT DONE -->
   <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/originDate">
@@ -2794,5 +2494,53 @@
     <rdfs:label>Date generated</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
-  <!-- NOT DONE -->
+  <!-- END NOT DONE -->
+  
+  
+  <!-- NEW TERMS APPROVED BY LC -->
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AudioTake">
+    <rdfs:label>Take number</rdfs:label>    
+    <skos:definition>Identifier(s) assigned to the smallest identifiable unit of a recording session, e.g., a specific recording of an individual song</skos:definition>
+    <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Gtin14Number">
+    <rdfs:label>GTIN-14 number</rdfs:label>    
+    <skos:definition>14-digit number assigned to identify trade items at various packaging levels</skos:definition>
+    <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/identifies">
+    <rdfs:label>Identifies</rdfs:label>    
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdfs:comment>Expected value Unspecified</rdfs:comment>
+    <owl:inverseOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/identifiedBy"/> 
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicAVDistributorNumber">
+    <rdfs:label>Music/AV distributor number</rdfs:label>    
+    <skos:definition>Identifier(s) appearing on a resource assigned by a distributor to a specific audio recording, publication of notated music, other music-related resource, or video recording</skos:definition>
+    <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/sourceOf">
+    <rdfs:label>Source of</rdfs:label>    
+    <rdfs:comment>Expect to be usd with bf:Source</rdfs:comment>
+    <owl:inverseOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/source"/> 
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/titleOf">
+    <rdfs:label>Title of</rdfs:label>    
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+    <rdfs:comment>Expected value Unspecified</rdfs:comment>
+    <owl:inverseOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/title"/> 
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/VideoPlatformIdentifier">
+    <rdfs:label>Video platform identifier</rdfs:label>    
+    <skos:definition>Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number)</skos:definition>
+    <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MusicAVDistributorNumber">
+    <rdfs:label>Music/AV distributor number</rdfs:label>    
+    <skos:definition>Identifier(s) appearing on a resource assigned by a distributor to a specific audio recording, publication of notated music, other music-related resource, or video recording</skos:definition>
+    <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+  </owl:Class>
+  
+  
+  <!-- END NEW TERMS APPROVED BY LC -->
 </rdf:RDF>
