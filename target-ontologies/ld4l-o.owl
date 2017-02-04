@@ -161,13 +161,7 @@
     </owl:Class>
 
     
-    <!-- OBJECT PROPERTIES -->
-    
-    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/atLocation">
-        <rdfs:label>at location</rdfs:label>
-        <skos:definition>Location of any resource</skos:definition>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Location"/> 
-    </owl:ObjectProperty>  
+    <!-- OBJECT PROPERTIES --> 
     
     <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/origin">
         <rdfs:label>Origin</rdfs:label>    
