@@ -86,19 +86,6 @@
         <skos:note xml:lang="en">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     </rdf:Description>
-    
-    <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
-        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
-        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    </rdf:Description>
 
     <!-- Needs group review
     <rdf:Description rdf:about="http://purl.org/dc/terms/language">
@@ -114,20 +101,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
     </rdf:Description>
     -->
-    
-    
-    <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
-        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</dcterms:modified>
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <dcterms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#modified-003"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
-    </rdf:Description>
     
     <!-- Not sure
     <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
