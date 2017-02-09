@@ -1578,7 +1578,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  -->
   <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/issuedWith">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
@@ -1624,6 +1623,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSeries">
     <skos:definition>Resource in which the part has been issued; the title of the larger resource appears on the part.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
@@ -1684,6 +1684,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  <!-- TODO
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/translation">
     <skos:definition>Resource that translates the text of the source entity into a language different from that of the original.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/derivativeOf"/>
@@ -1724,6 +1725,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+    -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/index">
     <skos:definition>Resource has an accompanying index</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompaniedBy"/>
@@ -1744,6 +1746,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  <!--
   <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/otherEdition">
     <skos:definition>Resource has other available editions, for example simultaneously published language editions or reprints.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/derivativeOf"/>
@@ -1753,6 +1756,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-05-13 (symmetrical)</dcterms:modified>
   </owl:SymmetricProperty>
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/findingAid">
     <skos:definition>Relationship for archival, visual, and manuscript resources to a finding aid or similar control materials.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompaniedBy"/>
@@ -1773,6 +1777,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  <!-- TODO 
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/separatedFrom">
     <skos:definition>Resource that spun off a part of its content to form a new resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/precededBy"/>
@@ -1893,27 +1898,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/contributor">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Generalized relationship role when no specific role can be given.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Contributor</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/contribution">
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-    <skos:definition>Agent and its role in relation to the resource.</skos:definition>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Contributor role</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/role">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <skos:definition>Specific role of agent.</skos:definition>
-    <rdfs:label>Agent role</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:DatatypeProperty>
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/assigner">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1988,6 +1973,4 @@
     <rdfs:label>Date generated</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
-
-
 </rdf:RDF>
