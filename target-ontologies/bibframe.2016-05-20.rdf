@@ -530,9 +530,14 @@
     <skos:definition>Number of objects in encoded geospatial information in a cartographic resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/IntendedAudience">
+    <rdfs:label>Intended audience information</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <skos:definition>Information that identifies the specific intended or target audience or intellectual level for which the content described is considered appropriate. Also used to record interest and motivation levels and special learner characteristics.</skos:definition>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology">
-    <rdfs:label>Enumeration and chronology</rdfs:label>
-    
+    <rdfs:label>Enumeration and chronology</rdfs:label>   
     <skos:definition>Numbering or other enumeration and dates associated with issues or items held.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -947,7 +952,6 @@
     <rdfs:label>Music key</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
-  <!-- schema:audience?
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/intendedAudience">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/IntendedAudience"/>
     <skos:definition>Information that identifies the specific audience or intellectual level for which the content of the resource is considered appropriate.</skos:definition>
@@ -955,7 +959,6 @@
     <rdfs:label>Intended audience</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/arrangement">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Arrangement"/>
     <skos:definition>Information about the organization and arrangement of a collection of resources.</skos:definition>
