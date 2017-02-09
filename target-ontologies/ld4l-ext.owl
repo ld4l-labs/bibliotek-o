@@ -305,14 +305,6 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Braille">
-        <rdfs:label>Braille</rdfs:label>    
-        <skos:definition>A tactile notation used by the blind and visually impaired, based on a system of rectangular cells and raised dots.</skos:definition>
-        <rdfs:subClassOf rdfs:resource="http://id.loc.gov/ontologies/bibframe/TactileNotation"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Tactile">
         <rdfs:label>Tactile</rdfs:label>    
         <skos:definition>A work intended to be at least partially perceived with the sense of touch.</skos:definition>
