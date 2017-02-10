@@ -407,6 +407,26 @@
         <dcterms:modified></dcterms:modified>
     </owl:ObjectProperty>
     
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/heldBy">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:definition>Specifies the agent holding this item or from which it is available.</skos:definition>
+        <owl:inverseOf rdf:resource="http://bib.ld4l.org/ontology/holds"/>
+        <rdfs:label>held by</rdfs:label>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/holds">
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:definition>Specifies an item held by this agent.</skos:definition>
+        <owl:inverseOf rdf:resource="http://bib.ld4l.org/ontology/heldBy"/>
+        <rdfs:label>holds</rdfs:label>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:ObjectProperty>
+    
     <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/isActivityOf">
         <rdfs:label xml:lang="en">has activity</rdfs:label>
         <skos:definition xml:lang="en">Relates an activity to the affected resource.</skos:definition>
@@ -602,3 +622,4 @@
     </owl:NamedIndividual>
     
 </rdf:RDF>
+

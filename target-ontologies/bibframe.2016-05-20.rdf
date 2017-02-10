@@ -1001,7 +1001,7 @@
     <rdfs:label>Degree</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
-  <!--
+  <!-- TODO Decision pending due to range of bf:Agent 
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/grantingInstitution">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Dissertation"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1390,7 +1390,7 @@
     <rdfs:label>Numbering or other enumeration and dates associated with issues or items held.</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  <!--
+  <!-- TODO Decision required re range of bf:Agent
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/heldBy">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1881,6 +1881,8 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  -->
+  <!-- TODO Pending decision re bf:Agent range
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/assigner">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1934,7 +1936,7 @@
     <rdfs:label>Description generation</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  <!--
+  <!-- TODO Pending decision re bf:Agent range
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/descriptionModifier">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
