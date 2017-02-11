@@ -132,7 +132,7 @@
     <skos:definition>Designation of the validity or position of something, e.g., whether something is incorrect or available.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- TODO
+  <!-- TODO Needs group review - include temporarily until decision is made -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Family">
     <rdfs:label>Family</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -151,7 +151,7 @@
     <skos:definition>Gathering of individuals or representatives of various bodies for the purpose of discussing and/or acting on topics of common interest.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  -->
+
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Temporal">
     <rdfs:label>Temporal concept</rdfs:label>
     <skos:definition>Chronological period.</skos:definition>
@@ -1521,6 +1521,8 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
+  -->
+  <!-- TODO Include at least temporarily - may use rdau predicate -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/precededBy">
     <skos:definition>Resource that precedes the resource being described, e.g., is earlier in time or before in narrative.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1541,6 +1543,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
+  <!--
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/references">
     <skos:definition>Resource that is referenced by the described resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
