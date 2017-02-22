@@ -65,8 +65,8 @@
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/VideoRecordingNumber">
     <rdfs:label>Video recording number</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
-    <skos:definition>Number assigned by a publisher to a videorecording.</skos:definition>
-    <skos:editorialNote>NAME CHANGE (was VideorecordingNumber). NB NOT FORMALLY APPROVED BY LC.</skos:editorialNote>
+    <skos:definition>Number assigned by a publisher to a video recording.</skos:definition>
+    <skos:editorialNote>NAME CHANGE</skos:editorialNote>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/VideoGamePlatformIdentifier">
     <rdfs:label>Video game platform identifier</rdfs:label>
@@ -118,6 +118,14 @@
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
     <skos:definition>Technical specification relating to the projection of a motion picture film.</skos:definition>
     <rdfs:label>Projection characteristic</rdfs:label>
-    <skos:editorialNote>FIXED TYPO IN LOCAL NAME (was projectionChracteristic)</skos:editorialNote>
+    <skos:editorialNote>NAME CHANGE</skos:editorialNote>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/sublocation">
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Sublocation"/>
+    <skos:definition>Specific place within the holding entity where the item is located or made available.</skos:definition>
+    <rdfs:label>Held in sublocation</rdfs:label>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+    <skos:editorialNote>NAME CHANGE</skos:editorialNote>
   </owl:ObjectProperty>
 </rdf:RDF>
