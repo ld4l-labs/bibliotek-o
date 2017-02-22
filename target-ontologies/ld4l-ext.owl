@@ -57,7 +57,6 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Activity">
         <rdfs:label xml:lang="en">Activity</rdfs:label>    
         <skos:definition xml:lang="en">An activity or contribution by a single agent that affects or alters the existence or state of a resource.</skos:definition>
-        <rdfs:subClassOf rdfs:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
