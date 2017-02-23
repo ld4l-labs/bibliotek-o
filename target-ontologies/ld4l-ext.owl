@@ -17,10 +17,10 @@
     <owl:Ontology rdf:about="http://bib.ld4l.org/ontology/">
         <owl:ontologyIRI rdf:resource="http://bib.ld4l.org/ontology"/>
         <!-- TODO Need redirect from the version IRI to the ontology IRI -->
-        <!-- TODO Fill in date of publication -->       
-        <owl:versionIRI rdf:resource="http://bib.ld4l.org/2017/02/10/ontology"/>
-        <!-- TODO Fill in datetime of publication -->
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-02-10T15:31:13.103-04:00</owl:versionInfo>
+        <!-- TODO Fill in path showing date of publication -->       
+        <owl:versionIRI rdf:resource="http://bib.ld4l.org/2017/02/10/ontology/"/>
+        <!-- TODO Fill in text -->
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
         <!-- TODO Fill in date of publication -->
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -360,6 +360,18 @@
         <rdfs:label xml:lang="en">has geographic coverage</rdfs:label>
         <skos:definition xml:lang="en">Specifies the geographic coverage of the content of the resource.</skos:definition>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Location"/> 
+        <!-- TODO Fix name -->
+        <owl:inverse rdf:resource="http://bib.ld4l.org/ontology/geographicallyCoveredIn"/> 
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:ObjectProperty>
+    
+    <!-- TODO Fix name -->
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/geographicallyCoveredIn">
+        <rdfs:label xml:lang="en">has geographic coverage</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the geographic coverage of the content of the resource.</skos:definition>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Location"/> 
+        <owl:inverse rdf:resource="http://bib.ld4l.org/ontology/hasGeographicCoverage"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:ObjectProperty>

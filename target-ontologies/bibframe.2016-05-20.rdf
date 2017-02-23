@@ -1542,7 +1542,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!--
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/references">
     <skos:definition>Resource that is referenced by the described resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1571,6 +1570,7 @@
     <rdfs:label>Issued with</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:SymmetricProperty>
+  <!--
   <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/otherPhysicalFormat">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
@@ -1599,6 +1599,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/dataSource">
     <skos:definition>Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1608,7 +1609,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  -->
+  <!--
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSeries">
     <skos:definition>Resource in which the part has been issued; the title of the larger resource appears on the part.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
@@ -1731,7 +1732,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!--
   <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/otherEdition">
     <skos:definition>Resource has other available editions, for example simultaneously published language editions or reprints.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/derivativeOf"/>
@@ -1741,7 +1741,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-05-13 (symmetrical)</dcterms:modified>
   </owl:SymmetricProperty>
-  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/findingAid">
     <skos:definition>Relationship for archival, visual, and manuscript resources to a finding aid or similar control materials.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompaniedBy"/>
