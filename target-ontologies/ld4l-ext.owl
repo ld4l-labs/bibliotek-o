@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- TODO Add/remove as needed -->
 <rdf:RDF  
     xmlns="http://bib.ld4l.org/ontology/"
-    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
     xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:ld4l="http://bib.ld4l.org/ontology/"
-    xmlns:oa="http://www.w3.org/ns/oa#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
-    xmlns:schema="http://schema.org/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:vann="http://purl.org/vocab/vann/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
