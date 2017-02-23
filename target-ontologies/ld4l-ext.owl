@@ -209,6 +209,12 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>       
+
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/OclcIdentifier">
+        <rdfs:label xml:lang="en-us">Oclc identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+        <rdfs:comment xml:lang="en-us">OCLC Worldcat identifier</rdfs:comment>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ParallelTitle">
         <rdfs:label xml:lang="en">Parallel title</rdfs:label>
