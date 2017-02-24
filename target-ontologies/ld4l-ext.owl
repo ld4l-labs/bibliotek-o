@@ -42,6 +42,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
 
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AbridgerActivity">
+        <rdfs:label xml:lang="en">Abridger</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of abridging a resource.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/abr. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work:consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AcquisitionActivity">
         <rdfs:label xml:lang="en">Acquisition</rdfs:label>    
         <skos:definition xml:lang="en">The activity of acquiring a resource.</skos:definition>
