@@ -118,7 +118,57 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <!-- No AnnotatorActivity class created paralleling http://id.loc.gov/vocabulary/relators/ann. Instead use the Web Annotation model -->
+    <!-- No AnnotatorActivity class was created to parallel http://id.loc.gov/vocabulary/relators/ann. Instead use the Web Annotation model -->
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AppellantActivity">
+        <rdfs:label xml:lang="en">Appellant</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of appealing a court decision.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/apl. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AppelleeActivity">
+        <rdfs:label xml:lang="en">Appellee</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of defending against an appeal.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/apl. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ApplicantActivity">
+        <rdfs:label xml:lang="en">Applicant</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of going through an application process.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/app. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArchitectActivity">
+        <rdfs:label xml:lang="en">Architect</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of creating an architectural design.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/arc. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArrangerActivity">
+        <rdfs:label xml:lang="en">Arranger</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of arranging a musical resource.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/arr. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AuthorActivity">
         <rdfs:label xml:lang="en">Author</rdfs:label>    
