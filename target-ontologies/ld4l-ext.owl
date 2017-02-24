@@ -55,13 +55,14 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AcquisitionActivity">
         <rdfs:label xml:lang="en">Acquisition</rdfs:label>    
         <skos:definition xml:lang="en">The activity of acquiring a resource.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is not derived from the MARC relator. </skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ActorActivity">
-        <rdfs:label xml:lang="en">Abridger</rdfs:label>    
+        <rdfs:label xml:lang="en">Actor</rdfs:label>    
         <skos:definition xml:lang="en">The activity of acting as a cast member or player in a musical or dramatic presentation, etc.</skos:definition>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/act. </skos:scopeNote>
         <skos:editorialNote xml:lang="en"> Future work:consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
