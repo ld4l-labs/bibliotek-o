@@ -78,6 +78,36 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AdapterActivity">
+        <rdfs:label xml:lang="en">Adapter</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of adapting a resource.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/adp. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work:consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AddresseeActivity">
+        <rdfs:label xml:lang="en">Addressee</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of receiving an addressed resource.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rcp. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work:consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AnalystActivity">
+        <rdfs:label xml:lang="en">Analyst</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of analyzing data or information.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rcp. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work:consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AuthorActivity">
         <rdfs:label xml:lang="en">Author</rdfs:label>    
         <skos:definition xml:lang="en">The activity of authoring a resource.</skos:definition>
