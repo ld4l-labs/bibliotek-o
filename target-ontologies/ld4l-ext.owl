@@ -61,19 +61,19 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Activity">
+        <rdfs:label xml:lang="en">Activity</rdfs:label>    
+        <skos:definition xml:lang="en">An activity or contribution by a single agent that affects or alters the existence or state of a resource.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ActorActivity">
         <rdfs:label xml:lang="en">Actor</rdfs:label>    
         <skos:definition xml:lang="en">The activity of acting as a cast member or player in a musical or dramatic presentation, etc.</skos:definition>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/act. </skos:scopeNote>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Activity">
-        <rdfs:label xml:lang="en">Activity</rdfs:label>    
-        <skos:definition xml:lang="en">An activity or contribution by a single agent that affects or alters the existence or state of a resource.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -172,8 +172,58 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArtCopyistActivity">
         <rdfs:label xml:lang="en">Art Copyist</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of makes copies of works of visual art.</skos:definition>
+        <skos:definition xml:lang="en">The activity of making copies of works of visual art.</skos:definition>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/acp. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArtDirectorActivity">
+        <rdfs:label xml:lang="en">Art Director Activity</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a motion picture or television production by overseeing the artists and craftspeople who build the sets.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/adi. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArtistActivity">
+        <rdfs:label xml:lang="en">Artist Activity</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of creating a work by conceiving, and implementing, an original graphic design, drawing, painting, etc. For book illustrators, prefer IllustratorActivity.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/art. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ArtisticDirectorActivity">
+        <rdfs:label xml:lang="en">Artistic Director Activity</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of controlling the development of the artistic style of an entire production, including the choice of works to be presented and selection of senior production staff.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ard. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AssigneeActivity">
+        <rdfs:label xml:lang="en">Artistic Director Activity</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of receiving a transferred license for printing or publishing.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/asg. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AttributionActivity">
+        <rdfs:label xml:lang="en">Attribution Activity</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of which there is or once was substantial authority for designating that person as author, creator, etc. of the work indicative of provenance.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/att. </skos:scopeNote>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
@@ -188,11 +238,31 @@
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
-    </owl:Class> 
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/BinderActivity">
+        <rdfs:label xml:lang="en">Binder</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of binding an item.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bnd. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/BindingDesignerActivity">
+        <rdfs:label xml:lang="en">Binding Designer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of designing a binding of a book, including the type of binding, the type of materials used, and any decorative aspects of the binding.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bdd. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/CaptureActivity">
         <rdfs:label xml:lang="en">Capture</rdfs:label>    
-        <skos:definition xml:lang="en">The recording, filming, etc. of a resource.</skos:definition>
+        <skos:definition xml:lang="en">The activity of recording, filming, etc. of a resource.</skos:definition>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -340,6 +410,16 @@
         <rdfs:label xml:lang="en-us">Oclc identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:comment xml:lang="en-us">OCLC Worldcat identifier</rdfs:comment>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/OfferActivity">
+        <rdfs:label xml:lang="en">Offer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of offering a resource for purchase or other form of aquisition. Use for Booksellers and sellers of other resources.</skos:definition>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bsl and http://id.loc.gov/vocabulary/relators/sll. </skos:scopeNote>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
     </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ParallelTitle">
