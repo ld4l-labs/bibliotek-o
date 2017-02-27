@@ -132,7 +132,6 @@
     <skos:definition>Designation of the validity or position of something, e.g., whether something is incorrect or available.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- TODO Needs group review - include temporarily until decision is made -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Family">
     <rdfs:label>Family</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -322,11 +321,14 @@
     <skos:definition>Review of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  <!-- TODO We define ld4l:TableOfContents as a bf:AccessibilityFeature. Can also
+    subclass bf:TableOfContents.
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/TableOfContents">
     <rdfs:label>Table of contents</rdfs:label> 
     <skos:definition>Table of contents of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Extent">
     <rdfs:label>Extent</rdfs:label>  
     <skos:definition>Number and type of units and/or subunits making up a resource.</skos:definition>
@@ -355,6 +357,11 @@
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/ProductionMethod">
     <rdfs:label>Production method</rdfs:label>  
     <skos:definition>Process used to produce a resource</skos:definition>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Generation">
+    <rdfs:label>Generation</rdfs:label>
+    <skos:definition>Relationship between an original carrier and the carrier of a reproduction made from the original.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Layout">
@@ -531,7 +538,6 @@
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/IntendedAudience">
     <rdfs:label>Intended audience information</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     <skos:definition>Information that identifies the specific intended or target audience or intellectual level for which the content described is considered appropriate. Also used to record interest and motivation levels and special learner characteristics.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
@@ -1325,6 +1331,13 @@
     <rdfs:label>Production method</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/generation">
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Generation"/>
+    <skos:definition>Relationship between an original carrier and the carrier of a reproduction made from the original.</skos:definition>
+    <rdfs:label>Generation</rdfs:label>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/layout">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Layout"/>
@@ -1472,15 +1485,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TODO
-  <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasEquivalent">
-    <skos:definition>Resource embodies the same content as the described resource.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-    <rdfs:comment>Used with Work, Instance or Item</rdfs:comment>
-    <rdfs:label>Equivalence</rdfs:label>
-    <rdfs:comment>Expected value Work, Instance or Item</rdfs:comment>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:SymmetricProperty>
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/accompaniedBy">
     <skos:definition>Resource that accompanies the described resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1501,6 +1505,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
+  <!--
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/derivativeOf">
     <skos:definition>Source work from which the described resource is derived.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1570,26 +1575,6 @@
     <rdfs:label>Has other physical format</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:SymmetricProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasReproduction">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <skos:definition>Resource that reproduces another Resource.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasEquivalent"/>
-    <rdfs:label>Reproduced as</rdfs:label>
-    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/reproductionOf"/>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/reproductionOf">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <skos:definition>Resource that is a reproduction of another Resource.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasEquivalent"/>
-    <rdfs:label>Reproduction of</rdfs:label>
-    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasReproduction"/>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
-  </owl:ObjectProperty>
   -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/dataSource">
     <skos:definition>Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures.</skos:definition>
@@ -1874,7 +1859,6 @@
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
   -->
-  <!-- TODO Pending decision re bf:Agent range
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/assigner">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1882,7 +1866,7 @@
     <rdfs:label>Assigner</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  -->
+  <!--
   <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/derivedFrom">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
@@ -1928,7 +1912,7 @@
     <rdfs:label>Description generation</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TODO Pending decision re bf:Agent range
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/descriptionModifier">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
@@ -1936,7 +1920,7 @@
     <rdfs:label>Description modifier</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:ObjectProperty>
-  -->
+  <!--
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/descriptionAuthentication">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/AdminMetadata"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication"/>

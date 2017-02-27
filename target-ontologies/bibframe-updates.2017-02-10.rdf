@@ -17,7 +17,6 @@
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature">
-    <rdfs:label>Accessibility</rdfs:label>
     <skos:definition>Accessibility feature of the resource, such as accessible media, alternatives and supported enhancements for accessibility. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
