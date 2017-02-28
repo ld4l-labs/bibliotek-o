@@ -994,6 +994,15 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Meeting">
+        <rdfs:label xml:lang="en">Meeting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+        <skos:definition xml:lang="en">Gathering of individuals or representatives of various bodies for the purpose of discussing and/or acting on topics of common interest.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MetalEngraverActivity">
         <rdfs:label xml:lang="en">Metal engraver</rdfs:label>    
@@ -1505,6 +1514,26 @@
         <dcterms:modified></dcterms:modified>
     </owl:ObjectProperty>
     
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/heldBy">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:definition>Specifies the agent holding the item or from which it is available.</skos:definition>
+        <owl:inverseOf rdf:resource="http://bib.ld4l.org/ontology/holds"/>
+        <rdfs:label>held by</rdfs:label>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/holds">
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:definition>Specifies an item held by the agent or from which it is available.</skos:definition>
+        <owl:inverseOf rdf:resource="http://bib.ld4l.org/ontology/holds"/>
+        <rdfs:label>held by</rdfs:label>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+    </owl:ObjectProperty>
+        
     <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/isTargetOf">
         <rdfs:label xml:lang="en">is target of</rdfs:label>
         <skos:definition xml:lang="en">Relates a resource to its annotation.</skos:definition>
@@ -1530,6 +1559,13 @@
         <skos:definition xml:lang="en">Specifies the geographic coverage of the content of the resource.</skos:definition>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Location"/> 
         <owl:inverse rdf:resource="http://bib.ld4l.org/ontology/hasGeographicCoverage"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:ObjectProperty>
+    
+    <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/hasCoverArt">
+        <rdfs:label xml:lang="en">has cover art</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the cover art of the resource.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:ObjectProperty>
