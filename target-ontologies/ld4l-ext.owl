@@ -1003,6 +1003,76 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/OrganizerActivity">
+        <rdfs:label xml:lang="en">Opponent</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of organizing the exhibit, event, conference, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/OwnerActivity">
+        <rdfs:label xml:lang="en">Owner</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of owns an item or collection, i.e.has legal possession of a resource.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship to ld4l:AcquisitionActivity.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/own. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PanelistActivity">
+        <rdfs:label xml:lang="en">Panelist</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by participating in a program (often broadcast) where topics are discussed, usually with participation of experts in fields related to the discussion.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pan. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PaperMakerActivity">
+        <rdfs:label xml:lang="en">PaperMaker</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of producing paper, usually from wood, cloth, or other fibrous material.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ppm. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PatentApplicantActivity">
+        <rdfs:label xml:lang="en">Patent Applicant</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of appling for a patent.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pta. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PatentHolderActivity">
+        <rdfs:label xml:lang="en">Patent Holder</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of being granted a patent.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pth. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PatronActivity">
+        <rdfs:label xml:lang="en">Patron</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of commissioning a work. Usually a patron uses his or her means or influence to support the work of artists, writers, etc. This includes those who commission and pay for individual works.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pat. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ParallelTitle">
         <rdfs:label xml:lang="en">Parallel title</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
@@ -1029,7 +1099,9 @@
 
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/PerformerActivity">
         <rdfs:label xml:lang="en">Performer</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of performing in a resource.</skos:definition>
+        <skos:definition xml:lang="en">The activity of contributing to a resource by performing music, acting, dancing, speaking, etc., often in a musical or dramatic presentation, etc. If specific Activities are used, ld4l:PerformerActivity is used for a person whose principal skill is not known or specified.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship with other "performance-based" activities. E.g. is every ld4l:ActorActivity a ld4l:PerformerActivity.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prf.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
