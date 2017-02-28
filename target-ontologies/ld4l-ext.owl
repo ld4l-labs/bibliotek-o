@@ -1289,6 +1289,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PresenterActivity">
+        <rdfs:label xml:lang="en">Presenter</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of presenting a moving image, as in being mentioned in an “X presents” credit for moving image materials and who is associated with production, finance, or distribution in some way. A vanity credit; in early years, normally the head of a studio.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Not be be confused with a presenter of a presentation, for which we don't have a subclass.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pre. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/PlatemakerActivity">
         <rdfs:label xml:lang="en">Platemaker</rdfs:label>    
         <skos:definition xml:lang="en">The activity of manufacturing a manifestation by preparing plates used in the production of printed images and/or text.</skos:definition>
@@ -1307,9 +1317,71 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PrinterActivity">
+        <rdfs:label xml:lang="en">Printer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of manufacturing a manifestation of printed text, notated music, etc., from type or plates, such as a book, newspaper, magazine, broadside, score, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prt. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PrintmakerActivity">
+        <rdfs:label xml:lang="en">Printmaker</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of making a relief, intaglio, or planographic printing surface.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship with ld4l:PrinterActivity and ld4l:Platemaker</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prm. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProducerActivity">
         <rdfs:label xml:lang="en">Producer</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of producing a resource.</skos:definition>
+        <skos:definition xml:lang="en">The activity of addressing the most of the business aspects of a production for screen, audio recording, television, webcast, etc. The producer is generally responsible for fund raising, managing the production, hiring key personnel, arranging for distributors, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pro. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProductionActivity">
+        <rdfs:label xml:lang="en">Production Personnel</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to the production aspects (props, lighting, special effects, etc.) of a musical or dramatic presentation or entertainment. When more specific activities are know use them, e.g. ld4l:Lighting Designer. </skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prd. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProgrammerActivity">
+        <rdfs:label xml:lang="en">Programmer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of creating a computer program.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prm. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProofreaderActivity">
+        <rdfs:label xml:lang="en">Proofreader</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of proofreading a resource.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pfr. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProofreaderActivity">
+        <rdfs:label xml:lang="en">Proofreader</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of producing, publishing, manufacturing, or distributing a resource if specific Activities are not desired (e.g. ProducerActivity, PublisherActivity, ManufacturerActivity).</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship ld4l:OfferActivity.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prv. </skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -1318,6 +1390,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/PublisherActivity">
         <rdfs:label xml:lang="en">Publishing</rdfs:label>    
         <skos:definition xml:lang="en">The activity of publishing a resource.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pbl. </skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
