@@ -17,12 +17,12 @@
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature">
-    <skos:definition>Accessibility feature of the resource, such as accessible media, alternatives and supported enhancements for accessibility. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
+    <skos:definition>Accessibility feature of the resource, such as accessible media,supported enhancements for accessibility, and alternatives. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard">
     <rdfs:label>Accessibility</rdfs:label>
-    <skos:definition>An accessibility characteristic of the resource that can be physiologically dangerous to some users, such as flashing, motion simulation, or sound. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
+    <skos:definition>A characteristic of the resource that is physiologically dangerous to some users, such as flashing, motion simulation, or sound. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AudioIssueNumber">
