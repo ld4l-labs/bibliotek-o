@@ -1279,6 +1279,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PhotographerActivity">
+        <rdfs:label xml:lang="en">Photographer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of organizing the exhibit, event, conference, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/pht. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/PrintPageNumbers">
         <rdfs:label xml:lang="en">Print page numbers</rdfs:label>    
         <skos:definition xml:lang="en">The resource includes equivalent print page numbers. Most commonly used with ebooks for which there is a print equivalent.</skos:definition>
