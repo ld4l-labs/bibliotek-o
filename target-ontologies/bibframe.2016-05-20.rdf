@@ -1128,6 +1128,13 @@
     <rdfs:label>Cartographic projection</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/awards">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <skos:definition>Information on awards associated with the described resource.</skos:definition>
+    <rdfs:comment>Used with Work or Instance</rdfs:comment>
+    <rdfs:label>Award note</rdfs:label>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/classification">
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Classification"/>
     <skos:definition>Classification number in any scheme.</skos:definition>
