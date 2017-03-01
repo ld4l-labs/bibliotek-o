@@ -1137,7 +1137,7 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/OfferActivity">
         <rdfs:label xml:lang="en">Offer</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of offering a resource for purchase or other form of aquisition. Use for Booksellers and sellers of other resources.</skos:definition>
+        <skos:definition xml:lang="en">The activity of offering a resource for purchase or other form of acquisition. Use for Booksellers and sellers of other resources.</skos:definition>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bsl and http://id.loc.gov/vocabulary/relators/sll. </skos:scopeNote>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. </skos:editorialNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
@@ -1396,6 +1396,16 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
+
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PuppeteerActivity">
+        <rdfs:label xml:lang="en">Puppeteer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of manipulating, controlling, or directing puppets or marionettes in a moving image production or a musical or dramatic presentation or entertainment.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ppt. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ReadingOrder">
         <rdfs:label xml:lang="en">Reading order</rdfs:label>    
@@ -1404,6 +1414,46 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/RecordistActivity">
+        <rdfs:label xml:lang="en">Recordist</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of using a recording device to capture sounds and/or video during a recording session, including field recordings of natural sounds, folkloric events, music, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rcd. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/RendererActivity">
+        <rdfs:label xml:lang="en">Renderer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of preparing drawings of architectural designs (i.e., renderings) in accurate, representational perspective to show what the project will look like when completed.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ren. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ReporterActivity">
+        <rdfs:label xml:lang="en">Reporter</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of writes or presents reports of news or current events on air or in print.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rpt. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/RepositoryActivity">
+        <rdfs:label xml:lang="en">Reporter</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of hosting data or material culture objects and provides services to promote long term, consistent and shared use of those data or objects.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relatioship with ldl4:AcquisitionActivity and bf:heldBy.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rpt. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/RubyAnnotations">
         <rdfs:label xml:lang="en">Ruby annotations</rdfs:label>    
