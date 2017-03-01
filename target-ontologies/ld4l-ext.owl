@@ -1377,8 +1377,8 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProofreaderActivity">
-        <rdfs:label xml:lang="en">Proofreader</rdfs:label>    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProviderActivity">
+        <rdfs:label xml:lang="en">Provider</rdfs:label>    
         <skos:definition xml:lang="en">The activity of producing, publishing, manufacturing, or distributing a resource if specific Activities are not desired (e.g. ProducerActivity, PublisherActivity, ManufacturerActivity).</skos:definition>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship ld4l:OfferActivity.</skos:editorialNote>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/prv. </skos:scopeNote>
