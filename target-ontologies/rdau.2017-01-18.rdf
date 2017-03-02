@@ -247,6 +247,20 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/equivalent.en" />
   </rdf:Description>
 
+<!-- Property: is variations based on -->
+<rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60114">
+  <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">variationsBasedOn</reg:name>
+  <rdfs:label xml:lang="en">is variations based on</rdfs:label>
+  <skos:definition xml:lang="en">Relates a resource to a musical resource from which melodic, thematic, or harmonic material is taken to form a discrete theme, which is repeated one or more times with subsequent modifications.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+  <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60115" />
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20081" />
+  <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/variationsBasedOn.en" />
+</rdf:Description>
+  
   <!-- Property: is modified by variation as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60115">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
