@@ -1505,12 +1505,10 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ReviewerActivity">
-        <rdfs:label xml:lang="en">Reviewer</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of reviewing of a book, motion picture, performance, etc.</skos:definition>
-        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship to Annotations model.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/rev. </skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/RubyAnnotations">
+        <rdfs:label xml:lang="en">Ruby annotations</rdfs:label>    
+        <skos:definition xml:lang="en">Ruby annotations are provided in the content. Ruby annotations are used as pronunciation guides for the logographic characters for languages like Chinese or Japanese.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -1525,13 +1523,55 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/RubyAnnotations">
-        <rdfs:label xml:lang="en">Ruby annotations</rdfs:label>    
-        <skos:definition xml:lang="en">Ruby annotations are provided in the content. Ruby annotations are used as pronunciation guides for the logographic characters for languages like Chinese or Japanese.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ScreenwriterAdvisorActivity">
+        <rdfs:label xml:lang="en">Screenwriter</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of authoring of a screenplay, script, or scene.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/aus. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ScribeActivity">
+        <rdfs:label xml:lang="en">Scribe</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of serving as an amanuensis and for a writer of manuscripts proper. For a person who makes pen-facsimiles, use FacsimilistActivity.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/scr. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SculptorActivity">
+        <rdfs:label xml:lang="en">Sculptor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of creating a three-dimensional work by modeling, carving, or similar technique.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/scl. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SecretaryActivity">
+        <rdfs:label xml:lang="en">Secretary</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of recording, redacting, etc. in order to express the views of a organization. See also ld4l:MinutetakerActivity.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sec. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SellerActivity">
+        <rdfs:label xml:lang="en">Seller</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of selling something to another owner.</skos:definition>
+        <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sll. </skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SignLanguage">
         <rdfs:label xml:lang="en">Sign language</rdfs:label>    
