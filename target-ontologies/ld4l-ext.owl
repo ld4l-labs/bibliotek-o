@@ -1217,7 +1217,7 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/OwnerActivity">
         <rdfs:label xml:lang="en">Owner</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of owns an item or collection, i.e.has legal possession of a resource.</skos:definition>
+        <skos:definition xml:lang="en">The activity of owning an item or collection, i.e.has legal possession of a resource.</skos:definition>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship to ld4l:AcquisitionActivity.</skos:editorialNote>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/own. </skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
