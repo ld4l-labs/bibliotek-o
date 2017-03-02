@@ -1103,7 +1103,7 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MusicianActivity">
         <rdfs:label xml:lang="en">Musician</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of performingi music or contributes to the musical content of a work when it is not possible or desirable to identify the function more precisely.</skos:definition>
+        <skos:definition xml:lang="en">The activity of performing music or contributes to the musical content of a work when it is not possible or desirable to identify the function more precisely.</skos:definition>
         <skos:editorialNote xml:lang="en"> Future work: consider more formal alignment between the class an corresponding MARC relator. Consider relationship with ld4l:InstrumentalistActivity.</skos:editorialNote>
         <skos:scopeNote xml:lang="en"> This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/mus. </skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
