@@ -1638,6 +1638,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
+  -->
   <!-- TODO
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/translation">
     <skos:definition>Resource that translates the text of the source entity into a language different from that of the original.</skos:definition>
@@ -1679,7 +1680,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-    -->
+  -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/index">
     <skos:definition>Resource has an accompanying index</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompaniedBy"/>
