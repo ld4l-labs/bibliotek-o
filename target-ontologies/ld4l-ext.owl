@@ -1560,12 +1560,28 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SignLanguage">
+        <rdfs:label xml:lang="en">Sign language</rdfs:label>    
+        <skos:definition xml:lang="en">Synchronized sign language intepretation is available for audio and video content.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class> 
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SingerActivity">
         <rdfs:label xml:lang="en">Singer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of contributing to a resource by using his/her/their voice, with or without instrumental accompaniment, to produce music. A singer's performance may or may not include actual words.</skos:definition>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sng.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Software">
+        <rdfs:label xml:lang="en">Software</rdfs:label>    
+        <skos:definition xml:lang="en">A compiled executable binary file.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -1580,28 +1596,22 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SignLanguage">
-        <rdfs:label xml:lang="en">Sign language</rdfs:label>    
-        <skos:definition xml:lang="en">Synchronized sign language intepretation is available for audio and video content.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class> 
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Software">
-        <rdfs:label xml:lang="en">Software</rdfs:label>    
-        <skos:definition xml:lang="en">A compiled executable binary file.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SoundHazard">
         <rdfs:label xml:lang="en">Sound hazard</rdfs:label>    
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SpeakerActivity">
+        <rdfs:label xml:lang="en">Speaker</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by speaking words, such as a lecture, speech, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/spk.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/StructuralNavigation">
         <rdfs:label xml:lang="en">Structural navigation</rdfs:label>    
