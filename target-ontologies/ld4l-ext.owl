@@ -544,23 +544,7 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Credits">
-        <rdfs:label xml:lang="en">Credits</rdfs:label>
-        <skos:definition xml:lang="en">Credits for agents who have participated in the creation and/or production of a resource.</skos:definition>
-        <skos:scopeNote xml:lang="en">Used to type Annotation bodies. Recommended use with motivation http://bib.ld4l.org/ontology/cataloging.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
 
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/CustodialHistory">
-        <rdfs:label xml:lang="en">Custodial history</rdfs:label>
-        <skos:definition xml:lang="en">Information about the provenance, such as origin, ownership and custodial history (chain of custody), of a resource.</skos:definition>
-        <skos:scopeNote xml:lang="en">Used to type Annotation bodies. Recommended use with motivation http://bib.ld4l.org/ontology/cataloging.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/DancerActivity">
         <rdfs:label xml:lang="en">Dancer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of dancing in a musical, dramatic, etc., presentation.</skos:definition>
@@ -777,14 +761,6 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/HistoryOfWork">
-        <rdfs:label xml:lang="en">History of work</rdfs:label>
-        <skos:definition xml:lang="en">Information about the history of a work.</skos:definition>
-        <skos:scopeNote xml:lang="en">Used to type Annotation bodies. Recommended use with motivation http://bib.ld4l.org/ontology/cataloging.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/HonoreeActivity">
         <rdfs:label xml:lang="en">Honoree</rdfs:label>
@@ -1120,16 +1096,7 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/NatureOfContent">
-        <rdfs:label xml:lang="en">Nature of content</rdfs:label>
-        <skos:definition xml:lang="en">Description of the primary type of content of a resource.</skos:definition>
-        <skos:example xml:lang="en">Field recording of birdsong; combined time series analysis and graph plotting system.</skos:example>
-        <skos:scopeNote xml:lang="en">Used to type Annotation bodies. Recommended use with motivation http://bib.ld4l.org/ontology/cataloging.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
+
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/NoFlashingHazard">
         <rdfs:label xml:lang="en">No flashing hazard</rdfs:label>    
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
@@ -1620,14 +1587,6 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SystemRequirements">
-        <rdfs:label xml:lang="en">System requirements</rdfs:label>
-        <skos:definition xml:lang="en">Description of the equipment or system requirements beyond what is normal and obvious for the type of carrier or type of file, such as make and model of equipment or hardware, operating system, amount of memory, programming language, other necessary software, any plug-ins or peripherals required to play, view, or run the resource, etc.</skos:definition>
-        <skos:scopeNote xml:lang="en">Used to type Annotation bodies. Recommended use with motivation http://bib.ld4l.org/ontology/cataloging.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TableOfContentsAccessibilityFeature">
         <rdfs:label xml:lang="en">Table of contents accessibility feature</rdfs:label>    
         <skos:definition xml:lang="en">Represents the feature of having a table of contents, rather than the table of contents itself.</skos:definition>
@@ -1935,7 +1894,6 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">cataloging</rdfs:label>
         <skos:definition xml:lang="en">The motivation that represents cataloging or recording metadata.</skos:definition>
-        <skos:scopeNote xml:lang="en">May be used with annotation body types http://bib.ld4l.org/ontology/Credits, http://bib.ld4l.org/ontology/CustodialHistory, http://bib.ld4l.org/ontology/HistoryOfWork, http://bib.ld4l.org/ontology/NatureOfContent, http://bib.ld4l.org/ontology/SystemRequirements.</skos:scopeNote>
         <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -1945,7 +1903,6 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">reviewing</rdfs:label>
         <skos:definition xml:lang="en">The motivation that represents reviewing the target resource.</skos:definition>
-        <skos:scopeNote xml:lang="en">Optional use with annotation body type http://id.loc.gov/ontologies/bibframe/Review.</skos:scopeNote>
         <skos:broader rdf:resource="http://www.w3.org/ns/oa#assessing"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
@@ -1955,7 +1912,6 @@
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">summarizing</rdfs:label>
         <skos:definition xml:lang="en">The motivation that represents summarizing the target resource.</skos:definition>
-        <skos:scopeNote xml:lang="en">May be used with annotation body types http://id.loc.gov/ontologies/bibframe/Summary, http://id.loc.gov/ontologies/bibframe/TableOfContents.</skos:scopeNote>
         <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
