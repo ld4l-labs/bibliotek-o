@@ -458,5 +458,116 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/expandedAs.en" />
   </rdf:Description>
   
+  <!-- Property: is abstract of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60224">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">abstractOf</reg:name>
+    <rdfs:label xml:lang="en">is abstract of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that has been abstracted, i.e., abbreviated in a brief, objective manner.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60203" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20122" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/abstractOf.en" />
+  </rdf:Description>
+
+  <!-- Property: is free translation of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60243">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">freeTranslationOf</reg:name>
+    <rdfs:label xml:lang="en">is free translation of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that has been adapted and translated into another language.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60189" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20140" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/freeTranslationOf.en" />
+  </rdf:Description>
   
+  <!-- Property: is musical setting of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60266">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">musicalSettingOf</reg:name>
+    <rdfs:label xml:lang="en">is musical setting of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that provides text for a non-dramatic musical resource, other than an oratorio.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60121" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20159" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/musicalSettingOf.en" />
+  </rdf:Description>
+
+  <!-- Property: is summary of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60289">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">summaryOf</reg:name>
+    <rdfs:label xml:lang="en">is summary of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource used as a basis for a brief recapitulation of its content.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60205" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20179" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/summaryOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is choreographic adaptation of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60293">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">choreographicAdaptationOf</reg:name>
+    <rdfs:label xml:lang="en">is choreographic adaptation of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that has been adapted as a resource consisting of movement.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60180" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20183" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/choreographicAdaptationOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is remake of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60295">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">remakeOf</reg:name>
+    <rdfs:label xml:lang="en">is remake of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource used as a basis for a new motion picture, radio program, television program, or video.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60120" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20185" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/remakeOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is abstracts for -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60308">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">abstractsFor</reg:name>
+    <rdfs:label xml:lang="en">is abstracts for</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose contents have been abstracted by an abstracting and indexing service.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60177" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20193" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/abstractsFor.en" />
+  </rdf:Description>
+
+  <!-- Property: is indexing for -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60309">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">indexingFor</reg:name>
+    <rdfs:label xml:lang="en">is indexing for</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose contents have been indexed by an abstracting and indexing service.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60178" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20194" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/indexingFor.en" />
+  </rdf:Description>
+
 </rdf:RDF>
