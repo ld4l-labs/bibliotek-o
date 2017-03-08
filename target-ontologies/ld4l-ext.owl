@@ -1566,18 +1566,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SellerActivity">
         <rdfs:label xml:lang="en">Seller</rdfs:label>    
         <skos:definition xml:lang="en">The activity of selling something to another owner.</skos:definition>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider relationship to Provenance modeling.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sll.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SetDesignerActivity">
-        <rdfs:label xml:lang="en">Set Designer Activity</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of translating the rough sketches of the art director into actual architectural structures for a theatrical presentation, entertainment, motion picture, etc. Set designers draw the detailed guides and specifications for building the set.</skos:definition>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/std.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sll.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
