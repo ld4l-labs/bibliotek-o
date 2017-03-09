@@ -1162,7 +1162,7 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Origin">
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Origin">
         <rdfs:label xml:lang="en">Title origin</rdfs:label>    
         <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
         <dcterms:issued></dcterms:issued>
