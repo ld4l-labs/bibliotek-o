@@ -191,11 +191,6 @@
     <skos:definition>Information about a work presented as part of the formal requirements for an academic degree.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Summary">
-    <rdfs:label>Summary</rdfs:label>
-    <skos:definition>Description of the content of a resource, such as an abstract, summary, etc..</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Notation">
     <rdfs:label>Notation</rdfs:label>
     <skos:definition>Information on the alphabet, script, or symbol system used to convey the content of the resource, including specialized scripts, typefaces, tactile notation, movement notation, and musical notation.</skos:definition>
@@ -310,19 +305,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-05-04 (Class name corrected)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Review">
-    <rdfs:label>Review</rdfs:label>  
-    <skos:definition>Review of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <!-- TODO We define ld4l:TableOfContents as a bf:AccessibilityFeature. Can also
-    subclass bf:TableOfContents.
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/TableOfContents">
-    <rdfs:label>Table of contents</rdfs:label> 
-    <skos:definition>Table of contents of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Extent">
     <rdfs:label>Extent</rdfs:label>  
     <skos:definition>Number and type of units and/or subunits making up a resource.</skos:definition>
