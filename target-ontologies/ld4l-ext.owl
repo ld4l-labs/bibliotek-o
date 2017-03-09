@@ -1677,7 +1677,17 @@
         <skos:definition xml:lang="en">The subtitle of a title.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
-    </owl:Class>   
+    </owl:Class>  
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SurveyorActivity">
+        <rdfs:label xml:lang="en">Surveyor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a cartographic resource by providing measurements or dimensional relationships for the geographic area represented.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/srv.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SynchronizedAudioText">
         <rdfs:label xml:lang="en">SynchronizedAudioText</rdfs:label>    
@@ -1731,6 +1741,26 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/TeacherActivity">
+        <rdfs:label xml:lang="en">Teacher</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by giving instruction or providing a demonstration.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/tch.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ThesisAdvisorActivity">
+        <rdfs:label xml:lang="en">Thesis advisor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of supervising a degree candidate as they develop and present a thesis, mémoire, or text of a dissertation.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ths.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TimingControl">
         <rdfs:label xml:lang="en">Timing control</rdfs:label>    
         <skos:definition xml:lang="en">For content with timed interaction, the user has the ability to control the timing to meet his or her needs (e.g., pause and reset).</skos:definition>
@@ -1744,7 +1774,17 @@
         <skos:definition xml:lang="en">A part of a title, such as a subtitle, part number, or part name.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
-    </owl:Class>    
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/TranscriberActivity">
+        <rdfs:label xml:lang="en">Transcriber</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by changing it from one system of notation to another. For a work transcribed for a different instrument or performing group, see ld4l:ArrangerActivity. For makers of pen-facsimiles, use ld4l:FacsimilistActivity.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ths.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
 
     <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Origin">
         <rdfs:label xml:lang="en">Title origin</rdfs:label>    
