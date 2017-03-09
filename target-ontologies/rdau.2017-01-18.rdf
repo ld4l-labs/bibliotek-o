@@ -1099,6 +1099,20 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/imitationOf.en" />
   </rdf:Description>  
 
+  <!-- Property: is parody of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60312">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">parodyOf</reg:name>
+    <rdfs:label xml:lang="en">is parody of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose style or content is imitated for comic effect.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60311" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60246" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20196" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/parodyOf.en" />
+  </rdf:Description>  
+  
   <!-- Property: is adapted as television program -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60354">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
