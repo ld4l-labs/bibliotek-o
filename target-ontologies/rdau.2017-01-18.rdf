@@ -16,6 +16,21 @@
     <foaf:homepage rdf:resource="http://www.rdaregistry.info/Elements/u/"/>
     <skos:note  xml:lang="en">Properties derived from RDA elements and relationship designators without specific or implicit restrictions to RDA entities.</skos:note>
   </rdf:Description>
+  
+  <!-- Property: has electronic reproduction -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60083">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">electronicReproduction</reg:name>
+    <rdfs:label xml:lang="en">has electronic reproduction</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource in a digital format that is a result of a transfer of a resource in an analog format.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60272" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60469" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40057" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30016" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/electronicReproduction.en" />
+  </rdf:Description>
 
   <!-- Property: is dramatized as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60088">
@@ -291,6 +306,22 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mirrorSite.en" />
   </rdf:Description>
 
+  <!-- Property: has digital transfer -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60200">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">digitalTransfer</reg:name>
+    <rdfs:label xml:lang="en">has digital transfer</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource in a digital format that results from a transfer of a resource in another digital format.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60272" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60287" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40056" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30029" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/digitalTransfer.en" />
+  </rdf:Description>
+
+  
   <!-- Property: is abstracted as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60203">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -360,6 +391,22 @@
     <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60294" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20115" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/expandedAs.en" />
+  </rdf:Description>
+
+  <!-- Property: has facsimile -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60217">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">facsimile</reg:name>
+    <rdfs:label xml:lang="en">has facsimile</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that exactly reproduces another resource embodying a resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60272" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60301" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60179" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40058" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30031" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/facsimile.en" />
   </rdf:Description>
   
   <!-- Property: is abridgement of -->
@@ -704,6 +751,21 @@
     <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60121" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20159" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/musicalSettingOf.en" />
+  </rdf:Description>
+
+  <!-- Property: is reprinted as -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60271">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">reprintedAs</reg:name>
+    <rdfs:label xml:lang="en">is reprinted as</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that reissues the same resource as a printed resource being described.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60272" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60168" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40060" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30038" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/reprintedAs.en" />
   </rdf:Description>
   
   <!-- Property: is reproduced as -->
