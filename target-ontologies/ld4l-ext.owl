@@ -1803,11 +1803,13 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TranslatorActivity">
         <rdfs:label xml:lang="en">Translator</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of translatin a resource.</skos:definition>
+        <skos:definition xml:lang="en">The activity of rending a text from one language into another, or from an older form of a language into the modern form.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/trl.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
-    </owl:Class>    
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TtsMarkup">
         <rdfs:label xml:lang="en">TTS markup</rdfs:label>    
@@ -1816,6 +1818,16 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/TypographerActivity">
+        <rdfs:label xml:lang="en">Typographer</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of choosing and arranging the type used in an item. If the typographer is also responsible for other aspects of the graphic design of a book (e.g., ld4l:DesignerActivity), activities for both functions may be needed.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/tyg.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Unlocked">
         <rdfs:label xml:lang="en">Unlocked</rdfs:label>    
@@ -1827,9 +1839,39 @@
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideographerActivity">
         <rdfs:label xml:lang="en">Videographer</rdfs:label>    
-        <skos:definition xml:lang="en">Video production, e.g. the video recording of a stage production as opposed to a commercial motion picture. The videographer may be the camera operator or may supervise one or more camera operators. Do not confuse with ld4l:CinematographerActivity.</skos:definition>
+        <skos:definition xml:lang="en">The activity of producing the video production, e.g. the video recording of a stage production as opposed to a commercial motion picture. The videographer may be the camera operator or may supervise one or more camera operators. Do not confuse with ld4l:CinematographerActivity.</skos:definition>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/vdg.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/VoiceActorActivity">
+        <rdfs:label xml:lang="en">Voice Actor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by providing the voice for characters in radio and audio productions and for animated characters in moving image works, as well as by providing voice overs in radio and television commercials, dubbed resources, etc.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/vac.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/WitnessActivity">
+        <rdfs:label xml:lang="en">Voice Actor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of verifying the truthfulness of an event or action.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/wit.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/WoodEngraverActivity">
+        <rdfs:label xml:lang="en">Wood Engraver</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of making prints by cutting the image in relief on the end-grain of a wood block.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider relationship with ld4l:PrintmakerActivity</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/wit.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
