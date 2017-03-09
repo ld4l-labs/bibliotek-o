@@ -15,11 +15,11 @@
     <!-- ONTOLOGY DECLARATION -->
        
     <owl:Ontology rdf:about="http://bib.ld4l.org/ontology/">
+        <!-- We are deprecating the original ontology and using the same namespace -->
         <owl:ontologyIRI rdf:resource="http://bib.ld4l.org/ontology"/>
-        <!-- Are we using the same domain ^^^^, versioning, deprecating, the original ontology? -->
         <!-- TODO Need redirect from the version IRI to the ontology IRI -->
-        <!-- TODO Fill in path showing date of publication -->       
-        <owl:versionIRI rdf:resource="http://bib.ld4l.org/2017/02/10/ontology/"/>
+        <!-- TODO Fill in path showing actual date of publication -->       
+        <owl:versionIRI rdf:resource="http://bib.ld4l.org/2017/04/15/ontology/"/>
         <!-- TODO Fill in text -->
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:versionInfo>
         <!-- TODO Fill in date of publication -->
