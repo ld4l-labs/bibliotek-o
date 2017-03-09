@@ -13,7 +13,7 @@
 	xmlns:wot="http://xmlns.com/wot/0.1/" 
 	xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-<!-- FOAF Agent and subclasses -->
+  <!-- FOAF Agent and subclasses -->
 
   <rdfs:Class rdf:about="http://xmlns.com/foaf/0.1/Person" rdfs:label="Person" rdfs:comment="A person." vs:term_status="stable">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />

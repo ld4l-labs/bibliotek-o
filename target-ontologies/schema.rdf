@@ -8,13 +8,14 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dct="http://purl.org/dc/terms/">
   
-  <!-- TODO Not yet definite -->
+  <!-- TODO Using this or bf:IntendedAudience? 
   <rdf:Description rdf:about="http://schema.org/Audience">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Audience</rdfs:label>
     <rdfs:comment xml:lang="en"></rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://schema.org/Audience"/>
   </rdf:Description>
+  -->
   
   <rdf:Description rdf:about="http://schema.org/Event">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -24,23 +25,23 @@
     <rdfs:isDefinedBy rdf:resource="http://schema.org/Event"/>
   </rdf:Description>
   
-  <!-- TODO Not sure whether we're using this or ld4l:Software -->
+  <!-- TODO Using this or ld4l:Software?
   <rdf:Description rdf:about="http://schema.org/SoftwareApplication">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Software Application</rdfs:label>
     <rdfs:comment xml:lang="en"></rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://schema.org/SoftwareApplication"/>
   </rdf:Description>
-    
-  <!-- TODO Not yet definite -->
+  -->
+  
+  <!-- TODO Using this or bf:intendedAudience? 
   <rdf:Description rdf:about="http://schema.org/audience">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:label xml:lang="en">Audience</rdfs:label>
     <rdfs:comment xml:lang="en">The intended audience of the item, i.e. the group for whom the item was created.</rdfs:comment>
   </rdf:Description>
-  
-  <!-- TODO Domain is schema:Person. Are we committing to equivalence of 
-    foaf:Person and schema:Person? -->
+  -->
+
   <rdf:Description rdf:about="http://schema.org/birthDate">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:label xml:lang="en">Birth Date</rdfs:label>
@@ -49,8 +50,6 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </rdf:Description>
 
-  <!-- TODO Domain is schema:Person. Are we committing to equivalence of 
-    foaf:Person and schema:Person? -->
   <rdf:Description rdf:about="http://schema.org/deathDate">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:label xml:lang="en">Death Date</rdfs:label>
