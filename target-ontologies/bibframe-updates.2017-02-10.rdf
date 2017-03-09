@@ -6,7 +6,7 @@
   xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
   xmlns:dcterms="http://purl.org/dc/terms/">
   
-  <owl:Ontology rdf:about="">
+  <owl:Ontology rdf:about="http://id.loc.gov/ontologies/bibframe-updates/">
     <rdfs:label>BIBFRAME vocabulary</rdfs:label>
     <skos:editorialNote>This file contains updates to BIBFRAME 2.0 that have been approved but not yet published. Temporary file used until the published BIBFRAME ontology specification has been updated. Any definitions of new terms or other notes are placeholders. Classes that are modified only by removing subclassing of rdfs:Resource are retained in the main BIBFRAME file.</skos:editorialNote>
   </owl:Ontology>
