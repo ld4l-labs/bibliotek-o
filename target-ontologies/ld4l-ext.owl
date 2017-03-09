@@ -1613,6 +1613,56 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SponsorActivity">
+        <rdfs:label xml:lang="en">Sponsor</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of sponsoring some aspect of a resource, e.g., funding research, sponsoring an event.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/spn.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StageDirectorActivity">
+        <rdfs:label xml:lang="en">Stage Director</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a stage resource through the overall management and supervision of a performance.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/sgd.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StageManagerActivity">
+        <rdfs:label xml:lang="en">Stage Manager</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of managing everything that occurs on a performance stage, and who acts as chief of all crews and assistant to a director during rehearsals.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/stm.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StereotyperActivity">
+        <rdfs:label xml:lang="en">Stereotyper</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of creating a new plate for printing by molding or copying another printing surface.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/str.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StorytellerActivity">
+        <rdfs:label xml:lang="en">Storyteller</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of contributing to a resource by relaying a creator's original story with dramatic or theatrical interpretation.</skos:definition>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/stl.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/StructuralNavigation">
         <rdfs:label xml:lang="en">Structural navigation</rdfs:label>    
         <skos:definition xml:lang="en">The use of headings in the resource fully and accurately reflects the document hierarchy, allowing navigation by assistive technologies.</skos:definition>
