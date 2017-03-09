@@ -16,76 +16,34 @@
     <foaf:homepage rdf:resource="http://www.rdaregistry.info/Elements/u/"/>
     <skos:note  xml:lang="en">Properties derived from RDA elements and relationship designators without specific or implicit restrictions to RDA entities.</skos:note>
   </rdf:Description>
+  
+<!-- Property: is dubbed version of -->
+<rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60111">
+  <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">dubbedVersionOf</reg:name>
+  <rdfs:label xml:lang="en">is dubbed version of</rdfs:label>
+  <skos:definition xml:lang="en">Relates a resource to a moving image resource in which spoken dialogue has been translated into a language different from that of an original resource.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60244" />
+  <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60112" />
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20078" />
+  <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dubbedVersionOf.en" />
+</rdf:Description>  
 
-  <!-- Property: is dramatized as -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60088">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">dramatizedAs</reg:name>
-    <rdfs:label xml:lang="en">is dramatized as</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a dramatic resource adapted from a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60225" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20073" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dramatizedAs.en" />
-  </rdf:Description>
-
-  <!-- Property: is adapted in verse as -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60106">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedInVerseAs</reg:name>
-    <rdfs:label xml:lang="en">is adapted in verse as</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a literary composition in verse form adapted from a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60226" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20077" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedInVerseAs.en" />
-  </rdf:Description>
-  
-  <!-- Property: is adapted as motion picture -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60110">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedAsAMotionPicture</reg:name>
-    <rdfs:label xml:lang="en">is adapted as motion picture</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a motion picture based on the source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60227" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20009" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsAMotionPicture.en" />
-  </rdf:Description>  
-  
-  <!-- Property: is dubbed version of -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60111">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">dubbedVersionOf</reg:name>
-    <rdfs:label xml:lang="en">is dubbed version of</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a moving image resource in which spoken dialogue has been translated into a language different from that of an original resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60244" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60112" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20078" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dubbedVersionOf.en" />
-  </rdf:Description>  
-  
-  <!-- Property: is variations based on -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60114">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">variationsBasedOn</reg:name>
-    <rdfs:label xml:lang="en">is variations based on</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a musical resource from which melodic, thematic, or harmonic material is taken to form a discrete theme, which is repeated one or more times with subsequent modifications.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60115" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20081" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/variationsBasedOn.en" />
-  </rdf:Description>
+<!-- Property: is variations based on -->
+<rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60114">
+  <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+  <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+  <reg:name xml:lang="en">variationsBasedOn</reg:name>
+  <rdfs:label xml:lang="en">is variations based on</rdfs:label>
+  <skos:definition xml:lang="en">Relates a resource to a musical resource from which melodic, thematic, or harmonic material is taken to form a discrete theme, which is repeated one or more times with subsequent modifications.</skos:definition>
+  <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+  <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60305" />
+  <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60115" />
+  <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20081" />
+  <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/variationsBasedOn.en" />
+</rdf:Description>
   
   <!-- Property: is modified by variation as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60115">
@@ -128,34 +86,6 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20087" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/setToMusicAs.en" />
   </rdf:Description>
-  
-  <!-- Property: is adapted as novel -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60138">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">novelization</reg:name>
-    <rdfs:label xml:lang="en">is adapted as novel</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a novel adapted from a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60228" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20088" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsNovel.en" />
-  </rdf:Description> 
-  
-  <!-- Property: is adapted as radio program -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60174">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedAsARadioProgram</reg:name>
-    <rdfs:label xml:lang="en">is adapted as radio program</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a radio program based on a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60229" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20060" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsARadioProgram.en" />
-  </rdf:Description>  
 
   <!-- Property: is abstracted in -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60177">
@@ -197,37 +127,6 @@
     <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60293" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20092" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsChoreography.en" />
-  </rdf:Description>
-
-  <!-- Property: is adapted as screenplay -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60185">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedAsScreenplay</reg:name>
-    <rdfs:label xml:lang="en">is adapted as screenplay</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a resource consisting of a screenplay for a motion picture, television program, or video, based on a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60231" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60184" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60186" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60187" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20096" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsScreenplay.en" />
-  </rdf:Description>  
-
-  <!-- Property: is adapted as radio script -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60188">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedAsARadioScript</reg:name>
-    <rdfs:label xml:lang="en">is adapted as radio script</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a resource consisting of a script for a radio program, based on a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60235" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20099" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsARadioScript.en" />
   </rdf:Description>
   
   <!-- Property: is freely translated as -->
@@ -977,34 +876,6 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/imitationOf.en" />
   </rdf:Description>  
 
-  <!-- Property: is adapted as television program -->
-  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60354">
-    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-    <reg:name xml:lang="en">adaptedAsATelevisionProgram</reg:name>
-    <rdfs:label xml:lang="en">is adapted as television program</rdfs:label>
-    <skos:definition xml:lang="en">Relates a resource to a television program based on a source resource.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60230" />
-    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20066" />
-    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsATelevisionProgram.en" />
-  </rdf:Description>  
-  
- <!-- Property: is adapted as video -->
- <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60361">
-   <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
-   <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
-   <reg:name xml:lang="en">adaptedAsAVideo</reg:name>
-   <rdfs:label xml:lang="en">is adapted as video</rdfs:label>
-   <skos:definition xml:lang="en">Relates a resource to a video based on a source resource.</skos:definition>
-   <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
-   <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60260" />
-   <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60236" />
-   <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20067" />
-   <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/adaptedAsAVideo.en" />
- </rdf:Description>  
-  
   <!-- Property: is graphic novelization of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60743">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
