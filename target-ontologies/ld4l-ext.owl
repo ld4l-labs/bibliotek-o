@@ -1162,6 +1162,13 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Origin">
+        <rdfs:label xml:lang="en">Title origin</rdfs:label>    
+        <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/OriginatorActivity">
         <rdfs:label xml:lang="en">Originator</rdfs:label>    
         <skos:definition xml:lang="en">The activity of performing the work, i.e., the name of a person or organization associated with the intellectual content of the work. This category does not include the publisher or personal affiliation, or sponsor except where it is also the corporate author.</skos:definition>
@@ -1782,13 +1789,6 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ths.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-
-    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Origin">
-        <rdfs:label xml:lang="en">Title origin</rdfs:label>    
-        <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
