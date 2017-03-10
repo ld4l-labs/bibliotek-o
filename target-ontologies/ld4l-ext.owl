@@ -1276,7 +1276,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Origin">
-        <rdfs:label xml:lang="en">Title origin</rdfs:label>    
+        <rdfs:label xml:lang="en">Origin</rdfs:label>    
         <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
         <rdfs:comment xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</rdfs:comment>
         <dcterms:issued></dcterms:issued>
