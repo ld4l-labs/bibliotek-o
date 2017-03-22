@@ -335,6 +335,21 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mirrorSite.en" />
   </rdf:Description>
 
+  <!-- Property: is continued in part by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60199">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuedInPartBy</reg:name>
+    <rdfs:label xml:lang="en">is continued in part by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource part of whose content separated from an earlier resource to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60277" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20101" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuedInPartBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+  
   <!-- Property: has digital transfer -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60200">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -858,6 +873,20 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/abridgedAs.en" />
   </rdf:Description>
   
+  <!-- Property: is separated from -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60277">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">separatedFrom</reg:name>
+    <rdfs:label xml:lang="en">is separated from</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that spun off a part of its content to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60199" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20168" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/separatedFrom.en" />
+  </rdf:Description>
+  
   <!-- Property: is digested as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60279">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -1056,6 +1085,21 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60832" />
   </rdf:Description>
  
+  <!-- Property: is continued by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60306">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuedBy</reg:name>
+    <rdfs:label xml:lang="en">is continued by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose content continues an earlier resource under a new title.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60576" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20191" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuedBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+ 
   <!-- Property: is abstracts for -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60308">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -1154,7 +1198,22 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40027" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30136" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/electronicReproductionOf.en" />
-  </rdf:Description> 
+  </rdf:Description>
+  
+  <!-- Property: is continuation of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60576">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuationOf</reg:name>
+    <rdfs:label xml:lang="en">is continuation of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that is continued by the content of a later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60306" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20149" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuationOf.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
   
   <!-- Property: is graphic novelization of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60743">
