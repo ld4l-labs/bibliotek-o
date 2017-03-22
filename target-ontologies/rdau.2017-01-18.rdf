@@ -46,6 +46,21 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dramatizedAs.en" />
   </rdf:Description>
 
+  <!-- Property: is replaced by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60104">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">replacedBy</reg:name>
+    <rdfs:label xml:lang="en">is replaced by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a later resource used in place of an earlier resource, usually because the later resource contains updated or new information that makes the earlier resource obsolete.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60480" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20076" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/replacedBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to single-part units, multipart monographs, and integrating resources.</skos:scopeNote>
+  </rdf:Description>
+  
   <!-- Property: is adapted in verse as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60106">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -1199,7 +1214,22 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30136" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/electronicReproductionOf.en" />
   </rdf:Description>
-  
+ 
+  <!-- Property: is replacement of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60480">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">replacementOf</reg:name>
+    <rdfs:label xml:lang="en">is replacement of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to an earlier resource whose content has been replaced by a later resource, usually because the later resource contains updated or new information that makes the earlier resource obsolete.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60104" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20199" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/replacementOf.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to single-part units, multipart monographs, and integrating resources.</skos:scopeNote>
+  </rdf:Description>
+ 
   <!-- Property: is merged to form -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60504">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
