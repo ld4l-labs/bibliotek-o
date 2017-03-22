@@ -1769,6 +1769,14 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SourceCode">
+        <rdfs:label xml:lang="en">Software</rdfs:label>    
+        <skos:definition xml:lang="en">A text listing of commands to be compiled or assembled into an executable computer program.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SpeakerActivity">
         <rdfs:label xml:lang="en">Speaker</rdfs:label>    
         <skos:definition xml:lang="en">The activity of contributing to a resource by speaking words, such as a lecture, speech, etc.</skos:definition>
