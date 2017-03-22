@@ -46,6 +46,19 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dramatizedAs.en" />
   </rdf:Description>
 
+  <!-- Property: is sequel -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60102">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">sequel</reg:name>
+    <rdfs:label xml:lang="en">is sequel</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a later resource that continues the narrative of an earlier resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60577" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/sequel.en" />
+  </rdf:Description>
+
   <!-- Property: is replaced by -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60104">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
