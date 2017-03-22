@@ -1200,6 +1200,34 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/electronicReproductionOf.en" />
   </rdf:Description>
   
+  <!-- Property: is merged to form -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60504">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">mergedToForm</reg:name>
+    <rdfs:label xml:lang="en">is merged to form</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource formed from a coming together of two or more resources.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60505" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20212" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mergedToForm.en" />
+  </rdf:Description>
+  
+  <!-- Property: is merger of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60505">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">mergerOf</reg:name>
+    <rdfs:label xml:lang="en">is merger of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that came together with one or more other resources to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60504" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20201" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mergerOf.en" />
+  </rdf:Description>
+  
   <!-- Property: is continuation of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60576">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
