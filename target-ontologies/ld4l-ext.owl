@@ -1236,6 +1236,15 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/NotatedMovement">
+        <rdfs:label xml:lang="en">NotatedMovement</rdfs:label>    
+        <skos:definition xml:lang="en">A work consisting of content expressed through a form of notation for movement intended to be perceived visually.</skos:definition>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bsl and http://id.loc.gov/vocabulary/relators/sll.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/OclcIdentifier">
         <rdfs:label xml:lang="en-us">OCLC identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
@@ -1246,8 +1255,8 @@
         <rdfs:label xml:lang="en">Offer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of offering a resource for purchase or other form of acquisition. Use for Booksellers and sellers of other resources.</skos:definition>
         <rdfs:comment xml:lang="en">The activity of offering a resource for purchase or other form of acquisition. Use for Booksellers and sellers of other resources.</rdfs:comment>
-        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bsl and http://id.loc.gov/vocabulary/relators/sll.</skos:scopeNote>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Content Type: http://rdaregistry.info/termList/RDAContentType/1009.</skos:scopeNote>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
