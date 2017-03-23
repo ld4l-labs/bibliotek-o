@@ -10,16 +10,19 @@
     <rdfs:label>BIBFRAME vocabulary</rdfs:label>
     <skos:editorialNote>This file contains updates to BIBFRAME 2.0 that have been approved but not yet published. Temporary file used until the published BIBFRAME ontology specification has been updated. Any definitions of new terms or other notes are placeholders. Classes that are modified only by removing subclassing of rdfs:Resource are retained in the main BIBFRAME file.</skos:editorialNote>
   </owl:Ontology>
+  <!-- TODO Replace with bf:ContentAccessibility, defined in 2017-02 version -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Accessibility">
     <rdfs:label>Accessibility</rdfs:label>
     <skos:definition>Physical or digital accessibility characteristic of the resource. Subclasses can represent either presence or absence of a characteristic (e.g., SoundHazard and NoSoundHazard). See https://www.w3.org/wiki/WebSchemas/Accessibility.
     </skos:definition>
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
+  <!-- TODO Not defined in 2017-02 version. Check with LC about their intentions. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature">
     <skos:definition>Accessibility feature of the resource, such as accessible media,supported enhancements for accessibility, and alternatives. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
     <skos:editorialNote>NEW TERM</skos:editorialNote>
   </owl:Class>
+  <!-- TODO Not defined in 2017-02 version. Check with LC about their intentions. -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard">
     <rdfs:label>Accessibility</rdfs:label>
     <skos:definition>A characteristic of the resource that is physiologically dangerous to some users, such as flashing, motion simulation, or sound. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
