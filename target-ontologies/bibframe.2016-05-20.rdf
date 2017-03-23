@@ -1523,16 +1523,7 @@
     <rdfs:label>Issued with</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:SymmetricProperty>
-  <!--
-  <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/otherPhysicalFormat">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <skos:definition>Resource that is manifested in another physical carrier.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasEquivalent"/>
-    <rdfs:label>Has other physical format</rdfs:label>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:SymmetricProperty>
-  -->
+
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/dataSource">
     <skos:definition>Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
