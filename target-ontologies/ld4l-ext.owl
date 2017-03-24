@@ -1828,6 +1828,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/SpokenWord">
+        <rdfs:label xml:lang="en">Spoken Word</rdfs:label>    
+        <skos:definition xml:lang="en">A work consisting of content expressed through language in an audible form.</skos:definition>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1013.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SponsorActivity">
         <rdfs:label xml:lang="en">Sponsor</rdfs:label>    
         <skos:definition xml:lang="en">The activity of sponsoring some aspect of a resource, e.g., funding research, sponsoring an event.</skos:definition>
