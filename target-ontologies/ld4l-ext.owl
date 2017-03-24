@@ -1249,7 +1249,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/NotatedMusic">
         <rdfs:label xml:lang="en">Notated Music</rdfs:label>    
         <skos:definition xml:lang="en">A work consisting of content expressed through a form of musical notation intended to be perceived visually.</skos:definition>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1011.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1010.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
         <dcterms:issued></dcterms:issued>
@@ -1417,6 +1417,16 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/PerformedMusic">
+        <rdfs:label xml:lang="en">Performed Music</rdfs:label>    
+        <skos:definition xml:lang="en">A work consisting of content expressed through music in an audible form.</skos:definition>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1011.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
 
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/PerformerActivity">
         <rdfs:label xml:lang="en">Performer</rdfs:label>    
@@ -1788,6 +1798,16 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Sounds">
+        <rdfs:label xml:lang="en">Sounds</rdfs:label>    
+        <skos:definition xml:lang="en">A work consisting of content other than language or music, expressed in an audible form.</skos:definition>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1012.</skos:scopeNote>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SourceCode">
         <rdfs:label xml:lang="en">Software</rdfs:label>    
