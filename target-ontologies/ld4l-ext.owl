@@ -2124,8 +2124,7 @@
 
     <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/isSubjectOf">
         <rdfs:label xml:lang="en">is subject of</rdfs:label>
-        <skos:definition xml:lang="en">Specifies a subject of this resource.</skos:definition>
-        <rdfs:comment xml:lang="en">Specifies a subject of this resource.</rdfs:comment>       
+        <skos:definition xml:lang="en">Specifies a subject of this resource.</skos:definition>      
         <owl:inverseOf rdf:resource="http://purl.org/dc/terms/subject"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
