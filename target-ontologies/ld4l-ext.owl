@@ -246,6 +246,14 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioCartridge">
+        <rdfs:label xml:lang="en">Audio Cartridge</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a cartridge containing an audio tape.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cartridge"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioDescription">
         <rdfs:label xml:lang="en">Audio description</rdfs:label>    
         <skos:definition xml:lang="en">Audio descriptions are available (e.g., via the HTML5 track element).</skos:definition>
@@ -338,12 +346,20 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontologyCartographerActivity">
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/CartographerActivity">
         <rdfs:label xml:lang="en">Cartographer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of creating a map, atlas, globe, or other cartographic work.</skos:definition>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/ctg.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider the relationship, if any to the ld4l:Publisher</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Cartridge">
+        <rdfs:label xml:lang="en">Cartridge</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a cartridge.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
