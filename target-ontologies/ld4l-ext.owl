@@ -1826,14 +1826,6 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/ThreeDimensionalProjectionCharacteristic">
-        <rdfs:label xml:lang="en">Three Dimensional Projection Characteric</rdfs:label>    
-        <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in three dimensions.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TimingControl">
         <rdfs:label xml:lang="en">Timing control</rdfs:label>    
         <skos:definition xml:lang="en">For content with timed interaction, the user has the ability to control the timing to meet his or her needs (e.g., pause and reset).</skos:definition>
@@ -1884,14 +1876,6 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/TwoDimensionalProjectionCharacteristic">
-        <rdfs:label xml:lang="en">Two Dimensional Projection Characteric</rdfs:label>    
-        <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in two dimensions.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/TypographerActivity">
         <rdfs:label xml:lang="en">Typographer</rdfs:label>    
@@ -2274,6 +2258,24 @@
         <rdfs:label xml:lang="en">summarizing</rdfs:label>
         <skos:definition xml:lang="en">The motivation for when the user intends to describe the Target by providing a summary of its contents.</skos:definition>
         <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    <!-- Type http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic -->
+    
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/ThreeDimensionalProjectionCharacteristic">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
+        <rdfs:label xml:lang="en">Three Dimensional Projection Characteric</rdfs:label>    
+        <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in three dimensions.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/TwoDimensionalProjectionCharacteristic">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
+        <rdfs:label xml:lang="en">Two Dimensional Projection Characteric</rdfs:label>    
+        <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in two dimensions.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
