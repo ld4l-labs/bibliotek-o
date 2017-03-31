@@ -329,6 +329,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioWireReel">
+        <rdfs:label xml:lang="en">Audio Wire Reel</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a reel or spool of steel or stainless steel wire upon which audio signals are magnetically recorded.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Reel"/>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1008.</skos:scopeNote>
+        <skos:editorialNote xml:lang="en">Future work: If more than audio sounds are found to be capture on wire, consider minting http://bib.ld4l.org/ontology/Wire and making ld4l:AudioWireReel a subclass.</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AuthorActivity">
         <rdfs:label xml:lang="en">Author</rdfs:label>    
         <skos:definition xml:lang="en">The activity of authoring a resource.</skos:definition>
@@ -1832,6 +1842,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Projected">
+        <rdfs:label xml:lang="en">Projected</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type used to store moving or still images, designed for use with a projection device such as a motion picture film projector, slide projector, or overhead projector.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: Move appropriate Carrier types made into bf:Instance subclasses that intend use by projection to be subclasses of bf:Projected ; review with AV folks to get clarification.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDAMediaType/1005.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ProofreaderActivity">
         <rdfs:label xml:lang="en">Proofreader</rdfs:label>    
         <skos:definition xml:lang="en">The activity of proofreading a resource.</skos:definition>
@@ -2181,6 +2201,36 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/stm.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Stereographic">
+        <rdfs:label xml:lang="en">Stereograph</rdfs:label>    
+        <skos:definition xml:lang="en">A work made of pairs of still images, designed for use with a device such as a stereoscope or stereograph viewer to give the effect of three dimensions.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Media. Ask AV folks if this should be at bf:Instance level instead.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Media Type: http://rdaregistry.info/termList/RDAMediaType/1006.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StereographCard">
+        <rdfs:label xml:lang="en">Stereograph Card</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a card bearing stereographic images.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Card"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1042.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/StereographDisc">
+        <rdfs:label xml:lang="en">Stereograph Disc</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a card bearing stereographic images.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Disc"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1043.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
