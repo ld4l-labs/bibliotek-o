@@ -461,7 +461,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Cassette">
         <rdfs:label xml:lang="en">Cassette</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cassette.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Tape"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Tape"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -1332,7 +1332,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Microfiche">
         <rdfs:label xml:lang="en">Microfiche</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a sheet of film bearing a number of microimages in a two-dimensional array.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microform"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microform"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1022.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1342,8 +1342,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicroficheCassette">
         <rdfs:label xml:lang="en">Microfiche Cassette</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cassette containing uncut microfiches.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microform"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cassette"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microform"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cassette"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1023.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1353,7 +1353,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Microfilm">
         <rdfs:label xml:lang="en">Microfilm</rdfs:label>    
         <skos:definition xml:lang="en">An instance type containing a microfilm.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microform"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microform"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
