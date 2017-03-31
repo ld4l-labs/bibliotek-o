@@ -255,6 +255,15 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioBelt">
+        <rdfs:label xml:lang="en">Audio Belt</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a loop of flexible plastic or magnetic film on which audio signals are mechanically recorded, commonly known under the trade name Dictabelt.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Belt"/>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1070.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class> 
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioCartridge">
         <rdfs:label xml:lang="en">Audio Cartridge</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cartridge containing an audio tape.</skos:definition>
@@ -274,15 +283,6 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioTapeReel">
-        <rdfs:label xml:lang="en">Audiotape Reel</rdfs:label>    
-        <skos:definition xml:lang="en">An instance type consisting of an open reel holding a length of audiotape to be used with reel-to-reel audio equipment.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Reel"/>
-        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Tape"/>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1008.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/AudioCylinder">
         <rdfs:label xml:lang="en">Audio Cylinder</rdfs:label>    
@@ -335,6 +335,14 @@
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/aut.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Belt">
+        <rdfs:label xml:lang="en">Belt</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a loop on which signals are recorded.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -918,8 +926,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmCartridge">
         <rdfs:label xml:lang="en">Film Cartridge</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cartridge containing a motion picture film.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartridge"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Film"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cartridge"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1032.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -929,31 +937,10 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmCassette">
         <rdfs:label xml:lang="en">Film Cassette</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cassette containing a motion picture film.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cassette"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Film"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cassette"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1033.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmReel">
-        <rdfs:label xml:lang="en">Film Reel</rdfs:label>    
-        <skos:definition xml:lang="en">An instance type consisting of an open reel holding a motion picture film to be used with a motion picture film projector.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Reel"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Film"/>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1034.</skos:scopeNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmSlip">
-        <rdfs:label xml:lang="en">Film Slip</rdfs:label>    
-        <skos:definition xml:lang="en">An instance type consisting of a short strip of film, usually in rigid format rather than rolled.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Film"/>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1035.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -978,12 +965,75 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmReel">
+        <rdfs:label xml:lang="en">Film Reel</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of an open reel holding a motion picture film to be used with a motion picture film projector.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Reel"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1034.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmRoll">
+        <rdfs:label xml:lang="en">Film Roll</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a wound length of film.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Roll"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1069.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmSlip">
+        <rdfs:label xml:lang="en">Film Slip</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a short strip of film, usually in rigid format rather than rolled.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1035.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmStrip">
+        <rdfs:label xml:lang="en">Film Strip</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a roll of film, with or without recorded sound, containing a succession of images intended for projection one at a time.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1036.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FilmStripCartridge">
+        <rdfs:label xml:lang="en">Film Strip Cartridge</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a cartridge containing a filmstrip.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Film"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cartridge"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1037.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/FlashingHazard">
         <rdfs:label xml:lang="en">Flashing hazard</rdfs:label>    
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/FlipChart">
+        <rdfs:label xml:lang="en">Flip Chart</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a hinging device holding two or more sheets designed for use on an easel.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1046.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/ForgerActivity">
         <rdfs:label xml:lang="en">Forger</rdfs:label>    
@@ -1298,11 +1348,22 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicrofilmRoll">
+        <rdfs:label xml:lang="en">Microfilm Roll</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a wound length of microfilm.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microform"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Roll"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1056.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicrofilmCartridge">
         <rdfs:label xml:lang="en">Microfilm Cartridge</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cartridge containing a microfilm.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microfilm"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartridge"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microfilm"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cartridge"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1024.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1312,8 +1373,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicrofilmCassette">
         <rdfs:label xml:lang="en">Microfilm Cassette</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a cassette containing a microfilm.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microfilm"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Cassette"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microfilm"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cassette"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1025.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1323,8 +1384,8 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicrofilmReel">
         <rdfs:label xml:lang="en">Microfilm Reel</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of an open reel holding a microfilm, to be threaded into a microfilm reader.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microfilm"/>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Reel"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microfilm"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Reel"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1026.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1334,7 +1395,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/MicrofilmSlip">
         <rdfs:label xml:lang="en">Microfilm Reel</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a short strip of microfilm cut from a roll.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microfilm"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microfilm"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1027.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1354,7 +1415,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Microopaque">
         <rdfs:label xml:lang="en">Microopaque</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a card or sheet of opaque material bearing a number of microimages in a two-dimensional array.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Microform"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Microform"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1028.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1364,7 +1425,7 @@
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/Microscopic">
         <rdfs:label xml:lang="en">Microscopic</rdfs:label>    
         <skos:definition xml:lang="en">An instance type consisting of a small sheet of transparent material, with or without a protective mount, bearing a minute object designed for use with a device such as a microscope.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Slide"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Slide"/>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1030.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
@@ -1565,6 +1626,16 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/OverheadTransparency">
+        <rdfs:label xml:lang="en">Overhead Transparency</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a sheet of transparent material, with or without a protective mount, bearing an image designed for use with an overhead projector.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1039.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -1964,6 +2035,16 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class>
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Sheet">
+        <rdfs:label xml:lang="en">Sheet</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a flat, thin piece of paper, plastic, etc.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1048.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/SignerActivity">
         <rdfs:label xml:lang="en">Signer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of signing a resource without a presentation or other statement indicative of provenance. When there is a presentation statement, use InscriberActivity.</skos:definition>
@@ -2299,6 +2380,62 @@
         <dcterms:modified></dcterms:modified>
     </owl:Class> 
     
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Video">
+        <rdfs:label xml:lang="en">Video</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type used to store moving or still images, designed for use with a playback device such as a videocassette player or DVD player.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Media.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDAMediaType/1008.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideoCartridge">
+        <rdfs:label xml:lang="en">Video Cartridge</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a cartridge containing a video tape.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Video"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cartridge"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Tape"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1051.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideoCassette">
+        <rdfs:label xml:lang="en">Video Cassette</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a cartridge containing a video tape.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Video"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Cassette"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Tape"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1052.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideoDisc">
+        <rdfs:label xml:lang="en">Video Disc</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of a disc on which video signals, with or without sound, are recorded.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Video"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Disc"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1060.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideotapeReel">
+        <rdfs:label xml:lang="en">Videotape Reel</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of an open reel holding a video tape for use with reel-to-reel video equipment.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Video"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Reel"/>
+        <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Tape"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1053.</skos:scopeNote>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
     <owl:Class rdf:about="http://bib.ld4l.org/ontology/VideographerActivity">
         <rdfs:label xml:lang="en">Videographer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of producing the video production, e.g. the video recording of a stage production as opposed to a commercial motion picture. The videographer may be the camera operator or may supervise one or more camera operators. Do not confuse with ld4l:CinematographerActivity.</skos:definition>
@@ -2315,6 +2452,16 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/vac.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bib.ld4l.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bib.ld4l.org/ontology/Volume">
+        <rdfs:label xml:lang="en">Volume</rdfs:label>    
+        <skos:definition xml:lang="en">An instance type consisting of one or more sheets bound or fastened together to form a single unit.</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA Carrier.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the RDA Carrier Type: http://rdaregistry.info/termList/RDACarrierType/1049.</skos:scopeNote>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
