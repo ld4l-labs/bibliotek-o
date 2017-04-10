@@ -2699,7 +2699,7 @@
     <owl:ObjectProperty rdf:about="http://bib.ld4l.org/ontology/isLocationOf">
         <rdfs:label xml:lang="en">is location of</rdfs:label>
         <skos:definition xml:lang="en">The specified resource is at the location being described.</skos:definition>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Location"/>
         <owl:inverseOf rdf:resource="http://bib.ld4l.org/ontology/atLocation"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
