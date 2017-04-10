@@ -2865,7 +2865,7 @@
     
     <!-- Type http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic -->
     
-    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/ThreeDimensionalProjectionCharacteristic">
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/threeDimensionalProjectionCharacteristic">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
         <rdfs:label xml:lang="en">Three Dimensional Projection Characteric</rdfs:label>    
         <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in three dimensions.</skos:definition>
@@ -2873,7 +2873,7 @@
         <dcterms:modified></dcterms:modified>
     </owl:NamedIndividual>
     
-    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/TwoDimensionalProjectionCharacteristic">
+    <owl:NamedIndividual rdf:about="http://bib.ld4l.org/ontology/twoDimensionalProjectionCharacteristic">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic"/>
         <rdfs:label xml:lang="en">Two Dimensional Projection Characteric</rdfs:label>    
         <skos:definition xml:lang="en">Projected images intended to be perceived to be moving, and in two dimensions.</skos:definition>
