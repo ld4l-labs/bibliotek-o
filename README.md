@@ -1,4 +1,4 @@
-# BibX: A BIBFRAME 2 Extension
+# BibX: a BIBFRAME 2 Extension
 
 The [BibX ontology extension](http://bibx.org/ontology/) defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe), and is intended to be used as a supplement to the core BIBFRAME 2 ontology. It is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See <http://ld4l.org> for more information on these projects.
 

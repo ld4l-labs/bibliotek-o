@@ -17,8 +17,7 @@ Simeon Warner - 2016-01-22
 
 import re
 
-# Move to tools directory: Try '../doc/LODE/bibx.html'. Also below in write()
-html = open('bibx.html','r').read()
+html = open('../doc/LODE/bibx.html','r').read()
 prefix = 'http://bibx.org/ontology/'
 
 ## Pass 1 - find anchors to change
@@ -45,4 +44,4 @@ for term, anchor in terms.items():
     html = re.sub(' id="'+anchor+'"',' id="'+term+'"',html)
     html = re.sub(' href="#'+anchor+'"',' href="#'+term+'"',html)
 
-open('ontology.html','w').write(html)
+open('../doc/LODE/ontology.html','w').write(html)
