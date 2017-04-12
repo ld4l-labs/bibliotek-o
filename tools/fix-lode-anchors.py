@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Fix up anchors in the BibX ontology document so that terms resolve.
+"""Fix up anchors in the BibX LODE ontology document so that terms resolve.
 
 The output of LODE is an HTML document with meaningless anchors which
 means that we can't readily make the ontology URIs nicely resolve the
