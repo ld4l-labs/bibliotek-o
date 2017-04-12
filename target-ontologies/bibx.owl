@@ -8,7 +8,6 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:vann="http://purl.org/vocab/vann/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     > 
     
     <!-- ONTOLOGY DECLARATION -->
@@ -47,6 +46,22 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/abr.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <rdfs:subClassOf rdf:resource="http://bibx.org/ontology/Activity"/>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://bibx.org/ontology/AccessibilityFeature">
+        <rdfs:label>Accessibility Feature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ContentAccessibility"/>
+        <skos:definition>Accessibility feature of the resource, such as accessible media,supported enhancements for accessibility, and alternatives. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
+        <dcterms:issued></dcterms:issued>
+        <dcterms:modified></dcterms:modified>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://bibx.org/ontology/AccessibilityHazard">
+        <rdfs:label>Accessibility Hazard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/ContentAccessibility"/>
+        <skos:definition>A characteristic of the resource that is physiologically dangerous to some users, such as flashing, motion simulation, or sound. May have both positive and negative subclasses. For example, FlashingHazard means the resource has a flashing hazard, while NoFlashingHazard means the resource is known not to have a flashing hazard. See https://www.w3.org/wiki/WebSchemas/Accessibility.</skos:definition>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:Class>
@@ -2708,7 +2723,7 @@
         <rdfs:label xml:lang="en">is preferred title of</rdfs:label>
         <skos:definition xml:lang="en">Specifies the resource for which this is the preferred title.</skos:definition>
         <skos:scopeNote xml:lang="en">A resource may have multiple directly linked titles, among which this is the preferred title.</skos:scopeNote>
-        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/titleOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://bibx.org/ontology/isTitleOf"/>
         <owl:inverseOf rdf:resource="http://bibx.org/ontology/hasPreferredTitle"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
     </owl:ObjectProperty>
@@ -2738,6 +2753,14 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
     </owl:ObjectProperty>   
+ 
+    <owl:ObjectProperty rdf:about="http://bibx.org/ontology/isTitleOf">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+        <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/title"/>
+        <skos:definition>Resource of which this title is the title.</skos:definition>
+        <rdfs:comment>Expected value Work, Instance or Item</rdfs:comment>
+        <rdfs:label>is title of</rdfs:label>
+    </owl:ObjectProperty>
     
     
     <!-- NAMED INDIVIDUALS -->

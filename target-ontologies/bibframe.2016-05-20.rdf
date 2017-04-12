@@ -180,13 +180,11 @@
     <skos:definition>Voice for which a musical work is appropriate.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <!-- Use schema:Audience?
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/IntendedAudience">
     <rdfs:label>Intended audience information</rdfs:label>
     <skos:definition>Information that identifies the specific intended or target audience or intellectual level for which the content described is considered appropriate. Also used to record interest and motivation levels and special learner characteristics.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  -->
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Arrangement">
     <rdfs:label>Organization of materials information</rdfs:label>
     <skos:definition>Information about the organization and arrangement of a collection of items. For instance, for computer files, organization and arrangement information may be the file structure and sort sequence of a file; for visual materials, this information may be how a collection is arranged.</skos:definition>
@@ -1468,18 +1466,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!--
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/derivativeOf">
-    <skos:definition>Source work from which the described resource is derived.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-    <rdfs:comment>Used with Work or Instance</rdfs:comment>
-    <rdfs:label>Is derivative of</rdfs:label>
-    <rdfs:comment>Expected value Work or Instance</rdfs:comment>
-    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasDerivative"/>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
-  </owl:ObjectProperty>
-  -->
   <!-- TODO Include at least temporarily - may use rdau predicate -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/precededBy">
     <skos:definition>Resource that precedes the resource being described, e.g., is earlier in time or before in narrative.</skos:definition>
