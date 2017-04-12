@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Fix up anchors in the LD4L ontology document so that terms resolve.
+"""Fix up anchors in the BibX ontology document so that terms resolve.
 
 The output of LODE is an HTML document with meaningless anchors which
 means that we can't readily make the ontology URIs nicely resolve the
@@ -7,20 +7,19 @@ the appropriate definitions. This script goes through the HTML looking
 for terms in the ontology and rewriting anchors to be the local part of
 the URI.
 
-Note that there are cases where the one ontology term (e.g. 
-http://bib.ld4l.org/ontology/note ) is described in multiple places
-within the ontology (in this case as a Data Property and an
-Annotation Property). The rewrite of anchors takes the first occurrence
-in the HTML as the anchor to change (i.e. the Data Property in this
-case).
+Note that if there are cases where one ontology term (e.g. 
+http://bibx.org/ontology/note ) is described in multiple places
+within the ontology, the rewrite of anchors takes the first occurrence
+in the HTML as the anchor to change.
 
 Simeon Warner - 2016-01-22
 """
 
 import re
 
-html = open('ld4l-ext.html','r').read()
-prefix = 'http://bib.ld4l.org/ontology/'
+# Move to tools directory: Try '../doc/LODE/bibx.html'. Also below in write()
+html = open('bibx.html','r').read()
+prefix = 'http://bibx.org/ontology/'
 
 ## Pass 1 - find anchors to change
 terms = {}
