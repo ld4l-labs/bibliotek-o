@@ -26,7 +26,7 @@
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
         <rdfs:label xml:lang="en">BibX: a BIBFRAME 2 extension</rdfs:label>
-        <rdfs:comment xml:lang="en">This ontology fragment includes extensions and modifications to BIBFRAME 2 and is intended to be used as a supplement to the core BIBFRAME 2 ontology. It is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See http://ld4l.org for more information on these projects.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The BibX ontology extension defines additions and modifications to BIBFRAME 2 and is intended to be used as a supplement to the core BIBFRAME 2 ontology. It is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See http://ld4l.org for more information on these projects.</rdfs:comment>
         <vann:preferredNamespacePrefix>bibx</vann:preferredNamespacePrefix>
     </owl:Ontology>
     

@@ -4,7 +4,7 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
   elementFormDefault="qualified"          
   attributeFormDefault="unqualified"
-  targetNamespace="http://bib.ld4l.org/datatypes/">
+  targetNamespace="http://bibx.org/datatypes/">
 
   <xs:simpleType name="legacySourceData">
     <xs:annotation>
