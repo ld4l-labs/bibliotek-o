@@ -4,7 +4,7 @@ The [BibX ontology extension](http://bibx.org/ontology/) defines additions and m
 
 This repository contains the formal BibX specification, along with ontology and dataset recommendations for use with BibX (including the recommended BIBFRAME 2 terms), and human-readable documentation. 
 
-Repository contents:
+## Repository contents:
 
   * OWL specification of BibX: `target-ontologies/bibx.owl`
   * RDFS and OWL specifications of recommended ontology fragments for use with BibX: `target-ontologies/`
