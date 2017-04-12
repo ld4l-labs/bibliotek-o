@@ -1,4 +1,11 @@
-<rdf:RDF xml:base="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/">
+<rdf:RDF xml:base="http://id.loc.gov/ontologies/bibframe/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:bf="http://id.loc.gov/ontologies/bibframe/" 
+  xmlns:owl="http://www.w3.org/2002/07/owl#" 
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+  xmlns:dcterms="http://purl.org/dc/terms/">
+  
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-03-15T16:23:59.852-04:00</owl:versionInfo>
     <rdfs:label>BIBFRAME vocabulary</rdfs:label>
@@ -74,12 +81,6 @@
     <skos:definition>Resource in a form intended to be perceived visually in three-dimensions. Includes man-made objects such as models, sculptures, clothing, and toys, as well as naturally occurring objects such as specimens mounted for viewing.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Multimedia">
-    <rdfs:label>Software or multimedia</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-    <skos:definition>Electronic resource that is a computer program (i.e., digitally encoded instructions intended to be processed and performed by a computer) or which consists of multiple media types that are software driven, such as videogames.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/MixedMaterial">
     <rdfs:label>Mixed material</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -104,12 +105,6 @@
     <skos:definition>Resources organically created, accumulated, and/or used by a person, family, or organization in the course of conduct of affairs and preserved because of their continuing value.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Tactile">
-    <rdfs:label>Tactile material</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
-    <skos:definition>Resource that is intended to be perceived by touch.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Collection">
     <rdfs:label>Collection</rdfs:label>
     <skos:definition>Aggregation of resources, generally gathered together artificially.</skos:definition>
@@ -119,11 +114,6 @@
     <rdfs:label>Electronic</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <skos:definition>Resource that is intended for manipulation by a computer, accessed either directly or remotely.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Note">
-    <rdfs:label>Note</rdfs:label>
-    <skos:definition>Information, usually in textual form, on attributes of a resource or some aspect of a resource.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Identifier">
@@ -136,32 +126,9 @@
     <skos:definition>Units in which a value is expressed.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Role">
-    <rdfs:label>Role</rdfs:label>
-    <skos:definition>Function played or provided by a contributor, e.g., author, illustrator, etc.</skos:definition>
-    <dcterms:modified>2017-02-03 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Source">
-    <rdfs:label>Source</rdfs:label>
-    <skos:definition>Resource from which value or label came or was derived.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Status">
     <rdfs:label>Status</rdfs:label>
     <skos:definition>Designation of the validity or position of something, e.g., whether something is incorrect or available.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Agent">
-    <rdfs:label>Agent</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <skos:definition>Entity having a role in a resource, such as a person or organization.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-05-13 (New subclass)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Person">
-    <rdfs:label>Person</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <skos:definition>Individual or identity established by an individual (either alone or in collaboration with one or more other individuals).</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Family">
@@ -170,62 +137,15 @@
     <skos:definition>Two or more persons related by birth, marriage, adoption, civil union, or similar legal status, or who otherwise present themselves as a family.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Organization">
-    <rdfs:label>Organization</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Corporation or group of persons and/or organizations that acts, or may act, as a unit.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Jurisdiction">
     <rdfs:label>Jurisdiction</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
     <skos:definition>Legal or political unit administering a geographic area.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Meeting">
-    <rdfs:label>Meeting</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
-    <skos:definition>Gathering of individuals or representatives of various bodies for the purpose of discussing and/or acting on topics of common interest.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Topic">
-    <rdfs:label>Topic</rdfs:label>
-    <skos:definition>Concept or area of knowledge.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Temporal">
     <rdfs:label>Temporal concept</rdfs:label>
     <skos:definition>Chronological period.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Place">
-    <rdfs:label>Place</rdfs:label>
-    <skos:definition>Geographic location.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Event">
-    <rdfs:label>Event entity</rdfs:label>
-    <skos:definition>Something that happens at a certain time and location, such as a performance, speech, or athletic event, that is documented by a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Contribution">
-    <rdfs:label>Contribution</rdfs:label>
-    <skos:definition>Agent and role with respect to the resource being described.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Content">
-    <rdfs:label>Content type</rdfs:label>
-    <skos:definition>Categorization reflecting the fundamental form of communication in which the content is expressed and the human sense through which it is intended to be perceived.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Media">
-    <rdfs:label>Media type</rdfs:label>
-    <skos:definition>Categorization reflecting the general type of intermediation device required to view, play, run, etc., the content of a resource.</skos:definition>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-  </owl:Class>
-  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Carrier">
-    <rdfs:label>Carrier type</rdfs:label>
-    <skos:definition>Categorization reflecting the format of the storage medium and housing of a carrier.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/GenreForm">
