@@ -149,6 +149,12 @@
     <skos:definition>Chronological period.</skos:definition>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:Class>
+  <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/GenreForm">
+    <rdfs:label>Genre/form</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <skos:definition>Characteristics of works with similar plots, themes, settings, etc. (e.g., westerns, thrillers), or with a particular format of purpose (e.g., animation, short), or a combination (e.g., horror film where horror is the genre and film is the form).</skos:definition>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:Class>
   <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Title">
     <rdfs:label>Title entity</rdfs:label>
     <skos:definition>Title information relating to a resource: mail title, translated title, or variant form of title.</skos:definition>
