@@ -2633,7 +2633,7 @@
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <skos:definition>Specifies an item held by the agent or from which it is available.</skos:definition>
         <owl:inverseOf rdf:resource="http://bibx.org/ontology/holds"/>
-        <rdfs:label>held by</rdfs:label>
+        <rdfs:label>holds</rdfs:label>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     </owl:ObjectProperty>
