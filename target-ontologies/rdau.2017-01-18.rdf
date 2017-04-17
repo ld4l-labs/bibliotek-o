@@ -57,8 +57,8 @@
     <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
     <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60577" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/sequel.en" />
-  </rdf:Description>
-
+  </rdf:Description>  
+  
   <!-- Property: is replaced by -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60104">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -479,6 +479,19 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40058" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30031" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/facsimile.en" />
+  </rdf:Description>
+
+  <!-- Property: is prequel -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60220">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">prequel</reg:name>
+    <rdfs:label xml:lang="en">is prequel</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that extends the narrative of an earlier resource backwards in time.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60310" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/prequel.en" />
   </rdf:Description>
   
   <!-- Property: is abridgement of -->
@@ -1222,6 +1235,19 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20194" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/indexingFor.en" />
   </rdf:Description>
+  
+  <!-- Property: is prequel to -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60310">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">prequelTo</reg:name>
+    <rdfs:label xml:lang="en">is prequel to</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose narrative is extended backwards in time by the later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60220" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/prequelTo.en" />
+  </rdf:Description>
 
   <!-- Property: is imitation of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60311">
@@ -1394,6 +1420,19 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuationOf.en" />
     <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
   </rdf:Description>
+  
+  <!-- Property: is sequel to -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60577">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">sequelTo</reg:name>
+    <rdfs:label xml:lang="en">is sequel to</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose narrative is continued by a later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60102" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/sequelTo.en" />
+  </rdf:Description>  
   
   <!-- Property: is graphic novelization of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60743">
