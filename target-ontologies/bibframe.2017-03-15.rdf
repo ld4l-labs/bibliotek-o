@@ -1657,7 +1657,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Christine/Steven -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/references">
     <skos:definition>Resource that is referenced by the described resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1668,7 +1667,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Christine/Steven -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/referencedBy">
     <skos:definition>Resource that references the described resource</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1679,7 +1677,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Christine/Steven -->
   <owl:SymmetricProperty rdf:about="http://id.loc.gov/ontologies/bibframe/issuedWith">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
@@ -1688,7 +1685,6 @@
     <rdfs:label>Issued with</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:SymmetricProperty>
-  <!-- TBD Christine -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/dataSource">
     <skos:definition>Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
@@ -1742,7 +1738,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Christine -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/supplement">
     <skos:definition>Resource that updates or otherwise complements the predominant resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompaniedBy"/>
@@ -1753,7 +1748,6 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Christine -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/supplementTo">
     <skos:definition>Resource that is updated or otherwise complemented by the augmenting resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/accompanies"/>
