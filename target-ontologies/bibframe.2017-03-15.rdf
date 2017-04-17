@@ -1658,28 +1658,6 @@
     <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
   </owl:ObjectProperty>
   <!-- TBD Christine/Steven -->
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/precededBy">
-    <skos:definition>Resource that precedes the resource being described, e.g., is earlier in time or before in narrative.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-    <rdfs:comment>Used with Work or Instance</rdfs:comment>
-    <rdfs:label>Preceded by</rdfs:label>
-    <rdfs:comment>Expected value Work or Instance</rdfs:comment>
-    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/succeededBy"/>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
-  </owl:ObjectProperty>
-  <!-- TBD Christine/Steven -->
-  <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/succeededBy">
-    <skos:definition>Resource that succeeds the resource being described, e.g., later in time or after in a narrative.</skos:definition>
-    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-    <rdfs:comment>Used with Work or Instance</rdfs:comment>
-    <rdfs:label>Succeeded by</rdfs:label>
-    <rdfs:comment>Expected value Work or Instance</rdfs:comment>
-    <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/precededBy"/>
-    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    <dcterms:modified>2016-04-29 (added inverse)</dcterms:modified>
-  </owl:ObjectProperty>
-  <!-- TBD Christine/Steven -->
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/references">
     <skos:definition>Resource that is referenced by the described resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
