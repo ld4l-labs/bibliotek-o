@@ -1560,27 +1560,7 @@
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified></dcterms:modified>
-    </owl:Class> 
-    
-    <owl:Class rdf:about="http://bibx.org/ontology/NotatedMovement">
-        <rdfs:label xml:lang="en">Notated movement</rdfs:label>    
-        <skos:definition xml:lang="en">A work consisting of content expressed through a form of notation for movement intended to be perceived visually.</skos:definition>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1009.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
-    
-    <owl:Class rdf:about="http://bibx.org/ontology/NotatedMusic">
-        <rdfs:label xml:lang="en">Notated music</rdfs:label>    
-        <skos:definition xml:lang="en">A work consisting of content expressed through a form of musical notation intended to be perceived visually.</skos:definition>
-        <skos:scopeNote xml:lang="en">This class is derived from the RDA content type http://rdaregistry.info/termList/RDAContentType/1010.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding RDA content type.</skos:editorialNote>
-        <dcterms:issued></dcterms:issued>
-        <dcterms:modified></dcterms:modified>
-    </owl:Class>
+    </owl:Class>  
     
     <owl:Class rdf:about="http://bibx.org/ontology/OclcIdentifier">
         <rdfs:label xml:lang="en-us">OCLC identifier</rdfs:label>
@@ -2633,7 +2613,7 @@
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <skos:definition>Specifies an item held by the agent or from which it is available.</skos:definition>
         <owl:inverseOf rdf:resource="http://bibx.org/ontology/holds"/>
-        <rdfs:label>held by</rdfs:label>
+        <rdfs:label>holds</rdfs:label>
         <dcterms:issued></dcterms:issued>
         <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     </owl:ObjectProperty>

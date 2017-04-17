@@ -1720,7 +1720,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Steven -->
+
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSeries">
     <skos:definition>Resource in which the part has been issued; the title of the larger resource appears on the part.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
@@ -1731,7 +1731,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Steven -->
+
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/seriesOf">
     <skos:definition>Resource that is a part of a larger resource.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasPart"/>
@@ -1742,7 +1742,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Steven -->
+
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/hasSubseries">
     <skos:definition>series resource that is part of another series.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/partOf"/>
@@ -1753,7 +1753,7 @@
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     <dcterms:modified>2016-04-29 (added inverse, updated range)</dcterms:modified>
   </owl:ObjectProperty>
-  <!-- TBD Steven -->
+
   <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/subseriesOf">
     <skos:definition>Series resource of which the described resource is a part.</skos:definition>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasPart"/>
