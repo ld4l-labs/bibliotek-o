@@ -5,7 +5,7 @@
   xmlns:owl="http://www.w3.org/2002/07/owl#" 
   xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
   xmlns:dcterms="http://purl.org/dc/terms/">
-  
+
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-03-15T16:23:59.852-04:00</owl:versionInfo>
     <rdfs:label>BIBFRAME vocabulary</rdfs:label>
