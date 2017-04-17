@@ -1,0 +1,15 @@
+body {
+ padding: 2em 2em 2em 2em;
+ margin: 0;
+ font-family: sans-serif;
+ color: #000000;
+ background: white;
+ font-size: medium;
+ line-height: 110%;
+}
+
+h1 { color: #005A9C; background: white }
+h2 { color: #005A9C; background: white }
+h3 { color: #005A9C; background: white }
+h4 { color: #005A9C; background: white }
+h5 { color: #005A9C; background: white }
