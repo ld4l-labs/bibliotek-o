@@ -8,7 +8,7 @@ for terms in the ontology and rewriting anchors to be the local part of
 the URI.
 
 Note that if there are cases where one ontology term (e.g. 
-http://bibx.org/ontology/note ) is described in multiple places
+http://biblioteko.org/ontology/note ) is described in multiple places
 within the ontology, the rewrite of anchors takes the first occurrence
 in the HTML as the anchor to change.
 
@@ -17,8 +17,8 @@ Simeon Warner - 2016-01-22
 
 import re
 
-html = open('../doc/LODE/bibx.html','r').read()
-prefix = 'http://bibx.org/ontology/'
+html = open('../doc/LODE/biblioteko.html','r').read()
+prefix = 'http://biblioteko.org/ontology/'
 
 ## Pass 1 - find anchors to change
 terms = {}
