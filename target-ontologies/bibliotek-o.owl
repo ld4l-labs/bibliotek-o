@@ -1602,7 +1602,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Origin">
-        <rdfs:label xml:lang="en">Title origin</rdfs:label>    
+        <rdfs:label xml:lang="en">Origin</rdfs:label>    
         <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
         <dcterms:issued>2017-04-21T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-21T00:00:00-04:00</dcterms:modified>
