@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Fix up anchors in the biblioteko-o LODE ontology document so that terms resolve.
+"""Fix up anchors in the bibliotek-o LODE ontology document so that terms resolve.
 
 The output of LODE is an HTML document with meaningless anchors which
 means that we can't readily make the ontology URIs nicely resolve the
@@ -8,7 +8,7 @@ for terms in the ontology and rewriting anchors to be the local part of
 the URI.
 
 Note that if there are cases where one ontology term (e.g. 
-http://biblioteko.org/ontology/note ) is described in multiple places
+http://bibliotek-o.org/ontology/note ) is described in multiple places
 within the ontology, the rewrite of anchors takes the first occurrence
 in the HTML as the anchor to change.
 
@@ -17,8 +17,8 @@ Simeon Warner - 2016-01-22
 
 import re
 
-html = open('../doc/LODE/biblioteko.html','r').read()
-prefix = 'http://biblioteko.org/ontology/'
+html = open('../doc/LODE/bibliotek-o.html','r').read()
+prefix = 'http://bibliotek-o.org/ontology/'
 
 ## Pass 1 - find anchors to change
 terms = {}
