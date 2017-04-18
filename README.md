@@ -8,7 +8,7 @@ biblioteko consists of:
 * A set of ontology fragments intended for use with the bibliotek-o extension.
 * A set of models and patterns - i.e., an application profile - demonstrating the intended use of the bibliotek-o extension and external terms.
 
-biblioteko is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See <http://ld4l.org> for more information on these projects.
+biblioteko is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
 ## Repository contents
 
@@ -34,6 +34,6 @@ Additional documents, currently in progress, will provide:
   * Mapping tables from current catalog formats to the ontology recommendation.
   * Application profiles for original data modeling using the biblioteko recommended ontologies. 
   
-Links to these documents will be provided once they have been published.
+Links to these documents will be added once they have been published.
   
  
