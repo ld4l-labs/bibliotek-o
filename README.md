@@ -1,4 +1,4 @@
-# biblioteko: a BIBFRAME 2 Extension Ontology
+# bibliotek-o: a BIBFRAME 2 Extension Ontology
 
 ## What is biblioteko?
 
