@@ -12,6 +12,9 @@ http://bibliotek-o.org/ontology/note ) is described in multiple places
 within the ontology, the rewrite of anchors takes the first occurrence
 in the HTML as the anchor to change.
 
+After running this script, change the href on the "Ontology Source" link to 
+http://biblioteko-org/ontology.owl".
+
 Simeon Warner - 2016-01-22
 """
 
