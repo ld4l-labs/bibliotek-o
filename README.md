@@ -2,7 +2,7 @@
 
 ## What is bibliotek-o?
 
-The bibliotek-o provides:
+bibliotek-o includes:
 
 * The [bibliotek-o extension ontology](http://bibliotek-o.org/ontology/), which defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe), and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
 * A set of ontology fragments intended for use with the bibliotek-o extension.
@@ -17,11 +17,11 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * OWL specification of bibliotek-o: `target-ontologies/bibliotek-o.owl`
   * RDFS and OWL specifications of recommended ontology fragments for use with bibliotek-o: `target-ontologies/`
   * Full specifications of these ontologies, for reference purposes: `reference-ontologies/`
-  * Datatypes defined by bibliotek-o: `xsd/bibliotek-o-datatypes.xsd`
+  * Datatypes defined by bibliotek-o: `xsd/bibliotek-o.datatypes.xsd`
   * Datasets included in the bibliotek-o recommendation: `datasets/`
-  * Documentation ([LODE](http://www.essepuntato.it/lode)): `doc/LODE/`
-    * An HTML LODE documentation file for bibliotek-o
-    * A document listing all terms included in the bibliotek-o recommendation, with links out to live documentation
+  * Human-readable documentation ([LODE](http://www.essepuntato.it/lode)): `doc/LODE/`
+    * An HTML LODE documentation file for bibliotek-o.
+    * A document listing all terms included in the bibliotek-o recommendation, with links out to live documentation.
   
   
 ## Accompanying documentation
