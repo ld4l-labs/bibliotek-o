@@ -2,7 +2,7 @@
 
 ## What is bibliotek-o?
 
-bibliotek-o provides:
+The bibliotek-o provides:
 
 * The [bibliotek-o extension ontology](http://bibliotek-o.org/ontology/), which defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe), and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
 * A set of ontology fragments intended for use with the bibliotek-o extension.
