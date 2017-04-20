@@ -4,7 +4,7 @@
 
 bibliotek-o is an ontology recommendation for modeling bibliographic metadata. It includes:
 
-* The [bibliotek-o extension ontology](http://bibliotek-o.org/ontology/), which defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe), and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
+* The [bibliotek-o extension ontology](http://bibliotek-o.org/ontology/), which defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe) and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
 * A set of ontology fragments (including BIBFRAME 2) intended for use with the bibliotek-o extension.
 * A set of models and patterns - i.e., an application profile - documenting the recommended use of the preceding.
 
