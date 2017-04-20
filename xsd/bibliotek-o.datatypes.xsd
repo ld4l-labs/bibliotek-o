@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified"          
+  attributeFormDefault="unqualified"
+  targetNamespace="http://bibliotek-o.org/datatypes/">
+
+  <xs:simpleType name="legacySourceData">
+    <xs:annotation>
+      <xs:documentation>Datatype used to flag unstructured source data when converting source metadata to RDF. This data may be parsed and normalized into structured RDF at a later time. For example, lexical data about awards received may be parsed into a structured object with attributes for name and date and relationships to grantor and recipient.</xs:documentation>      
+    </xs:annotation>    
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  
+</xs:schema>

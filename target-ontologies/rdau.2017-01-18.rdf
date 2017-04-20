@@ -46,6 +46,34 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/dramatizedAs.en" />
   </rdf:Description>
 
+  <!-- Property: is sequel -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60102">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">sequel</reg:name>
+    <rdfs:label xml:lang="en">is sequel</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a later resource that continues the narrative of an earlier resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60577" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/sequel.en" />
+  </rdf:Description>  
+  
+  <!-- Property: is replaced by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60104">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">replacedBy</reg:name>
+    <rdfs:label xml:lang="en">is replaced by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a later resource used in place of an earlier resource, usually because the later resource contains updated or new information that makes the earlier resource obsolete.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60480" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20076" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/replacedBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to single-part units, multipart monographs, and integrating resources.</skos:scopeNote>
+  </rdf:Description>
+  
   <!-- Property: is adapted in verse as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60106">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -335,6 +363,21 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mirrorSite.en" />
   </rdf:Description>
 
+  <!-- Property: is continued in part by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60199">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuedInPartBy</reg:name>
+    <rdfs:label xml:lang="en">is continued in part by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource part of whose content separated from an earlier resource to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60277" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20101" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuedInPartBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+  
   <!-- Property: has digital transfer -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60200">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -436,6 +479,19 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40058" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30031" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/facsimile.en" />
+  </rdf:Description>
+
+  <!-- Property: is prequel -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60220">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">prequel</reg:name>
+    <rdfs:label xml:lang="en">is prequel</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that extends the narrative of an earlier resource backwards in time.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60310" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/prequel.en" />
   </rdf:Description>
   
   <!-- Property: is abridgement of -->
@@ -706,6 +762,34 @@
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/parodiedAs.en" />
   </rdf:Description>
   
+  <!-- Property: is absorbed by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60247">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">absorbedBy</reg:name>
+    <rdfs:label xml:lang="en">is absorbed by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that incorporates another resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60574" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20143" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/absorbedBy.en" />
+  </rdf:Description>
+  
+  <!-- Property: is absorbed in part by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60248">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">absorbedInPartBy</reg:name>
+    <rdfs:label xml:lang="en">is absorbed in part by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that incorporates part of the content of another resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60575" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20144" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/absorbedInPartBy.en" />
+  </rdf:Description>
+  
   <!-- Property: is derivative -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60250">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -857,6 +941,59 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20166" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/abridgedAs.en" />
   </rdf:Description>
+  
+  <!-- Property: is continuation in part of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60276">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuationInPartOf</reg:name>
+    <rdfs:label xml:lang="en">is continuation in part of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that split into two or more separate resources with new titles.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60503" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20167" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuationInPartOf.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+  
+  <!-- Property: is separated from -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60277">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">separatedFrom</reg:name>
+    <rdfs:label xml:lang="en">is separated from</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that spun off a part of its content to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60199" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20168" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/separatedFrom.en" />
+  </rdf:Description>
+  
+  <!-- Property: is succeeded by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60278">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">succeededBy</reg:name>
+    <rdfs:label xml:lang="en">is succeeded by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that succeeds, that is, is later in time or after in a narrative, etc., a preceding resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60713" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60102" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60103" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60104" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60199" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60247" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60248" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60306" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60310" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60503" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60504" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20169" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/succeededBy.en" />
+  </rdf:Description>  
   
   <!-- Property: is digested as -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60279">
@@ -1056,6 +1193,21 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/u/P60832" />
   </rdf:Description>
  
+  <!-- Property: is continued by -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60306">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuedBy</reg:name>
+    <rdfs:label xml:lang="en">is continued by</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose content continues an earlier resource under a new title.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60576" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20191" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuedBy.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+ 
   <!-- Property: is abstracts for -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60308">
     <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
@@ -1082,6 +1234,19 @@
     <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60178" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20194" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/indexingFor.en" />
+  </rdf:Description>
+  
+  <!-- Property: is prequel to -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60310">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">prequelTo</reg:name>
+    <rdfs:label xml:lang="en">is prequel to</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose narrative is extended backwards in time by the later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60220" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/prequelTo.en" />
   </rdf:Description>
 
   <!-- Property: is imitation of -->
@@ -1154,7 +1319,120 @@
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/i/P40027" />
     <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/m/P30136" />
     <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/electronicReproductionOf.en" />
-  </rdf:Description> 
+  </rdf:Description>
+ 
+  <!-- Property: is replacement of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60480">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">replacementOf</reg:name>
+    <rdfs:label xml:lang="en">is replacement of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to an earlier resource whose content has been replaced by a later resource, usually because the later resource contains updated or new information that makes the earlier resource obsolete.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60104" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20199" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/replacementOf.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to single-part units, multipart monographs, and integrating resources.</skos:scopeNote>
+  </rdf:Description>
+
+  <!-- Property: is split into -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60503">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">splitInto</reg:name>
+    <rdfs:label xml:lang="en">is split into</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource resulting from a division of an earlier resource into two or more separate resources.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60276" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20200" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/splitInto.en" />
+  </rdf:Description>
+  
+  <!-- Property: is merged to form -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60504">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">mergedToForm</reg:name>
+    <rdfs:label xml:lang="en">is merged to form</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource formed from a coming together of two or more resources.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60278" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60505" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20212" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mergedToForm.en" />
+  </rdf:Description>
+  
+  <!-- Property: is merger of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60505">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">mergerOf</reg:name>
+    <rdfs:label xml:lang="en">is merger of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that came together with one or more other resources to form a new resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60504" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20201" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/mergerOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is absorption of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60574">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">absorptionOf</reg:name>
+    <rdfs:label xml:lang="en">is absorption of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that has been incorporated into another resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60247" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20137" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/absorptionOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is absorption in part of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60575">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">absorptionInPartOf</reg:name>
+    <rdfs:label xml:lang="en">is absorption in part of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that has been partially incorporated into another resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60248" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20138" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/absorptionInPartOf.en" />
+  </rdf:Description>
+  
+  <!-- Property: is continuation of -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60576">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">continuationOf</reg:name>
+    <rdfs:label xml:lang="en">is continuation of</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource that is continued by the content of a later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60306" />
+    <reg:hasSubproperty rdf:resource="http://rdaregistry.info/Elements/e/P20149" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/continuationOf.en" />
+    <skos:scopeNote xml:lang="en">This relationship applies generally to serials.</skos:scopeNote>
+  </rdf:Description>
+  
+  <!-- Property: is sequel to -->
+  <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60577">
+    <rdfs:isDefinedBy rdf:resource="http://rdaregistry.info/Elements/u/" />
+    <reg:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001" />
+    <reg:name xml:lang="en">sequelTo</reg:name>
+    <rdfs:label xml:lang="en">is sequel to</rdfs:label>
+    <skos:definition xml:lang="en">Relates a resource to a resource whose narrative is continued by a later resource.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" />
+    <rdfs:subPropertyOf rdf:resource="http://rdaregistry.info/Elements/u/P60261" />
+    <owl:inverseOf rdf:resource="http://rdaregistry.info/Elements/u/P60102" />
+    <reg:lexicalAlias rdf:resource="http://rdaregistry.info/Elements/u/sequelTo.en" />
+  </rdf:Description>  
   
   <!-- Property: is graphic novelization of -->
   <rdf:Description rdf:about="http://rdaregistry.info/Elements/u/P60743">
