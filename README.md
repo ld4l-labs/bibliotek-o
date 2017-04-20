@@ -20,8 +20,7 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * Datatypes defined by bibliotek-o: `xsd/bibliotek-o.datatypes.xsd`
   * Datasets included in the bibliotek-o recommendation: `datasets/`
   * Human-readable documentation ([LODE](http://www.essepuntato.it/lode)): `doc/LODE/`
-    * An HTML LODE documentation file for bibliotek-o.
-    * A document listing all terms included in the bibliotek-o recommendation, with links out to live documentation.
+  * Overview diagrams of the bibliotek-o recommendation, in both vue and png formats: `doc/overview/`
   
   
 ## Accompanying documentation
@@ -32,7 +31,7 @@ Additional documents, currently in progress, will provide:
   * Discussion and diagrams of the principal models and patterns adopted by bibliotek-o. 
   * Narrative presentation of the recommendations in each topic area.
   * Mapping tables from current catalog formats to the ontology recommendation.
-  * Application profiles for original data modeling using the bibliotek-o recommendation. 
+  * Application profiles for original data modeling using the bibliotek-o recommendation.
   
 Links to these documents will be added here once they have been published.
   
