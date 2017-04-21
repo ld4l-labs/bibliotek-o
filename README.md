@@ -25,11 +25,13 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * Recommendation documents, including recommended terms, models, and patterns: `doc/recommendations/`
   
   
-## Additional documentation in progress
+## Additional documentation 
 
-  * An overview of the principles and best practices guiding the development of bibliotek-o. 
-  * Discussion and diagrams of the principal models and patterns adopted by bibliotek-o. 
-  * Mapping tables from current catalog formats to the ontology recommendation.
-  * Application profiles for original data modeling using the bibliotek-o recommendation.
+  * [LD4P project wiki](https://wiki.duraspace.org/display/LD4P/bibliotek-o)
+  * The [bibliotek-o application profile overview diagram and index of terms](http://bibliotek-o.org/overview.html)
+  * An overview of the principles and best practices guiding the development of bibliotek-o (forthcoming)
+  * Discussion and diagrams of the principal models and patterns adopted by bibliotek-o (forthcoming)
+  * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
+  * Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
 
  
