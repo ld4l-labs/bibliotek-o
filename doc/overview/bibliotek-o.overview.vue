@@ -1,18 +1,18 @@
-<!-- Tufts VUE 3.3.0 concept-map (BIBX_Overview.vue) 2017-04-20 -->
+<!-- Tufts VUE 3.3.0 concept-map (bibliotek-o.overview.vue) 2017-04-21 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
-<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Apr 20 10:11:03 EDT 2017 by folsom on platform Mac OS X 10.12.4 in JVM 1.6.0_65-b14-468-11M4833 -->
+<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.localized/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
+<!-- Do Not Remove: Saved date Fri Apr 21 13:38:03 EDT 2017 by rjy7 on platform Mac OS X 10.10.5 in JVM 1.8.0_51-b16 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
-    label="BIBX_Overview.vue" created="1491760706566" x="0.0" y="0.0"
-    width="1489.0906" height="913.8333" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1492697463665" size="78458"
-        spec="/Users/folsom/Desktop/LD4*/Ontologies/BIBX_Overview.vue"
+    label="bibliotek-o.overview.vue" created="1491760706566" x="0.0"
+    y="0.0" width="1489.0906" height="913.8333" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1492796283584" size="78535"
+        spec="/Users/rjy7/projects/bibliotek-o/doc/overview/bibliotek-o.overview.vue"
         type="1" xsi:type="URLResource">
-        <title>BIBX_Overview.vue</title>
-        <property key="File" value="/Users/folsom/Desktop/LD4*/Ontologies/BIBX_Overview.vue"/>
+        <title>bibliotek-o.overview.vue</title>
+        <property key="File" value="/Users/rjy7/projects/bibliotek-o/doc/overview/bibliotek-o.overview.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
@@ -303,10 +303,10 @@
   &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { color: #000000; font-size: 18; margin-left: 0px; margin-bottom: 0px; font-family: Arial; margin-top: 0px; margin-right: 0px }
-        ol { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
-        p { color: #000000; margin-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0 }
-        ul { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; color: #000000; font-size: 18; font-family: Arial }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 18; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 18; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
       --&gt;
     &lt;/style&gt;
     
@@ -621,10 +621,10 @@
   &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { color: #000000; font-size: 18; margin-left: 0px; margin-bottom: 0px; font-family: Arial; margin-top: 0px; margin-right: 0px }
-        ol { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
-        p { color: #000000; margin-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0 }
-        ul { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; color: #000000; font-size: 18; font-family: Arial }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 18; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 18; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
       --&gt;
     &lt;/style&gt;
     
@@ -730,10 +730,10 @@
   &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { color: #000000; font-size: 18; margin-left: 0px; margin-bottom: 0px; font-family: Arial; margin-top: 0px; margin-right: 0px }
-        ol { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
-        p { color: #000000; margin-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0 }
-        ul { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; color: #000000; font-size: 18; font-family: Arial }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 18; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 18; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
       --&gt;
     &lt;/style&gt;
     
@@ -916,10 +916,10 @@
   &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { color: #000000; font-size: 18; margin-left: 0px; margin-bottom: 0px; font-family: Arial; margin-top: 0px; margin-right: 0px }
-        ol { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
-        p { color: #000000; margin-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0 }
-        ul { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; color: #000000; font-size: 18; font-family: Arial }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 18; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 18; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
       --&gt;
     &lt;/style&gt;
     
@@ -1043,10 +1043,10 @@
   &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { color: #000000; font-size: 18; margin-left: 0px; margin-bottom: 0px; font-family: Arial; margin-top: 0px; margin-right: 0px }
-        ol { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
-        p { color: #000000; margin-left: 0; margin-bottom: 0; margin-top: 0; margin-right: 0 }
-        ul { margin-left: 30; font-size: 18; font-family: Arial; margin-top: 6; list-style-position: outside; vertical-align: middle }
+        body { margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; color: #000000; font-size: 18; font-family: Arial }
+        ol { margin-top: 6; font-family: Arial; vertical-align: middle; margin-left: 30; font-size: 18; list-style-position: outside }
+        p { margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; color: #000000 }
+        ul { margin-top: 6; font-size: 18; margin-left: 30; vertical-align: middle; list-style-position: outside; font-family: Arial }
       --&gt;
     &lt;/style&gt;
     
@@ -1171,9 +1171,9 @@
         <ID1 xsi:type="node">9</ID1>
         <ctrlPoint0 x="444.73636" y="570.81836" xsi:type="point"/>
     </child>
-    <child ID="72" label="Biblioteko Application Profile Overview"
+    <child ID="72" label="bibliotek-o Application Profile Overview"
         layerID="73" created="1491785188843" x="-101.81381"
-        y="-297.47794" width="539.0" height="41.0" strokeWidth="1.0"
+        y="-297.47794" width="545.0" height="41.0" strokeWidth="1.0"
         autoSized="true" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
         <strokeColor>#776D6D</strokeColor>
@@ -1182,9 +1182,9 @@
         <URIString>http://vue.tufts.edu/rdf/resource/557365e7c0a86a2e4067d00af2bfdf6b</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="70" label="bibliotek-o.org/ontology (bib)" layerID="73"
+    <child ID="70" label="bibliotek-o.org/ontology/ (bib)" layerID="73"
         created="1491785110015" x="-101.81381" y="-221.54425"
-        width="231.0" height="27.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        width="235.0" height="27.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#BDE5F2</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -1423,7 +1423,7 @@
         height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/68e1de0fc0a86a2e4067d00a98ba0c6e</URIString>
     </layer>
-    <userZoom>0.5974831429755524</userZoom>
+    <userZoom>0.6526234306871915</userZoom>
     <userOrigin x="-319.14984" y="-240.41621"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
@@ -1476,6 +1476,6 @@
     </PathwayList>
     <date>2017-04-09</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>/Users/folsom/Desktop/LD4*/Ontologies</saveLocation>
-    <saveFile>/Users/folsom/Desktop/LD4*/Ontologies/BIBX_Overview.vue</saveFile>
+    <saveLocation>/Users/rjy7/projects/bibliotek-o/doc/overview</saveLocation>
+    <saveFile>/Users/rjy7/projects/bibliotek-o/doc/overview/bibliotek-o.overview.vue</saveFile>
 </LW-MAP>
