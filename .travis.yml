@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - oraclejdk8
+
+# The install and script defaults for Java are given at
+# https://docs.travis-ci.com/user/languages/java/
+# For a maven project with pom.xml, these are:
+#install: - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script:
+  - ./tools/robot help
+
+# save cache
+
