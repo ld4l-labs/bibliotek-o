@@ -2,12 +2,13 @@ language: java
 jdk:
   - oraclejdk8
 
-# Use robot to convert the ontology, which requires that the ontology can be parsed.
-#
-# Could also validate OWL profiles? e.g.
-# ./tools/robot validate-profile -i ./target-ontologies/bibliotek-o.owl -p DL
+# The install and script defaults for Java are given at
+# https://docs.travis-ci.com/user/languages/java/
+# For a maven project with pom.xml, these are:
+#install: - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 script:
   - ./tools/robot help
-  - ./tools/robot convert -i ./target-ontologies/bibliotek-o.owl -f OBO -o /tmp/bibliotek-o.obo
+
+# save cache
 
