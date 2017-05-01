@@ -371,7 +371,7 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bnd.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-01T00:00:00-04:00</dcterms:modified>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BindingDesignerActivity">
@@ -412,13 +412,13 @@
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BroadcasterActivity">
-        <rdfs:label xml:lang="en">Binder</rdfs:label>    
+        <rdfs:label xml:lang="en">Broadcaster</rdfs:label>    
         <skos:definition xml:lang="en">The activity of broadcasting a resource via radio, television, webcast, etc.</skos:definition>
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/brd.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider the relationship, if any to the ld4l:Publisher</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-01T00:00:00-04:00</dcterms:modified>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Captions">
@@ -1590,16 +1590,6 @@
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bibliotek-o.org/ontology/OrganizerActivity">
-        <rdfs:label xml:lang="en">Opponent</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of organizing the exhibit, event, conference, etc.</skos:definition>
-        <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
-        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
-    </owl:Class>
-    
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Origin">
         <rdfs:label xml:lang="en">Origin</rdfs:label>    
         <skos:definition xml:lang="en">The place from which a resource (e.g., a title) originates, such as spine, cover, container, etc.</skos:definition>
@@ -1624,7 +1614,7 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-01T00:00:00-04:00</dcterms:modified>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/OverheadTransparency">
