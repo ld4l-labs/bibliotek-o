@@ -365,7 +365,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BinderActivity">
-        <rdfs:label xml:lang="en">Broadcaster</rdfs:label>    
+        <rdfs:label xml:lang="en">Binder</rdfs:label>    
         <skos:definition xml:lang="en">The activity of binding an item.</skos:definition>
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bnd.</skos:scopeNote>
@@ -1618,7 +1618,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/OrganizerActivity">
-        <rdfs:label xml:lang="en">Opponent</rdfs:label>    
+        <rdfs:label xml:lang="en">Organizer</rdfs:label>    
         <skos:definition xml:lang="en">The activity of organizing the exhibit, event, conference, etc.</skos:definition>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm.</skos:scopeNote>
