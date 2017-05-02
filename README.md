@@ -6,7 +6,7 @@ bibliotek-o is an ontology recommendation for modeling bibliographic metadata. I
 
 * The [bibliotek-o extension ontology](http://bibliotek-o.org/ontology/), which defines additions and modifications to [BIBFRAME 2](http://id.loc.gov/ontologies/bibframe) and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
 * A set of ontology fragments (including BIBFRAME 2) intended for use with the bibliotek-o extension.
-* An application profile - i.e., a set of models and patterns documenting the recommended use of the bibliotek-o and external ontologies.
+* A data model and application profile - i.e., a set of models and patterns documenting the recommended use BIBFRAME 2, bibliotek-o and external ontologies.
 
 bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
