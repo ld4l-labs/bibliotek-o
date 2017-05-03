@@ -24,7 +24,7 @@ The following protocols are used to version and record changes to the ontology:
     * Numbering conventions:
       * Third number: non-semantic modifications, such as changing an rdfs:label.
       * Second number: backward-compatible semantic modifications
-      * First number: non-backward-compatible semantic modifications
+      * First number: non-backward-compatible modifications
   * Issuance and modification datetimes
     * `dcterms:issued` is used on each ontology term, and on the ontology as a whole, to indicate date of first issuance.
     * `dcterms:modified` is used on each ontology term, and on the ontology as a whole, to indicate last modification date. 
