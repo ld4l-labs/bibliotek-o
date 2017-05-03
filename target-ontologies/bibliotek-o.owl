@@ -372,7 +372,7 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote xml:lang="en">v1.0.1 - Fix rdfs:label value</skos:changeNote>
+        <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BindingDesignerActivity">
@@ -420,7 +420,7 @@
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider the relationship, if any to the ld4l:Publisher</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote xml:lang="en">v1.0.1 - Fix rdfs:label value</skos:changeNote>
+        <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Captions">
@@ -1617,7 +1617,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote xml:lang="en">v1.0.1 - Fix rdfs:label value</skos:changeNote>
+        <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/OverheadTransparency">
