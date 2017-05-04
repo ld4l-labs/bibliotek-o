@@ -17,7 +17,7 @@
         <owl:versionIRI rdf:resource="http://bibliotek-o.org/1.0/ontology/"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0.1</owl:versionInfo>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <rdfs:label xml:lang="en">bibliotek-o: a BIBFRAME 2 Ontology Extension</rdfs:label>
         <rdfs:comment xml:lang="en">The bibliotek-o ontology extension defines additions and modifications to BIBFRAME 2 and is intended to be used as a supplement to the core BIBFRAME 2 ontology. In addition to the extension specification, bibliotek-o provides a set of recommended fragments from external ontologies and an application profile based on its recommended models and patterns. It is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See http://ld4l.org for more information on these projects.</rdfs:comment>        <vann:preferredNamespacePrefix>bib</vann:preferredNamespacePrefix>
     </owl:Ontology>
@@ -371,7 +371,7 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/bnd.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
@@ -419,7 +419,7 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/brd.</skos:scopeNote>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator. Consider the relationship, if any to the ld4l:Publisher</skos:editorialNote>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
@@ -1616,7 +1616,7 @@
         <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/orm.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-05-03T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <skos:changeNote xml:lang="en">Fix rdfs:label (v1.0.1)</skos:changeNote>
     </owl:Class>
     
