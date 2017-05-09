@@ -61,4 +61,14 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
   * Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
 
- 
+
+## Issues and updates
+
+  * Github issues are used to track bug reports and feature requests.
+  * Follow these steps to propose an issue resolution:
+    * Create an issue, adding any appropriate labels.
+    * Fork the repository.
+    * Commit the change to your fork.
+    * Create a pull request. Note that develop is the default branch against which pull requests are made.
+  * Pull requests will be reviewed at periodic intervals (to be specified).
+  * For transparency and traceability, this process should be followed even by those with direct write access to the repository.
