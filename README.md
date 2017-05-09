@@ -20,12 +20,13 @@ The following protocols are used to version and record changes to the ontology:
     * `owl:versionIRI` identifies a particular version of the ontology; e.g., "http://bibliotek-o.org/1.0/ontology/". 
     * The `owl:versionIRI` of the current version of the ontology redirects to the `owl:ontologyIRI`.
     * By importing or referencing terms from, a particular `owl:versionIRI`, users are insulated from non-backward-compatible changes in newer published versions until they decide to upgrade.
-    * `owl:versionInfo` provides a version label; e.g., "Version 1.0.1." This version number is also used to tag the repository: e.g., "v1.0.1".
-    * Numbering conventions:
-      * Third number: non-semantic modifications, such as changing an rdfs:label.
-      * Second number: backward-compatible semantic modifications
-      * First number: non-backward-compatible modifications
-    * The `owl:versionIRI` is updated for increments of the first or second number, but not the third. 
+    * `owl:versionInfo` provides a label containing the version number; e.g., "Version 1.0.1." This version number is also used to tag the repository: e.g., "v1.0.1".
+    * Version numbering convention (MAJOR.MINOR.PATCH):
+      * MAJOR: non-backward-compatible modifications
+      * MINOR: backward-compatible semantic modifications
+      * PATCH: non-semantic modifications, such as changing an rdfs:label.
+    * The `owl:versionIRI` is updated for MAJOR and MINOR versions, but not PATCH versions. It thus includes only the MAJOR and MINOR version numbers, as in "http://bibliotek-o.org/1.0/ontology/".
+    * To avoid an unnecessary proliferation of MAJOR versions, `owl:deprecated` is applied to terms slated for removal. A term deprecated in a MINOR version will be removed in the next MAJOR version. 
   * Issuance and modification datetimes
     * `dcterms:issued` is used on each ontology term, and on the ontology as a whole, to indicate date of first issuance.
     * `dcterms:modified` is used on each ontology term, and on the ontology as a whole, to indicate last modification date. 
@@ -60,4 +61,14 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
   * Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
 
- 
+
+## Issues and updates
+
+  * Github issues are used to track bug reports and feature requests.
+  * Follow these steps to propose an issue resolution:
+    * Create an issue, adding any appropriate labels.
+    * Fork the repository.
+    * Commit the change to your fork.
+    * Create a pull request. Note that develop is the default branch against which pull requests are made.
+  * Pull requests will be reviewed at periodic intervals (to be specified).
+  * For transparency and traceability, this process should be followed even by those with direct write access to the repository.
