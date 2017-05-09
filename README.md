@@ -20,7 +20,7 @@ The following protocols are used to version and record changes to the ontology:
     * `owl:versionIRI` identifies a particular version of the ontology; e.g., "http://bibliotek-o.org/1.0/ontology/". 
     * The `owl:versionIRI` of the current version of the ontology redirects to the `owl:ontologyIRI`.
     * By importing or referencing terms from, a particular `owl:versionIRI`, users are insulated from non-backward-compatible changes in newer published versions until they decide to upgrade.
-    * `owl:versionInfo` provides a label containing the version number; e.g., "Version 1.0.1." This version number is also used to tag the repository: e.g., "v1.0.1".
+    * `owl:versionInfo` provides a label containing the version number; e.g., "Version 1.0.1." This version number is also used to tag the repository; in this case, `v1.0.1`.
     * Version numbering convention (MAJOR.MINOR.PATCH):
       * MAJOR: non-backward-compatible modifications
       * MINOR: backward-compatible semantic modifications
@@ -67,8 +67,20 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * Github issues are used to track bug reports and feature requests.
   * Follow these steps to propose an issue resolution:
     * Create an issue, adding any appropriate labels.
-    * Fork the repository.
-    * Commit the change to your fork.
-    * Create a pull request. Note that develop is the default branch against which pull requests are made.
+    * Either clone or fork the repository, depending on whether you have write permission to the repository or not.
+    * Create a feature branch on your local repository. Such a branch is typically named `feature/<name-of-feature>`; e.g., `feature/remove_origin_class`. [TBD Should this be a PR instead of a feature branch?]
+    * Commit the change to the local feature branch.
+    * Create a pull request against the develop branch. Note that develop is the default branch, and pull requests should not be made against master.
   * Pull requests will be reviewed at periodic intervals (to be specified).
   * For transparency and traceability, this process should be followed even by those with direct write access to the repository.
+  
+  
+## Branching policy
+
+  * The develop branch contains changes approved for the next release.
+  * The master branch is considered the release branch; i.e., the most current version is always on master.
+  * At the point of release:
+    * The develop branch is merged to master.
+    * The master branch is tagged with the version number. The tag name corresponds to the ontology version defined by the `owl:versionInfo` value. E.g., tag `v1.0.1` for version "Version 1.0.1".
+   
+  
