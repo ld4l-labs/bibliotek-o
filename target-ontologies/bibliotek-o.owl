@@ -15,7 +15,7 @@
     <owl:Ontology rdf:about="http://bibliotek-o.org/ontology/">
         <owl:ontologyIRI rdf:resource="http://bibliotek-o.org/ontology/"/>
         <owl:versionIRI rdf:resource="http://bibliotek-o.org/1.0/ontology/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0.2</owl:versionInfo>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <rdfs:label xml:lang="en">bibliotek-o: a BIBFRAME 2 Ontology Extension</rdfs:label>
@@ -108,9 +108,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AlternativeText">
         <rdfs:label xml:lang="en">Alternative text</rdfs:label>    
         <skos:definition xml:lang="en">Alternative text is provided for visual content (e.g., via the HTML alt attribute).</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>    
 
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AnalystActivity">
@@ -126,9 +127,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Annotations">
         <rdfs:label xml:lang="en">Annotations</rdfs:label>    
         <skos:definition xml:lang="en">The resource includes annotations from the author, instructor and/or others.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>  
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AnimatorActivity">
@@ -303,9 +305,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AudioDescription"> 
         <rdfs:label xml:lang="en">Audio description</rdfs:label>   
         <skos:definition xml:lang="en">Audio descriptions are available (e.g., via the HTML5 track element).</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AudioDisc">
@@ -388,28 +391,31 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Bookmarks">
         <rdfs:label xml:lang="en">Bookmarks</rdfs:label>    
         <skos:definition xml:lang="en">The resource includes bookmarks to facilitate navigation to key points.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>    
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Braille">
         <rdfs:label xml:lang="en">Braille</rdfs:label>    
         <skos:definition xml:lang="en">Content of a resource in braille format.</skos:definition>
         <skos:scopeNote xml:lang="en">The feature of being in braille is both a notation and an accessibility feature.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/TactileNotation"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BrailleAlternative">
         <rdfs:label xml:lang="en">Braille alternative</rdfs:label>    
         <skos:definition xml:lang="en">Alternative content for a resource in braille.</skos:definition>
         <skos:scopeNote xml:lang="en">Differs from http://bibliotek-o.org/ontology/Braille, which types the notation of the resource itself, rather than the existence of alternative content.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BroadcasterActivity">
@@ -426,9 +432,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Captions">
         <rdfs:label xml:lang="en">Captions</rdfs:label>    
         <skos:definition xml:lang="en">Synchronized captions are available for audio and video content</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/CaptureActivity">
@@ -478,9 +485,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ChemMl">
         <rdfs:label xml:lang="en">ChemML</rdfs:label>    
         <skos:definition xml:lang="en">Chemical information is encoded using the ChemML markup language</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ChoreographerActivity">
@@ -805,9 +813,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DescribedMath">
         <rdfs:label xml:lang="en">Described math</rdfs:label>    
         <skos:definition xml:lang="en">Textual descriptions of math equations are included.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DesignerActivity">
@@ -841,9 +850,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DisplayTransformability">
         <rdfs:label xml:lang="en">Display transformability</rdfs:label>    
         <skos:definition xml:lang="en">Display properties are controllable by the user.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DistinctiveTitle">
@@ -1039,9 +1049,10 @@
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/FlashingHazard">
         <rdfs:label xml:lang="en">Flashing hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/FlipChart">
@@ -1067,17 +1078,19 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/HighContrastAudio">
         <rdfs:label xml:lang="en">High contrast audio</rdfs:label>    
         <skos:definition xml:lang="en">Audio content with speech in the foreground meets the contrast thresholds set out in WCAG Success Criteria 1.4.7.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/HighContrastDisplay">
         <rdfs:label xml:lang="en">High contrast display</rdfs:label>    
         <skos:definition xml:lang="en">Content meets the visual contrast threshold set out in WCAG Success Criteria 1.4.6.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/HonoreeActivity">
@@ -1124,9 +1137,10 @@
         <rdfs:label xml:lang="en">Index accessibility feature</rdfs:label>    
         <skos:definition xml:lang="en">The accessibility feature of having an index.</skos:definition>
         <skos:scopeNote xml:lang="en">Refers to the feature of having an index, not to the index itself.</skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>        
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>        
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/InscriberActivity">
@@ -1192,17 +1206,19 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LargePrint">
         <rdfs:label xml:lang="en">Large print</rdfs:label>    
         <skos:definition xml:lang="en">The content has been formatted to meet large print guidelines.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LatexMathMl">
         <rdfs:label xml:lang="en">LaTeXMathML</rdfs:label>    
         <skos:definition xml:lang="en">Mathematical equations and formulas are encoded using the LaTeXMathML markup language.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LenderActivity">
@@ -1268,9 +1284,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LongDescription">
         <rdfs:label xml:lang="en">Long description</rdfs:label>    
         <skos:definition xml:lang="en">Descriptions are provided for image-based visual content and/or complex structures such as tables, mathematics, diagrams and charts.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LyricistActivity">
@@ -1314,9 +1331,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/MathMl">
         <rdfs:label xml:lang="en">MathML</rdfs:label>    
         <skos:definition xml:lang="en">Mathematical equations and formulas are encoded using the MathML markup language.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
 
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Meeting">
@@ -1483,9 +1501,10 @@
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/MotionSimulationHazard">
         <rdfs:label xml:lang="en">Motion simulation hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/MusicCopyistActivity">
@@ -1530,16 +1549,18 @@
 
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NoFlashingHazard">
         <rdfs:label xml:lang="en">No flashing hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NoMotionSimulationHazard">
         <rdfs:label xml:lang="en">No motion simulation hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NonSortElement">
@@ -1552,9 +1573,10 @@
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NoSoundHazard">
         <rdfs:label xml:lang="en">No sound hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>  
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/OclcIdentifier">
@@ -1767,9 +1789,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/PrintPageNumbers">
         <rdfs:label xml:lang="en">Print page numbers</rdfs:label>    
         <skos:definition xml:lang="en">The resource includes equivalent print page numbers. Most commonly used with ebooks for which there is a print equivalent.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/PrinterActivity">
@@ -1875,9 +1898,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ReadingOrder">
         <rdfs:label xml:lang="en">Reading order</rdfs:label>    
         <skos:definition xml:lang="en">The reading order of the content is clearly defined (e.g., figures, sidebars and other secondary content have been marked up to allow it to be skipped automatically and/or manually escaped from.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/RecordistActivity">
@@ -1960,9 +1984,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/RubyAnnotations">
         <rdfs:label xml:lang="en">Ruby annotations</rdfs:label>    
         <skos:definition xml:lang="en">Ruby annotations are provided in the content. Ruby annotations are used as pronunciation guides for the logographic characters for languages like Chinese or Japanese.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ScientificAdvisorActivity">
@@ -2058,9 +2083,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SignLanguage">
         <rdfs:label xml:lang="en">Sign language</rdfs:label>    
         <skos:definition xml:lang="en">Synchronized sign language intepretation is available for audio and video content.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SingerActivity">
@@ -2103,9 +2129,10 @@
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SoundHazard">
         <rdfs:label xml:lang="en">Sound hazard</rdfs:label>    
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityHazard"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Sounds">
@@ -2238,9 +2265,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/StructuralNavigation">
         <rdfs:label xml:lang="en">Structural navigation</rdfs:label>    
         <skos:definition xml:lang="en">The use of headings in the resource fully and accurately reflects the document hierarchy, allowing navigation by assistive technologies.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SubtitleElement">
@@ -2264,18 +2292,20 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SynchronizedAudioText">
         <rdfs:label xml:lang="en">Synchronized audio text</rdfs:label>    
         <skos:definition xml:lang="en">The resource offers both audio and text, with information that allows them to be rendered simultaneously.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TableOfContentsAccessibilityFeature">
         <rdfs:label xml:lang="en">Table of contents accessibility feature</rdfs:label>    
         <skos:definition xml:lang="en">Represents the feature of having a table of contents, rather than the table of contents itself.</skos:definition>
         <skos:scopeNote xml:lang="en"></skos:scopeNote>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Tactile">
@@ -2291,26 +2321,29 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TactileGraphic">
         <rdfs:label xml:lang="en">Tactile graphic</rdfs:label>    
         <skos:definition xml:lang="en">Tactile graphics are provided; for example, as described in the BANA Guidelines and Standards for Tactile Graphics.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TactileObject">
         <rdfs:label xml:lang="en">Tactile object</rdfs:label>    
         <skos:definition xml:lang="en">The content is a tactile 3D object, or the model to generate one is included.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/TactileNotation"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TaggedPdf">
         <rdfs:label xml:lang="en">Tagged PDF</rdfs:label>    
         <skos:definition xml:lang="en">The structures in a PDF have been tagged to improve the navigation of the content.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Tape">
@@ -2344,9 +2377,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TimingControl">
         <rdfs:label xml:lang="en">Timing control</rdfs:label>    
         <skos:definition xml:lang="en">For content with timed interaction, the user has the ability to control the timing to meet his or her needs (e.g., pause and reset).</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TitleElement">
@@ -2369,9 +2403,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Transcript">
         <rdfs:label xml:lang="en">Transcript</rdfs:label>    
         <skos:definition xml:lang="en">A transcript of the audio content is available.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TranslatorActivity">
@@ -2387,9 +2422,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TtsMarkup">
         <rdfs:label xml:lang="en">TTS markup</rdfs:label>    
         <skos:definition xml:lang="en">Markup has been used to enhance text-to-speech playback quality.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TypographerActivity">
@@ -2405,9 +2441,10 @@
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Unlocked">
         <rdfs:label xml:lang="en">Unlocked</rdfs:label>    
         <skos:definition xml:lang="en">No digital rights management or other content restriction protocols have been applied to the resource.</skos:definition>
-        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/AccessibilityFeature"/>
+        <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Video">
