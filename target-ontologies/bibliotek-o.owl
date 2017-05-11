@@ -15,7 +15,7 @@
     <owl:Ontology rdf:about="http://bibliotek-o.org/ontology/">
         <owl:ontologyIRI rdf:resource="http://bibliotek-o.org/ontology/"/>
         <owl:versionIRI rdf:resource="http://bibliotek-o.org/1.0/ontology/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0.2</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.1.0</owl:versionInfo>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <rdfs:label xml:lang="en">bibliotek-o: a BIBFRAME 2 Ontology Extension</rdfs:label>
@@ -111,7 +111,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>    
 
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AnalystActivity">
@@ -130,7 +130,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>  
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AnimatorActivity">
@@ -308,7 +308,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/AudioDisc">
@@ -394,7 +394,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>    
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Braille">
@@ -405,7 +405,7 @@
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/TactileNotation"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BrailleAlternative">
@@ -415,7 +415,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/BroadcasterActivity">
@@ -435,7 +435,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/CaptureActivity">
@@ -488,7 +488,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ChoreographerActivity">
@@ -816,7 +816,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DesignerActivity">
@@ -853,7 +853,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/DistinctiveTitle">
@@ -1052,7 +1052,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/FlipChart">
@@ -1081,7 +1081,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/HighContrastDisplay">
@@ -1090,7 +1090,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/HonoreeActivity">
@@ -1140,7 +1140,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>        
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/InscriberActivity">
@@ -1209,7 +1209,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LatexMathMl">
@@ -1218,7 +1218,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LenderActivity">
@@ -1287,7 +1287,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/LyricistActivity">
@@ -1334,7 +1334,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
 
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Meeting">
@@ -1504,7 +1504,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/MusicCopyistActivity">
@@ -1552,7 +1552,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NoMotionSimulationHazard">
@@ -1560,7 +1560,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/NonSortElement">
@@ -1576,7 +1576,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>  
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/OclcIdentifier">
@@ -1792,7 +1792,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/PrinterActivity">
@@ -1901,7 +1901,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/RecordistActivity">
@@ -1987,7 +1987,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/ScientificAdvisorActivity">
@@ -2086,7 +2086,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SingerActivity">
@@ -2132,7 +2132,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityHazard"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Sounds">
@@ -2268,7 +2268,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SubtitleElement">
@@ -2295,7 +2295,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TableOfContentsAccessibilityFeature">
@@ -2305,7 +2305,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Tactile">
@@ -2324,7 +2324,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TactileObject">
@@ -2334,7 +2334,7 @@
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/TactileNotation"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TaggedPdf">
@@ -2343,7 +2343,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Tape">
@@ -2380,7 +2380,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TitleElement">
@@ -2406,7 +2406,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TranslatorActivity">
@@ -2425,7 +2425,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/TypographerActivity">
@@ -2444,7 +2444,7 @@
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/AccessibilityFeature"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-05-11T00:00:00-04:00</dcterms:modified>
-        <skos:changeNote>Fix superclass (v1.0.2)</skos:changeNote>
+        <skos:changeNote>Fix superclass (v1.1.0)</skos:changeNote>
     </owl:Class> 
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/Video">
