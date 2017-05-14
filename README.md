@@ -10,6 +10,21 @@ bibliotek-o is an ontology recommendation for modeling bibliographic metadata. I
 
 bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
+
+## Repository contents
+
+This repository contains the formal bibliotek-o specification, ontology and dataset recommendations for use with bibliotek-o (including the recommended BIBFRAME 2 terms), and a set of human-readable documentation. 
+
+* `target-ontologies/bibliotek-o.owl`: OWL specification of bibliotek-o 
+* `target-ontologies/`: RDFS and OWL specifications of recommended ontology fragments for use with bibliotek-o
+* `reference-ontologies/`: Full specifications of these ontologies, for reference purposes
+* `xsd/bibliotek-o.datatypes.xsd`: Datatypes defined by bibliotek-o
+* `datasets/`: Datasets included in the bibliotek-o recommendation 
+* `doc/LODE/`: Human-readable documentation ([LODE](http://www.essepuntato.it/lode)): 
+* `doc/overview/`: Overview diagrams of the bibliotek-o application profile, in both vue and png formats
+* `doc/principles/`: The foundational principles applied in the development of bibliotek-o
+* `CHANGELOG.md`: A change log with sections for each release
+  
 ## Versioning
 
 The following protocols are used to version and record changes to the ontology:
@@ -42,30 +57,8 @@ The following protocols are used to version and record changes to the ontology:
 * A `skos:changeNote` could be applied to the ontology itself to record major, broad, or high-level changes affecting multiple terms.
 * Changes are also recorded in the project change log (CHANGELOG.md).
 
-## Repository contents
 
-This repository contains the formal bibliotek-o specification, ontology and dataset recommendations for use with bibliotek-o (including the recommended BIBFRAME 2 terms), and a set of human-readable documentation. 
-
-* `target-ontologies/bibliotek-o.owl`: OWL specification of bibliotek-o 
-* `target-ontologies/`: RDFS and OWL specifications of recommended ontology fragments for use with bibliotek-o
-* `reference-ontologies/`: Full specifications of these ontologies, for reference purposes
-* `xsd/bibliotek-o.datatypes.xsd`: Datatypes defined by bibliotek-o
-* `datasets/`: Datasets included in the bibliotek-o recommendation 
-* `doc/LODE/`: Human-readable documentation ([LODE](http://www.essepuntato.it/lode)): 
-* `doc/overview/`: Overview diagrams of the bibliotek-o application profile, in both vue and png formats
-* `CHANGELOG.md`: A change log with sections for each release
-  
-  
-## Additional documentation 
-
-* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](http://bibliotek-o.org/overview.html) 
-* An overview of the principles and best practices guiding the development of bibliotek-o (forthcoming)
-* Discussion and diagrams of the principal models and patterns adopted by bibliotek-o (forthcoming)
-* Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
-* Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
-
-
-## Issues and updates
+## Issue tracking and updates
 
 * Github issues are used to track bug reports and feature requests.
 * Follow these steps if you wish to propose an issue resolution:
@@ -87,4 +80,12 @@ This repository contains the formal bibliotek-o specification, ontology and data
     * The develop branch is merged to master.
     * The master branch is tagged with the version number. The tag name corresponds to the ontology version defined by the `owl:versionInfo` value. E.g., tag `v1.0.1` for version "Version 1.0.1".
     * If the new version represents a MAJOR or MINOR update, the old version will remain available at its `owl:versionIRI`, while the latest version will redirect to the `owl:ontologyIRI` http://bibliotek-o.org/ontology/.  
-  
+
+ 
+## Additional documentation 
+
+* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](http://bibliotek-o.org/overview.html) 
+* An overview of the principles and best practices guiding the development of bibliotek-o (forthcoming)
+* Discussion and diagrams of the principal models and patterns adopted by bibliotek-o (forthcoming)
+* Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
+* Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
