@@ -1,6 +1,10 @@
 # Change Log
 
-## [Unreleased] (will be 1.1.0)
+## [Unreleased] 
+
+### Changed
+- Remove domain specification of hasAgent property.
+- Remove range specification of isAgentOf property.
 
 ### Fixed
 - Namespace of AccessibilityFeature and AccessibilityHazard in subclass assertions
@@ -12,6 +16,4 @@
 - Some rdfs:label values 
 
 ## Version 1.0.0 - 2017-04-22
-
-### Added
 - Release 1.0.0 pushed to `master` and published at http://bibliotek-o.org/ontology/.
