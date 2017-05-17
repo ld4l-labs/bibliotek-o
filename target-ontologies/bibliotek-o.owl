@@ -2806,6 +2806,15 @@
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:NamedIndividual>
     
+    <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/providingPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">providing purpose</rdfs:label>
+        <skos:definition xml:lang="en">The motivation for when the user intends to describe the purpose or use of the target resource.</skos:definition>
+        <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
+        <dcterms:issued>2017-05-17T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-05-17T00:00:00-04:00</dcterms:modified>
+    </owl:NamedIndividual>
+    
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/reviewing">
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">reviewing</rdfs:label>

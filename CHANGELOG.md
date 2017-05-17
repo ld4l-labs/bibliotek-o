@@ -2,6 +2,9 @@
 
 ## [Unreleased] 
 
+### Added
+- Annotation Motivation providingPurpose.
+
 ### Changed
 - Remove domain specification of hasAgent property.
 - Remove range specification of isAgentOf property.
