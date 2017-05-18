@@ -6,12 +6,12 @@
 - Annotation Motivation providingPurpose.
 
 ### Changed
-- Remove domain specification of hasAgent property.
-- Remove range specification of isAgentOf property.
+- Removed domain specification of hasAgent property.
+- Removed range specification of isAgentOf property.
 
 ### Fixed
 - Namespace of AccessibilityFeature and AccessibilityHazard in subclass assertions
-
+- Added missing xml:lang="en" values
 
 ## Version 1.0.1 - 2017-05-05
 
