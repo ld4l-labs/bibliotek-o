@@ -1,4 +1,5 @@
 **Reuse and Alignment Principle**
+
 **LD4L Labs / LD4P Ontology Group**
 
 **December 2016**
