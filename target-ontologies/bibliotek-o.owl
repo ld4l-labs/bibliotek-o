@@ -2576,7 +2576,7 @@
     </owl:ObjectProperty> 
  
     <owl:ObjectProperty rdf:about="http://bibliotek-o.org/ontology/coveredIn">
-        <rdfs:label xml:lang="en">covers</rdfs:label>
+        <rdfs:label xml:lang="en">covered in</rdfs:label>
         <skos:definition xml:lang="en">Specifies a resource the content of which covers this time period or location.</skos:definition>
         <skos:scopeNote xml:lang="en">Contrasts with http://bibliotek-o.org/ontology/isSubjectOf: e.g., a book written by a French author may be set in France without France being the subject of the work. Not all cases are expected to be unambiguous.</skos:scopeNote>
         <owl:inverseOf rdf:resource="http://bibliotek-o.org/ontology/covers"/>
