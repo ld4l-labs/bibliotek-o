@@ -110,6 +110,7 @@ Pull requests (PRs) implement changes proposed in issues. Contributors may submi
 * Term deletion
   * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a MAJOR, MINOR, or PATCH release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
+* All annotation properties should have an xml:lang value. The value for English is "en". 
 
 ### Change cycle
 
