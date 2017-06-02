@@ -1,5 +1,10 @@
 # bibliotek-o: A Framework for Modeling Bibliographic Metadata 
 
+## News
+* **2017-06-30** Q2 release of Version 1.1.0 
+  * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
+* Watch for an announcement of the Q3 release and timeline. 
+
 ## What is bibliotek-o?
 
 bibliotek-o is an ontology framework for modeling bibliographic metadata based on the [Library of Congress BIBFRAME ontology](http://id.loc.gov/ontologies/bibframe). It includes:
@@ -109,7 +114,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * Term deletion
   * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a MAJOR, MINOR, or PATCH release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
-* All annotation properties should have an xml:lang value. The value for English is "en". 
+* All annotation properties should have an `xml:lang` value. The value for English is `"en"`. 
 
 ### Change cycle
 
