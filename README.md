@@ -1,10 +1,5 @@
 # bibliotek-o: A Framework for Modeling Bibliographic Metadata 
 
-## News
-* **2017-06-30** Q2 release of Version 1.1.0 
-  * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
-* Watch for an announcement of the Q3 release and timeline. 
-
 ## What is bibliotek-o?
 
 bibliotek-o is an ontology framework for modeling bibliographic metadata based on the [Library of Congress BIBFRAME ontology](http://id.loc.gov/ontologies/bibframe). It includes:
@@ -15,6 +10,10 @@ bibliotek-o is an ontology framework for modeling bibliographic metadata based o
 
 bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
+## News
+* **2017-06-30** Q2 release of Version 1.1.0 
+  * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
+* Watch for an announcement of the Q3 release and timeline. 
 
 ## Repository contents
 
