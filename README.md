@@ -11,9 +11,10 @@ bibliotek-o is an ontology framework for modeling bibliographic metadata based o
 bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
 ## News
+* Public `bibliotek-o_community@googlegroups.com` created as a community mailing list for release-related announcements. 
 * **2017-06-30** Q2 release of Version 1.1.0 
   * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
-* Watch for an announcement of the Q3 release and timeline. 
+* Watch for an announcement of the Q3 release and timeline, both on `bibliotek-o_community@googlegroups.com` and this repository.
 
 ## Repository contents
 
@@ -99,7 +100,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 
 * PRs are made against the develop (default) branch.
 * Each PR should address only one issue.
-* A PR should include any modifications to the BIBFRAME and other target ontology files that are associated with the proposed change to bibliotek-o.
+* A PR should include any modifications to the BIBFRAME and other target ontology files (i.e., adding or deleting terms from the fragments included in the repository) that are associated with the proposed change to bibliotek-o.
 * PRs should not include regeneration of documentation, since this will be regenerated once prior to the release.
 * The issue number should be included in the PR commit message; e.g., "#10".
 
@@ -121,7 +122,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * Each new change cycle begins with the announcement of deadlines associated with the release, and ends with the release of a new version (assuming there are changes to release).
 
 #### Community announcement 
-* An announcement of the date of next release and associated deadlines is made to the community Google group (`bibliotek-o_community@googlegroups.com`) via email and posted at the top of this README.
+* An announcement of the date of next release and associated deadlines is made to the community Google group (`bibliotek-o_community@googlegroups.com`) via email, and posted at the top of this README.
 
 #### Issue review
 * Immediately following the issue submission deadline (see timeline below), the CRM team begins to review open issues.
