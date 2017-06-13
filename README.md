@@ -11,11 +11,10 @@ bibliotek-o is an ontology framework for modeling bibliographic metadata based o
 bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs (LD4L - Labs) and Linked Data for Production (LD4P) projects. See the [LD4L website](http://ld4l.org), the [LD4L - Labs public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=77447730), and the [LD4P public wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=74515029) for more information on these projects.
 
 ## News
-* Public `bibliotek-o_community@googlegroups.com` created as a communication channel between bibliotek-o contributors, community implementers of bibliotek-o, and other interested parties. 
 
 * **2017-06-30** Q2 release of Version 1.1.0 
   * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
-* Watch for an announcement of the Q3 release and timeline, both on `bibliotek-o_community@googlegroups.com` and this repository.
+* Watch for an announcement of the Q3 release and timeline.
 
 
 ## Repository contents
@@ -87,7 +86,7 @@ GitHub issues are the vehicles for proposing change, requesting information or c
 * Requests for modifications to bibliotek-o.owl, external ontologies (i.e., addition or removal of terms from the target files), datasets, datatypes, and artifacts such as documentation, are made through GitHub issues. These issues should be labelled `change request`.
 * Contributors are encouraged to submit a pull request (see below) with an issue, while non-contributing users will submit issues as proposals for modification that may be assigned to contributors.
 * Requests for clarification, modeling and implementation questions, discussion topics, etc. that are not direct proposals for change may also be submitted as GitHub issues. The issues should be labeled either `request for clarification` or `discussion`.  Such issues _may_ be reviewed and addressed outside the release cycle, but there is no commitment to do so.
-* Status of issues will be communicated on a periodic basis via the `bibliotek-o_community` mailing list, as well as through GitHub comments and actions.
+
 
 #### Issue content
 * Issues should be atomic. Multiple _interdependent_ modifications that are part of a single change should be submitted as a single issue, while multiple _unrelated_ changes should be submitted as separate issues. For example:
@@ -106,7 +105,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * A PR should include any modifications to the BIBFRAME and other target ontology files (i.e., adding or deleting terms from the fragments included in the repository) that are associated with the proposed change to bibliotek-o.
 * PRs should not include regeneration of documentation, since this will be regenerated once prior to the release.
 * The commit message should use a GitHub keyword to automatically close the related issue, such as `fixes #5`). See [GitHub documentation on closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
-* Status of PRs will be communicated on a periodic basis via the `bibliotek-o_community` mailing list, as well as through GitHub comments and actions.
+
 * 
 #### Modifications to bibliotek-o.owl
 
@@ -126,7 +125,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * Each new change cycle begins with the announcement of deadlines associated with the release, and ends with the release of a new version (assuming there are changes to release).
 
 #### Community announcement 
-* An announcement of the date of next release and associated deadlines is made to the community Google group (`bibliotek-o_community@googlegroups.com`) via email, and posted at the top of this README.
+An announcement of the date of next release and associated deadlines is posted at the top of this README.
 
 #### Issue review
 * Immediately following the issue submission deadline (see timeline below), the CRM team begins to review open issues.
@@ -202,7 +201,7 @@ After all pre-release tasks are completed, the CRM executes the new release:
   * Pre-release tasks completed
   * Release 
  
-At the start of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process. Notification will occur via email to `bibliotek-o_community@googlegroups.com` and at the top of this README.
+At the start of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process, at the top of this README.
 
 
 ## Branching policy
@@ -215,13 +214,6 @@ At the start of each new release cycle, the team will announce the release timel
     * If the new version represents a MAJOR or MINOR update, the old version will remain available at its `owl:versionIRI`, while the latest version will redirect to the `owl:ontologyIRI` http://bibliotek-o.org/ontology/.  
 * Changes to non-bibliotek-o target ontology files may be pushed to master without a release and reversioning, provided there are no concomitant changes to the bibliotek-o ontology.
 * Changes not affecting the ontology, such as README or documentation updates, may be pushed to master without a release and reversioning.
-
-## Community engagement
-
-Community engagement with the bibliotek-o ontology and framework is encouraged. As outlined above, community participation is invited at various stages of the quarterly change cycle, via GitHub issues, pull requests, review, and comment. Communication 
-
-The public `bibliotek-o_community@googlegroups.com` mailing list serves as a means of communication between bibliotek-o contributors, community implementers of bibliotek-o, and other interested parties. This list will be used to announce scheduled maintenance and new versions of bibliotek-o, and provide the community with a clear communication channel to discuss implementations and application profiles.
-
 
 
 ## Additional bibliotek-o documentation 
