@@ -102,7 +102,7 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * Each PR should address only one issue.
 * A PR should include any modifications to the BIBFRAME and other target ontology files (i.e., adding or deleting terms from the fragments included in the repository) that are associated with the proposed change to bibliotek-o.
 * PRs should not include regeneration of documentation, since this will be regenerated once prior to the release.
-* The issue number should be included in the PR commit message; e.g., "#10".
+* The commit message should use a GitHub keyword to automatically close the related issue, such as `fixes #5`). See [GitHub documentation on closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
 
 #### Modifications to bibliotek-o.owl
 
