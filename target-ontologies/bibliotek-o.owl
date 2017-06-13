@@ -8,6 +8,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"  
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:voaf="http://purl.org/vocommons/voaf#"
     > 
     
     <!-- ONTOLOGY DECLARATION -->
@@ -20,6 +21,9 @@
         <dcterms:modified>2017-05-05T00:00:00-04:00</dcterms:modified>
         <rdfs:label xml:lang="en">bibliotek-o: a BIBFRAME 2 Ontology Extension</rdfs:label>
         <rdfs:comment xml:lang="en">The bibliotek-o ontology extension defines additions and modifications to BIBFRAME 2 and is intended to be used as a supplement to the core BIBFRAME 2 ontology. In addition to the extension specification, bibliotek-o provides a set of recommended fragments from external ontologies and an application profile based on its recommended models and patterns. It is a joint product of the Mellon Foundation-funded Linked Data for Libraries - Labs and Linked Data for Production projects. See http://ld4l.org for more information on these projects.</rdfs:comment>        <vann:preferredNamespacePrefix>bib</vann:preferredNamespacePrefix>
+        <dcterms:title xml:lang="en">bibliotek-o: a BIBFRAME 2 Ontology Extension</dcterms:title>
+        <voaf:extends rdf:resource="http://id.loc.gov/ontologies/bibframe/"/>
+        <voaf:specializes rdf:resource="http://id.loc.gov/ontologies/bibframe/"/>
     </owl:Ontology>
     
  
