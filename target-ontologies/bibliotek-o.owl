@@ -2907,6 +2907,16 @@
         <dcterms:modified>2017-06-12T00:00:00-04:00</dcterms:modified>
     </owl:NamedIndividual>
 
+    <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/specifyingSystemRequirements">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">specifying system requirements</rdfs:label>
+        <skos:definition xml:lang="en">The motivation for when the user intends to specify system requirements for using the Target.</skos:definition>
+        <skos:broader rdf:resource="http://bibliotek-o.org/ontology/specifying"/>
+        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:NamedIndividual>
+
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/summarizing">
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">summarizing</rdfs:label>
