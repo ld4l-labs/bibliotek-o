@@ -1,0 +1,45 @@
+myspan {
+    display: inline-block; /* change the display type           */
+    margin: 10px 0;        /* apply the needed vertical margins */
+}
+
+div.tooltip-inner {
+    max-width: 350px;
+}
+
+#fontstyle{
+	color: #ef6548;
+}
+
+#footer {
+    height: 50px;
+    background-color: #f5f5f5;
+    padding-top: 20px;
+}
+
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+#over{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ld4limage{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 5;
+}
+
+#imagemodal{
+  min-width: 100%;
+}
