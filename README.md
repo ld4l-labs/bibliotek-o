@@ -82,5 +82,3 @@ This repository contains the formal bibliotek-o specification, ontology and data
   * At the point of release:
     * The develop branch is merged to master.
     * The master branch is tagged with the version number. The tag name corresponds to the ontology version defined by the `owl:versionInfo` value. E.g., tag `v1.0.1` for version "Version 1.0.1".
-   
-  
