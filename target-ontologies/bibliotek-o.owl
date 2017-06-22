@@ -686,11 +686,11 @@
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:Class>
     
-    <owl:Class rdf:about="http://bibliotek-o.org/ontology/ConservatorActivity">
-        <rdfs:label xml:lang="en">Conservator</rdfs:label>    
-        <skos:definition xml:lang="en">The activity of documenting, preserving, or treating printed or manuscript material, works of art, artifacts, or other media.</skos:definition>
+    <owl:Class rdf:about="http://bibliotek-o.org/ontology/ConsultantActivity">
+        <rdfs:label xml:lang="en">Consultant</rdfs:label>    
+        <skos:definition xml:lang="en">The activity of providing professional advice or services in a specialized field of knowledge or training.</skos:definition>
         <skos:editorialNote xml:lang="en">Future work: consider more formal alignment between the class and corresponding MARC relator.</skos:editorialNote>
-        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/con.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This class is derived from the MARC relator: http://id.loc.gov/vocabulary/relators/csl.</skos:scopeNote>
         <rdfs:subClassOf rdf:resource="http://bibliotek-o.org/ontology/Activity"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
