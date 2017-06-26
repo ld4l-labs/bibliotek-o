@@ -2891,7 +2891,10 @@
         <skos:definition xml:lang="en">The motivation for when the user intends to specify system requirements for using the Target.</skos:definition>
         <skos:broader rdf:resource="http://bibliotek-o.org/ontology/specifying"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-06-30-2017T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote xml:lang="en">Deprecated ()</skos:changeNote>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <skos:editorialNote>This motivation has been deprecated in favor of object property bf:systemRequirement, with range bf:SystemRequirement.</skos:editorialNote>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/summarizing">
