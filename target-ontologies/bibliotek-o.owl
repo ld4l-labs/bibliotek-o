@@ -2785,6 +2785,15 @@
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/describingSupplementaryContent">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">cataloging</rdfs:label>
+        <skos:definition xml:lang="en">The motivation that represents indicating the existence of supplementary content such as bibliographies, discographies, filmographies, and/or other bibliographic references in the described resource or in accompanying material.</skos:definition>
+        <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
+        <dcterms:issued>2017-06-30T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-06-30T00:00:00-04:00</dcterms:modified>
+    </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/linkingTableOfContents">
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
