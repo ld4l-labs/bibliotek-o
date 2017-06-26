@@ -1275,6 +1275,13 @@
     <rdfs:label>Edition enumeration</rdfs:label>
     <dcterms:modified>2016-04-21 (New)</dcterms:modified>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/provisionActivityStatement">
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <skos:definition>Statement relating to providers of a resource; usually transcribed.</skos:definition>
+    <rdfs:label>Provider statement</rdfs:label>
+    <dcterms:modified>2016-04-21 (New)</dcterms:modified>
+  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/seriesStatement">
     <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
