@@ -2840,6 +2840,24 @@
         <skos:broader rdf:resource="http://www.w3.org/ns/oa#describing"/>
     </owl:NamedIndividual>
     
+    <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/specifyingAdministrativeHistory">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">specifying administrative history</rdfs:label>
+        <skos:definition xml:lang="en">The motivation for when the user intends to specify the administrative history of a target.</skos:definition>
+        <skos:broader rdf:resource="http://bibliotek-o.org/ontology/specifying"/>
+        <dcterms:issued>2017-06-12T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-06-12T00:00:00-04:00</dcterms:modified>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/specifyingBiographicalData">
+        <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+        <rdfs:label xml:lang="en">specifying biographical data</rdfs:label>
+        <skos:definition xml:lang="en">The motivation for when the user intends to specify the presence of any biographical data in a target.</skos:definition>
+        <skos:broader rdf:resource="http://bibliotek-o.org/ontology/specifying"/>
+        <dcterms:issued>2017-06-12T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-06-12T00:00:00-04:00</dcterms:modified>
+    </owl:NamedIndividual>
+    
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/specifyingContents">
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">specifying contents</rdfs:label>
@@ -2891,7 +2909,9 @@
         <skos:definition xml:lang="en">The motivation for when the user intends to specify system requirements for using the Target.</skos:definition>
         <skos:broader rdf:resource="http://bibliotek-o.org/ontology/specifying"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
+        <dcterms:modified>2017-06-19-2017T00:00:00-04:00</dcterms:modified>
+        <skos:changeNote xml:lang="en">Deprecated ()</skos:changeNote>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/ontology/summarizing">
