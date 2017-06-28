@@ -1,4 +1,4 @@
-#  bibliotek-o Change and Release Process 
+#  bibliotek-o Change and Release Processes
  
 
 This document articulates a structured process governing ongoing ontology changes and releases so that contributors, users, and other community members can plan and prepare for new versions.
