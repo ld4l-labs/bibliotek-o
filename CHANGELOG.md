@@ -1,8 +1,10 @@
 # bibliotek-o Change Log
 
+This change log documents changes to the repository per release. Changes to the [bibliotek-o ontology file](target-ontologies/bibliotek-o.owl) are distinguished from other changes to the repository, such as updates to documentation and other [target ontology files](target-ontologies).
+
 ## Version 1.1.0 - 2017-06-30
 
-### The [bibliotek-o ontology](../target-ontologies/bibliotek-o.owl)
+### The bibliotek-o ontology
 
 #### Added 
 - Annotation Motivation [providingPurpose](http://bibliotek-o.org/ontology/providingPurpose)
@@ -21,13 +23,13 @@
 - rdfs:label value of bibliotek-o coveredIn property
 
 ### Other changes
-- Added documentation of [bibliotek-o design and reuse principles](principles/)
+- Added documentation of [bibliotek-o design and reuse principles](doc/principles/)
 - Added documentation of [bibliotek-o change and release processes](RELEASES.md)
 - Added [BIBFRAME provisionActivityStatement](http://id.loc.gov/bibframe/ontologies/provisionActivityStatement) to bibliotek-o application profile (via [BIBFRAME target ontology file](../target-ontologies/bibframe.2017-03-15.rdf)).
 
 ## Version 1.0.1 - 2017-05-05
 
-### The [bibliotek-o ontology](../target-ontologies/bibliotek-o.owl)
+### The bibliotek-o ontology
 
 #### Fixed
 - Some rdfs:label values 

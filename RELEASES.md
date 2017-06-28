@@ -45,11 +45,11 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
   * Include `dcterms:issued` and `dcterms:modified` assertions, with the same datetime value. Datetime values are expressed in ISO-8601 format; e.g., "2017-04-22T01:30:00-04:00".
 * Modification of an existing term:
   * Update the `dcterms:modified` value.
-  * Add a `skos:changeNote` describing the change, leaving a set of parentheses where the version number will be filled in at release time. For example: "Fix rdfs:label ()".  Note that each `skos:changeNote` records only a single change, and thus a term may have multiple `skos:changeNote`s. 
+  * Add a `skos:changeNote` describing the change, leaving a set of parentheses where the new version number will be filled in at release time; For example, "Fix rdfs:label ()".   
 * Term deletion
   * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a MAJOR, MINOR, or PATCH release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
-* All annotation properties should have an `xml:lang` value. The value for English is `"en"`. 
+* All annotation properties should have an `xml:lang` value. The value used for English is `"en"` (i.e., the variant of English is not specified). 
 
 ## Change cycle
 
@@ -99,11 +99,11 @@ After all PRs have been merged to the develop branch (see Change cycle above), t
 
 * Generate new documentation (currently we use the online LODE tool for auto-generating documentation of bibliotek-o).
 * Determine the new version number according to the criteria defined above.
-* Combine multiple `skos:changeNote`s for a single term that have been added for this release into a single note (see usage of `skos:changeNote` above).
-* Add version number to `skos:changeNote`s.
+* Combine multiple `skos:changeNote` values for a single term that have been added for this release into a single note (see usage of `skos:changeNote` above).
+* Add version number to `skos:changeNote` values.
 * Update new `dcterms:issued` and `dcterms:modified` values of any new or modified terms to reflect the datetime of the release.
-* Update the change log.
-* Update this README, if necessary.
+* Update the [change log](CHANGELOG.md).
+* Update the [README](README.md), if necessary.
 * Update the bibliotek-o.org home page, if necessary.
 
 ### Release 
@@ -132,7 +132,7 @@ After all pre-release tasks are completed, the CRM executes the new release:
   * Pre-release tasks completed
   * Release 
  
-At the start of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process, at the top of this README.
+At the beginning of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process, at the top of the [README](README.md).
 
 
 ## Branching policy
