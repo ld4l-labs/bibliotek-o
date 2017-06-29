@@ -5,5 +5,5 @@
 #
 # Run this script and then check in changes in the updated
 # `site` directory.
-cp doc/LODE/ontology.html site/ontology.html
+cp doc/lode/ontology.html site/ontology.html
 cp target-ontologies/bibliotek-o.owl site/ontology.owl

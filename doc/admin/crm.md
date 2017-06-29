@@ -41,7 +41,12 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 
 ### Standards for modifications to bibliotek-o.owl
 
+A complete set of standards for editing the bibliotek-o OWL file is forthcoming. In the meantime, the following short list provides some guidelines.
+
 * New term:
+  * All annotation properties should have an `xml:lang` value. The value used for English is `"en"` (i.e., the variant of English is not specified). 
+  * All local names are camel-cased. Local names of classes beging with an upppercase letter. Local names of properties and named individuals begin with a lowercase letter. 
+  * With few exceptions, the rdfs:label value is derived from the full local name by inserting whitespace at word junctures and lowercasing second and subsequent words.
   * Include `dcterms:issued` and `dcterms:modified` assertions, with the same datetime value. Datetime values are expressed in ISO-8601 format; e.g., "2017-04-22T01:30:00-04:00".
 * Modification of an existing term:
   * Update the `dcterms:modified` value.
@@ -49,14 +54,14 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 * Term deletion
   * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a MAJOR, MINOR, or PATCH release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
-* All annotation properties should have an `xml:lang` value. The value used for English is `"en"` (i.e., the variant of English is not specified). 
+
 
 ## Change cycle
 
 The change cycle operates on a quarterly basis. Each new change cycle begins with the announcement of deadlines associated with the release, and ends with the release of a new version (assuming there are changes to release). Steps in the change cycle are outlined below.
 
 ### Initial community announcement 
-An announcement of the date of next release and associated deadlines is posted at the top of this README.
+An announcement of the date of next release and associated deadlines is posted at the top of the [README](/README.md).
 
 ### Issue review
 * Immediately following the issue submission deadline (see timeline below), the CRM team begins to review open issues.
@@ -83,39 +88,28 @@ An announcement of the date of next release and associated deadlines is posted a
 * PRs accepted with modifications are returned to the submitter for modification by the final PR review date.
 
 ### Call for community review and comment  
-* Notification to the community for review and comment on accepted PRs is sent to the community Google group and posted at the top of this README.
+* Notification to the community for review and comment on accepted PRs is sent to the community Google group and posted at the top of the [README](/README.md).
 
 ### Final PR review
 * All PRs must be finalized by the PR close date (see timeline below). If requested modifications to a PR have not been made, the PR will be deferred.
 * All accepted PRs are merged into the develop branch.
  
-## Release process
+## Release 
 
-A release occurs if and only if there are PRs that have been merged into the develop branch since the last release.
+A release occurs if and only if there are PRs that have been merged into the develop branch since the last release. 
 
-### Pre-release tasks
+At the time of release:
 
-After all PRs have been merged to the develop branch (see Change cycle above), the CRM team performs pre-release tasks, including but not limited to:
+* the develop branch is merged to master
+* the master branch is tagged
+* the web server is updated with the new files
+* if `owl:versionIRI` has been updated (for a `MAJOR` or `MINOR` version):
+  * the prior redirect from the `owl:versionIRI` to the `owl:ontologyIRI` is removed. Prior versions continue to be available at their `owl:versionIRI`.
+  * a redirect from the new `owl:versionIRI` to the `owl:ontologyIRI` is added.
 
-* Generate new documentation (currently we use the online LODE tool for auto-generating documentation of bibliotek-o).
-* Determine the new version number according to the criteria defined above.
-* Combine multiple `skos:changeNote` values for a single term that have been added for this release into a single note (see usage of `skos:changeNote` above).
-* Add version number to `skos:changeNote` values.
-* Update new `dcterms:issued` and `dcterms:modified` values of any new or modified terms to reflect the datetime of the release.
-* Update the [change log](CHANGELOG.md).
-* Update the [README](README.md), if necessary.
-* Update the bibliotek-o.org home page, if necessary.
+The CRM team should refer to the [checklist of pre-release and release tasks](crm-checklist.md) for guidance on completing the release.
 
-### Release 
 
-After all pre-release tasks are completed, the CRM executes the new release:
-
-* Merge develop to master and tag the master branch.
-* Update server: this is an automated process triggered by a merge to the master branch. 
-* If `owl:versionIRI` has been updated (for a MAJOR or MINOR version):
-  * Remove the redirect from the `owl:versionIRI` to http://bibliotek-o.org/ontology/. This version remains publicly available at its `owl:versionIRI`.
-  * Add a redirect from the new `owl:versionIRI` to http://bibliotek-o.org/ontology/. 
-* Community announcement of release (details TBD)
 
 ## Timeline
 

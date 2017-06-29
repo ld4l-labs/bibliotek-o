@@ -20,7 +20,7 @@ Simeon Warner - 2016-01-22
 
 import re
 
-html = open('../doc/LODE/bibliotek-o.html','r').read()
+html = open('../doc/lode/bibliotek-o.html','r').read()
 prefix = 'http://bibliotek-o.org/ontology/'
 
 ## Pass 1 - find anchors to change
@@ -47,4 +47,4 @@ for term, anchor in terms.items():
     html = re.sub(' id="'+anchor+'"',' id="'+term+'"',html)
     html = re.sub(' href="#'+anchor+'"',' href="#'+term+'"',html)
 
-open('../doc/LODE/ontology.html','w').write(html)
+open('../doc/lode/ontology.html','w').write(html)
