@@ -15,7 +15,7 @@ ontologies.
 
 1.  Use BIBFRAME for core resources and default to BIBFRAME usage for as many fragments as the LD4L Labs / LD4P Ontology Group considers feasible.
 
-2.  Recommend for reuse to Library of Congress, and if not approved, reuse as part of bibliotek-o, external ontology fragments where the external ontology fragment is equivalent (or improves) the replaced BIBFRAME 2.0 ontology fragment.
+2.  Recommend for reuse to Library of Congress, and if not approved, reuse as part of bibliotek-o, external ontology fragments where the external ontology fragment is equivalent (or improves) the replaced BIBFRAME ontology fragment.
 
 3.  Send recommendations to the Library of Congress for external ontology reuse and other forms of external ontology alignment within the BIBFRAME ontology.
 

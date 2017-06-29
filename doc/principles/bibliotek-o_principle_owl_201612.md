@@ -36,7 +36,7 @@ versus OWL for ontology development:
 Approach for Moving Forward
 ===========================
 
-For LD4L Labs / LD4P Ontology Group usage of BIBFRAME 2.0, and
+For LD4L Labs / LD4P Ontology Group usage of BIBFRAME, and
 bibliotek-o, we will continue to work with OWL. The OWL ‘flavor’ will be
 determined by the needs/cases/axioms outlined in the alignment and
 modeling process.

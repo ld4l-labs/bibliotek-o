@@ -4,7 +4,7 @@
 
 bibliotek-o is an ontology framework for modeling bibliographic metadata based on the [Library of Congress BIBFRAME ontology](http://id.loc.gov/ontologies/bibframe). It includes:
 
-* The [bibliotek-o ontology](http://bibliotek-o.org/ontology/), which defines extensions and modifications to BIBFRAME and is intended to be used as a supplement to the core BIBFRAME 2 ontology.
+* The [bibliotek-o ontology](http://bibliotek-o.org/ontology/), which defines extensions and modifications to BIBFRAME and is intended to be used as a supplement to the core BIBFRAME ontology.
 * A set of external ontology fragments (including BIBFRAME) intended for use with the bibliotek-o ontology.
 * A data model and application profile - i.e., a set of recommended models and patterns for expressing bibliographic metadata using BIBFRAME, the bibliotek-o ontology, and other external ontologies.
 
@@ -18,7 +18,7 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 
 ## Repository contents
 
-This repository contains the formal bibliotek-o specification, ontology and dataset recommendations for use with bibliotek-o (including the recommended BIBFRAME 2 terms), and a set of human-readable documentation. 
+This repository contains the formal bibliotek-o specification, ontology and dataset recommendations for use with bibliotek-o (including the recommended BIBFRAME terms), and a set of human-readable documentation. 
 
 * [`target-ontologies/bibliotek-o.owl`](target-ontologies/bibliotek-o.owl): OWL specification of bibliotek-o 
 * [`target-ontologies/`](target-ontologies/): RDFS and OWL specifications of recommended ontology fragments, including BIBFRAME, for use with bibliotek-o
