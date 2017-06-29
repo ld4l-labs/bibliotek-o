@@ -2158,7 +2158,7 @@
     </owl:Class>
     
     <owl:Class rdf:about="http://bibliotek-o.org/ontology/SourceCode">
-        <rdfs:label xml:lang="en">Software</rdfs:label>    
+        <rdfs:label xml:lang="en">Source code</rdfs:label>    
         <skos:definition xml:lang="en">A text listing of commands to be compiled or assembled into an executable computer program.</skos:definition>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
@@ -2564,7 +2564,7 @@
         <rdfs:label xml:lang="en">at location</rdfs:label>
         <skos:definition xml:lang="en">The resource being described is at the specified location.</skos:definition>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Location"/> 
-        <owl:inverseOf rdf:resource="http://bibliotek-o.org/ontology/locationOf"/>
+        <owl:inverseOf rdf:resource="http://bibliotek-o.org/ontology/isLocationOf"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:ObjectProperty>
@@ -2622,26 +2622,6 @@
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-06-30T00:00:00-04:00</dcterms:modified>
         <skos:changeNote xml:lang="en">Removed domain specification (v1.1.0)</skos:changeNote>
-    </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="http://bibliotek-o.org/ontology/heldBy">
-        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <skos:definition xml:lang="en">Specifies the agent holding the item or from which it is available.</skos:definition>
-        <owl:inverseOf rdf:resource="http://bibliotek-o.org/ontology/holds"/>
-        <rdfs:label xml:lang="en">held by</rdfs:label>
-        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2016-04-21 (New)</dcterms:modified>
-    </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="http://bibliotek-o.org/ontology/holds">
-        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Item"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <skos:definition xml:lang="en">Specifies an item held by the agent or from which it is available.</skos:definition>
-        <owl:inverseOf rdf:resource="http://bibliotek-o.org/ontology/heldBy"/>
-        <rdfs:label xml:lang="en">holds</rdfs:label>
-        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
-        <dcterms:modified>2016-04-21 (New)</dcterms:modified>
     </owl:ObjectProperty>
     
     <owl:ObjectProperty rdf:about="http://bibliotek-o.org/ontology/hasCoverArt">
