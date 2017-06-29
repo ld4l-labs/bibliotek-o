@@ -16,6 +16,7 @@ After all PRs have been merged to the develop branch (see the documented [change
 * Update the [README](/README.md). At a minimum, the News section should be updated to include announcement of the new version.
 * Generate new documentation of the ontology modules using the LD4LOntologyDocBuilder (forked to the GitHub ld4l-labs organization).
 * Update the bibliotek-o.org home page, if necessary.
+* Copy bibliotek-o.owl to /site/ontology.owl and the generated ontology.html file from doc/lode to /site.
 ## Release tasks
 
 After all pre-release tasks are completed, the CRM executes the new release:
