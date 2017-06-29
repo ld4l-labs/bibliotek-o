@@ -13,7 +13,6 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 ## News
 
 * **2017-06-30** Q2 release of Version 1.1.0 
-  * Due to a compressed change cycle this quarter, new issues and pull requests will not be considered. 
 * Watch for an announcement of the Q3 release and timeline.
 
 
@@ -30,7 +29,7 @@ This repository contains the formal bibliotek-o specification, ontology and data
 * [`doc/overview/`](doc/overview/): Overview diagrams of the bibliotek-o application profile, in both vue and png formats
 * [`doc/principles/`](doc/principles/): The foundational principles applied to the development of bibliotek-o
 * [`doc/admin/`](doc/admin/): Documentation of administrative processes and procedures, such as change and release processes
-* [`CHANGELOG.md`](CHANGELOG.md): A change log with sections for each release
+* [`CHANGELOG.md`](CHANGELOG.md): Release change log
   
 ## Versioning
 

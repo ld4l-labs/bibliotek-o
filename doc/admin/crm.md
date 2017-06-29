@@ -1,4 +1,4 @@
-#  bibliotek-o Change and Release Processes
+#  bibliotek-o Change and Release Management
  
 
 This document articulates a structured process governing ongoing ontology changes and releases so that contributors, users, and other community members can plan and prepare for new versions.
@@ -126,7 +126,7 @@ The CRM team should refer to the [checklist of pre-release and release tasks](cr
   * Pre-release tasks completed
   * Release 
  
-At the beginning of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process, at the top of the [README](README.md).
+At the beginning of each new release cycle, the team will announce the release timeline, including specific due dates for each stage of the process, at the top of the [README](/README.md).
 
 
 ## Branching policy
