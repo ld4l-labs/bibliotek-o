@@ -32,7 +32,7 @@ GitHub issues are the vehicles for proposing change, requesting information or c
 
 A pull request (PR) implements the changes proposed in an issue. Any interested community members are invited to submit PRs to the repository.
 
-* PRs are made against the develop (default) branch.
+* PRs are made against the develop branch.
 * Each PR should address only one issue.
 * A PR should include any modifications to the BIBFRAME and other target ontology files (i.e., adding or deleting terms from the fragments included in the repository) that are associated with the proposed change to bibliotek-o.
 * PRs should not include regeneration of documentation, since this will be regenerated once prior to the release.
@@ -44,15 +44,17 @@ A pull request (PR) implements the changes proposed in an issue. Any interested 
 A complete set of standards for editing the bibliotek-o OWL file is forthcoming. In the meantime, the following short list provides some guidelines.
 
 * New term:
-  * All annotation properties should have an `xml:lang` value. The value used for English is `"en"` (i.e., the variant of English is not specified). 
+  * All annotation properties should have an `xml:lang` value. The value used for English is "en" (i.e., the variant of English is not specified). 
   * All local names are camel-cased. Local names of classes beging with an upppercase letter. Local names of properties and named individuals begin with a lowercase letter. 
-  * With few exceptions, the rdfs:label value is derived from the full local name by inserting whitespace at word junctures and lowercasing second and subsequent words.
-  * Include `dcterms:issued` and `dcterms:modified` assertions, with the same datetime value. Datetime values are expressed in ISO-8601 format; e.g., "2017-04-22T01:30:00-04:00".
+  * Camel-casing is applied to acronyms in local names, though not in the corresponding `rdfs:label` values. E.g., term `TaggedPdf` has `rdfs:label` "Tagged PDF".
+  * With few exceptions, the `rdfs:label` value is derived from the full local name by inserting whitespace at word junctures and lowercasing second and subsequent words.
+  * Annotation properties other than `rdfs:label` should end in a period. 
+  * Term definitions include `dcterms:issued` and `dcterms:modified` assertions, with the same datetime value. Datetime values are expressed in ISO-8601 format; e.g., "2017-04-22T01:30:00-04:00".
 * Modification of an existing term:
   * Update the `dcterms:modified` value.
   * Add a `skos:changeNote` describing the change, leaving a set of parentheses where the new version number will be filled in at release time; For example, "Fix rdfs:label ()".   
 * Term deletion
-  * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a MAJOR, MINOR, or PATCH release, whether the term can be deleted rather than deprecated.
+  * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a `MAJOR`, `MINOR`, or `PATCH` release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
 
 
