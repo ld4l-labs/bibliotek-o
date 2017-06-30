@@ -16,14 +16,16 @@ After all PRs have been merged to the develop branch (see the documented [change
 * Update the [README](/README.md). At a minimum, the News section should be updated to include announcement of the new version.
 * Generate new documentation of the ontology modules using the LD4LOntologyDocBuilder (forked to the GitHub ld4l-labs organization).
 * Update the bibliotek-o.org home page, if necessary.
-* Copy bibliotek-o.owl to /site/ontology.owl and the generated ontology.html file from doc/lode to /site.
+* Copy `bibliotek-o.owl` to `/site/ontology.owl` and the generated `ontology.html` file from `/doc/lode/` to `/site/`.
+* Create a new directory under site based on its `owl:versionIRI`. For example, if the previous `owl:versionIRI` was `http://bibliotek-o.org/1.1/ontology/`, create a directory `1.1` under `/site/`.
+* Copy the previous versions of `/site/ontology.owl` and `/site/ontology.html` to the new directory.
 ## Release tasks
 
 After all pre-release tasks are completed, the CRM executes the new release:
 
-* Merge develop to master and tag the master branch with the version number (vn.n.n).
+* Merge develop to master and tag the master branch with the version number (`vn.n.n`).
 * Update the web server: this is an automated process triggered by a merge to the master branch. 
-* If `owl:versionIRI` has been updated (for a MAJOR or MINOR version):
+* If `owl:versionIRI` has been updated (for a `MAJOR` or `MINOR` version):
   * Remove the redirect from the `owl:versionIRI` to the `owl:ontologyIRI`. This version remains publicly available at its `owl:versionIRI`.
   * Add a redirect from the new `owl:versionIRI` to the `owl:ontologyIRI`. 
 * Announce the new release to the community (notification channels TBD).
