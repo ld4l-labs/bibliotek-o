@@ -2745,7 +2745,7 @@
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
         <owl:inverseOf rdf:resource="http://id.loc.gov/ontologies/bibframe/title"/>
         <skos:definition xml:lang="en">Resource of which this title is the title.</skos:definition>
-        <rdfs:comment xml:lang="en">Expected value Work, Instance or Item</rdfs:comment>
+        <skos:scopeNote xml:lang="en">Expected value Work, Instance or Item</skos:scopeNote>
         <rdfs:label xml:lang="en">is title of</rdfs:label>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
