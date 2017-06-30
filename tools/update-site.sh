@@ -4,6 +4,7 @@
 # https://bibliotek-o.org/
 #
 # Run this script and then check in changes in the updated
-# `site` directory.
-cp doc/lode/ontology.html site/ontology.html
-cp target-ontologies/bibliotek-o.owl site/ontology.owl
+# `site` directory. The paths assume the script is run from
+# the tools directory where it resides.
+cp ../doc/lode/ontology.html ../site/ontology.html
+cp ../target-ontologies/bibliotek-o.owl ../site/ontology.owl
