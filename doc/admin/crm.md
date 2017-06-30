@@ -50,9 +50,11 @@ A complete set of standards for editing the bibliotek-o OWL file is forthcoming.
   * With few exceptions, the `rdfs:label` value is derived from the full local name by inserting whitespace at word junctures and lowercasing second and subsequent words.
   * Annotation properties other than `rdfs:label` should end in a period. 
   * Term definitions include `dcterms:issued` and `dcterms:modified` assertions, with the same datetime value. Datetime values are expressed in ISO-8601 format; e.g., "2017-04-22T01:30:00-04:00".
+  * Term URIs should use the current version. Once the version number of the release has been established, the CRM team will modify the URIs accordingly.
 * Modification of an existing term:
   * Update the `dcterms:modified` value.
   * Add a `skos:changeNote` describing the change, leaving a set of parentheses where the new version number will be filled in at release time; For example, "Fix rdfs:label ()".   
+  * Terms should retain their current URIs. Once the version number of the release has been established, the CRM team will modify the URIs accordingly.
 * Term deletion
   * Terms should be marked `owl:deprecated` rather than deleted. The CRM team will determine, based on the semantics of the change and whether the next release is a `MAJOR`, `MINOR`, or `PATCH` release, whether the term can be deleted rather than deprecated.
   * Update the `dcterms:modified` value and add a `skos:changeNote` as for modified terms.
@@ -105,9 +107,7 @@ At the time of release:
 * the develop branch is merged to master
 * the master branch is tagged
 * the web server is updated with the new files
-* if `owl:versionIRI` has been updated (for a `MAJOR` or `MINOR` version):
-  * the prior redirect from the `owl:versionIRI` to the `owl:ontologyIRI` is removed. Prior versions continue to be available at their `owl:versionIRI`.
-  * a redirect from the new `owl:versionIRI` to the `owl:ontologyIRI` is added.
+* if `owl:versionIRI` has been updated (for a `MAJOR` or `MINOR` version), the redirect from the `owl:ontologyIRI` to the `owl:versionIRI` is updated to the new `owl:versionIRI`. Prior versions continue to be available at their `owl:versionIRI`.
 
 The CRM team should refer to the [checklist of pre-release and release tasks](crm-checklist.md) for guidance on completing the release.
 

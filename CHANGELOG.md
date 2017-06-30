@@ -2,7 +2,7 @@
 
 This change log documents changes to the repository per release. Changes to the [bibliotek-o ontology file](target-ontologies/bibliotek-o.owl) are distinguished from other changes to the repository, such as updates to documentation and other [target ontology files](target-ontologies).
 
-## Version 1.1.0 - 2017-06-30
+## Version 1.1.0 - 2017-07-05
 
 ### The bibliotek-o ontology
 
