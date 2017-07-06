@@ -2877,7 +2877,7 @@
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/1.1/ontology/specifyingSystemRequirements">
         <rdf:type rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
         <rdfs:label xml:lang="en">specifying system requirements</rdfs:label>
-        <skos:definition xml:lang="en">The motivation for when the user intends to specify system requirements for using the Target.</skos:definition>
+        <skos:definition xml:lang="en">The motivation for when the user intends to specify system requirements for using the Target (deprecated).</skos:definition>
         <skos:broader rdf:resource="http://bibliotek-o.org/1.1/ontology/specifying"/>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-07-06T00:00:00-04:00</dcterms:modified>

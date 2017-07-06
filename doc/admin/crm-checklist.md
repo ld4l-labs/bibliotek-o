@@ -10,12 +10,13 @@ After all PRs have been merged to the develop branch (see the documented [change
     * Determine the new version number according to the criteria defined in the [README](/README.md).
     * Update the `owl:versionInfo`.  This value shows all three version numbers: e.g., "Version 1.1.0".
     * For a `MAJOR` or `MINOR` release, when the `owl:versionIRI` changes:
-      * Create a new directory under `/site` based on its `owl:versionIRI`. For example, if the previous `owl:versionIRI` was `http://bibliotek-o.org/1.1/ontology/`, create a directory `1.1` under `/site`.
-      * Copy the previous versions of `/site/ontology.owl` and `/site/ontology.html` to the new directory.
+      * Create a new directory under `/site/` based on the new `owl:versionIRI`. For example, if the new `owl:versionIRI` is `http://bibliotek-o.org/1.1/ontology/`, create a directory `1.1` under `/site/`.
       * Update the `owl:versionIRI` and all term URIs to reflect the new version. 
+      * Add an `owl:priorVersion` assertion to the ontology; e.g., `<owl:priorVersion rdf:resource="http://bibliotek-o.org/1.1/ontology/"/>`.
+      * If appropriate, an `owl:backwardCompatibleWith` or `owl:incompatibleWith` assertion can also be added.
 
 * Final updates to the ontology file 
-  * Proofread and review the OWL file for typos and other errors. A convenient way to do this is by generating and reviewing the documentation.
+  * Proofread and review the OWL file for typos and other errors. A convenient way to do this is by generating and reviewing the documentation. Another useful practice is to load the ontology into Protégé for review, and run reasoning to check for any logic errors.
   * Combine multiple `skos:changeNote` values for a single term that have been added in this release into a single change note (see usage of `skos:changeNote` documented in the [README](/README.md)).
   * Add the new version number to `skos:changeNote` values.
   * Update new `dcterms:issued` and `dcterms:modified` values of any new or modified terms to reflect the datetime of the release. For new terms, the `dcterms:modified` and `dcterms:issued` values are identical. All datetimes are normalized to the actual date of release, not the date the change was committed to the repository.
@@ -27,7 +28,7 @@ After all PRs have been merged to the develop branch (see the documented [change
   * Generate new documentation of the ontology modules using the LD4LOntologyDocBuilder (forked to the GitHub ld4l-labs organization). 
 
 * Site 
-  * Copy `bibliotek-o.owl` to `/site/ontology.owl` and the generated ``doc/lode/ontology.html` file to `/site/ontology.html`. This can be done manually or by running the script `/tools/update-site.sh`.
+  * Copy `bibliotek-o.owl` as `ontology.owl` to the appropriate subdirectory of `/site/`, and the generated `/doc/lode/ontology.html` file to the same directory. 
   * Update the bibliotek-o.org home page, if necessary.
   
 

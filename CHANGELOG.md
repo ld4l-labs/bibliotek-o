@@ -14,8 +14,11 @@ This change log documents changes to the repository per release. Changes to the 
 #### Changed
 - Removed domain specification of [hasAgent](http://bibliotek-o.org/ontology/hasAgent) property.
 - Removed range specification of [isAgentOf](http://bibliotek-o.org/ontology/isAgentOf) property.
-- Deprecated bibliotek-o [specifyingSystemRequirements](http://bibliotek-o.org/ontology/specifyingSystemRequirements) Annotation Motivation.
 - Modified definition of bibliotek-o [ConservatorActivity](http://bibliotek-o.org/ontology/ConservatorActivity) class.
+
+### Deprecated
+- bibliotek-o [specifyingSystemRequirements](http://bibliotek-o.org/ontology/specifyingSystemRequirements) Annotation Motivation.
+
 
 #### Fixed
 - Namespace of AccessibilityFeature and AccessibilityHazard in subclass assertions
