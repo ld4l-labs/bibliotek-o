@@ -10,13 +10,13 @@ After all PRs have been merged to the develop branch (see the documented [change
     * Determine the new version number according to the criteria defined in the [README](/README.md).
     * Update the `owl:versionInfo`.  This value shows all three version numbers: e.g., "Version 1.1.0".
     * For a `MAJOR` or `MINOR` release, when the `owl:versionIRI` changes:
-      * Create a new directory under `/site/` based on the new `owl:versionIRI`. For example, if the new `owl:versionIRI` is `http://bibliotek-o.org/1.1/ontology/`, create a directory `1.1` under `/site/`.
+      * Create a new directory under `/site/` based on the new `owl:versionIRI`. For example, if the new `owl:versionIRI` is `http://bibliotek-o.org/1.1/ontology/`, create a directory `/site/1.1/`.
       * Update the `owl:versionIRI` and all term URIs to reflect the new version. 
       * Add an `owl:priorVersion` assertion to the ontology; e.g., `<owl:priorVersion rdf:resource="http://bibliotek-o.org/1.1/ontology/"/>`.
       * If appropriate, an `owl:backwardCompatibleWith` or `owl:incompatibleWith` assertion can also be added.
 
 * Final updates to the ontology file 
-  * Proofread and review the OWL file for typos and other errors. A convenient way to do this is by generating and reviewing the documentation. Another useful practice is to load the ontology into Protégé for review, and run reasoning to check for any logic errors.
+  * Proofread and review the OWL file for typos and other errors. A convenient way to do this is by generating and reviewing the documentation. Another useful practice is to load the ontology into Protégé for review, and run reasoning to check for any logic errors. In future automated validity tests may be implemented.
   * Combine multiple `skos:changeNote` values for a single term that have been added in this release into a single change note (see usage of `skos:changeNote` documented in the [README](/README.md)).
   * Add the new version number to `skos:changeNote` values.
   * Update new `dcterms:issued` and `dcterms:modified` values of any new or modified terms to reflect the datetime of the release. For new terms, the `dcterms:modified` and `dcterms:issued` values are identical. All datetimes are normalized to the actual date of release, not the date the change was committed to the repository.
