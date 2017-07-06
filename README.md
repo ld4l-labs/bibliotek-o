@@ -12,8 +12,8 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 
 ## News
 
-* **2017-07-05** Q2 release of Version 1.1.0 
-* Watch for an announcement of the Q3 release and timeline.
+* **2017-07-06** Release of Version 1.1.0 
+* Watch for an announcement of the next release and timeline.
 
 
 ## Repository contents
@@ -50,7 +50,8 @@ The following protocols are used to version and record changes to the ontology.
 * To avoid an unnecessary proliferation of `MAJOR` versions, `owl:deprecated` is applied to terms slated for removal. A term deprecated in a `MINOR` version will be removed in the next `MAJOR` version. 
 * `owl:versionInfo` provides a label containing the version number, formatted as "Version n.n.n"; e.g., "Version 1.1.0". This version number is also used to tag the repository, in this case `v1.1.0`. 
 * `owl:priorVersion` provides the URI of the previous MAJOR.MINOR version of the ontology, if any.
- 
+* `owl:backwardCompatibleWith` or `owl:incompatibleWith` may also be used to reference previous MAJOR.MINOR versions of the ontology, where applicable.
+
 ### Issuance and modification datetimes
 * `dcterms:issued` is used on each ontology term, and on the ontology as a whole, to indicate datetime of first issuance.
 * `dcterms:modified` is used on each ontology term, and on the ontology as a whole, to indicate last modification datetime. 

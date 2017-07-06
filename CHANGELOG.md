@@ -2,9 +2,9 @@
 
 This change log documents changes to the repository per release. Changes to the [bibliotek-o ontology file](target-ontologies/bibliotek-o.owl) are distinguished from other changes to the repository, such as updates to documentation and other [target ontology files](target-ontologies).
 
-## Version 1.1.0 - 2017-07-05
+## Version 1.1.0 - 2017-07-06
 
-### The bibliotek-o ontology
+### bibliotek-o.owl
 
 #### Added 
 - Annotation Motivation [providingPurpose](http://bibliotek-o.org/ontology/providingPurpose)
@@ -16,7 +16,7 @@ This change log documents changes to the repository per release. Changes to the 
 - Removed range specification of [isAgentOf](http://bibliotek-o.org/ontology/isAgentOf) property.
 - Modified definition of bibliotek-o [ConservatorActivity](http://bibliotek-o.org/ontology/ConservatorActivity) class.
 
-### Deprecated
+#### Deprecated
 - bibliotek-o [specifyingSystemRequirements](http://bibliotek-o.org/ontology/specifyingSystemRequirements) Annotation Motivation.
 
 
@@ -32,7 +32,7 @@ This change log documents changes to the repository per release. Changes to the 
 
 ## Version 1.0.1 - 2017-05-05
 
-### The bibliotek-o ontology
+### bibliotek-o.owl
 
 #### Fixed
 - Some rdfs:label values 
