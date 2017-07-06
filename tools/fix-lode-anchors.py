@@ -7,10 +7,12 @@ the appropriate definitions. This script goes through the HTML looking
 for terms in the ontology and rewriting anchors to be the local part of
 the URI.
 
-Note that if there are cases where one ontology term (e.g. 
-http://bibliotek-o.org/ontology/note ) is described in multiple places
-within the ontology, the rewrite of anchors takes the first occurrence
+Note that if there are cases where one ontology term is described in multiple 
+places within the ontology, the rewrite of anchors takes the first occurrence
 in the HTML as the anchor to change.
+
+Before running the script, change the prefix value to the versionIRI of the
+ontology: e.g., http://bibliotek-o.org/1.2/ontology for version 1.2.x.
 
 After running this script, change the href on the "Ontology Source" link
 to http://biblioteko-org/ontology.owl.
@@ -20,8 +22,8 @@ Simeon Warner - 2016-01-22
 
 import re
 
-html = open('../doc/LODE/bibliotek-o.html','r').read()
-prefix = 'http://bibliotek-o.org/ontology/'
+html = open('../doc/lode/bibliotek-o.html','r').read()
+prefix = 'http://bibliotek-o.org/1.1/ontology/'
 
 ## Pass 1 - find anchors to change
 terms = {}
@@ -47,4 +49,4 @@ for term, anchor in terms.items():
     html = re.sub(' id="'+anchor+'"',' id="'+term+'"',html)
     html = re.sub(' href="#'+anchor+'"',' href="#'+term+'"',html)
 
-open('../doc/LODE/ontology.html','w').write(html)
+open('../doc/lode/ontology.html','w').write(html)
