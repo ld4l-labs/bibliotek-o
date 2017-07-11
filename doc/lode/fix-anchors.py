@@ -14,18 +14,21 @@ in the HTML as the anchor to change.
 Before running the script, change the prefix value to the versionIRI of the
 ontology: e.g., http://bibliotek-o.org/1.2/ontology for version 1.2.x.
 
+After running this script, change the href on the "Ontology Source" link
+to http://biblioteko-org/ontology.owl.
+
 Simeon Warner - 2016-01-22
 """
 
 import re
 
-html = open('./bibliotek-o.html','r').read()
+html = open('bibliotek-o.html','r').read()
 prefix = 'http://bibliotek-o.org/1.1/ontology/'
 
 ## Pass 1 - find anchors to change
 terms = {}
 seen_anchors = set()
-for m in re.findall(r'''<a href="http:\/\/www.essepuntato.it\/lode/http:\/\/www.essepuntato.it\/tmp\/.+#([0-9a-f]+)" title="([^"]+)"''',html):
+for m in re.findall(r'''<a href="#([0-9a-f]+)" title="([^"]+)"''',html):
     anchor = m[0]
     uri = m[1]
     # Only want URIs in this namespace
@@ -46,4 +49,4 @@ for term, anchor in terms.items():
     html = re.sub(' id="'+anchor+'"',' id="'+term+'"',html)
     html = re.sub(' href="#'+anchor+'"',' href="#'+term+'"',html)
 
-open('./ontology.html','w').write(html)
+open('ontology.html','w').write(html)
