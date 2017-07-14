@@ -13,7 +13,7 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 ## News
 
 * **2017-07-06** Release of Version 1.1.0 
-* bibliotek-o remains frozen at Version 1.1.0 until further notice. * 
+* bibliotek-o remains frozen at Version 1.1.0 until further notice.  
 
 
 ## Repository contents
