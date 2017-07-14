@@ -62,7 +62,7 @@ A complete set of standards for editing the bibliotek-o OWL file is forthcoming.
 
 ## Change cycle
 
-The change cycle operates on a quarterly basis. Each new change cycle begins with the announcement of deadlines associated with the release, and ends with the release of a new version (assuming there are changes to release). Steps in the change cycle are outlined below.
+Each new change cycle begins with the announcement of deadlines associated with the release, and ends with the release of a new version (assuming there are changes to release). Steps in the change cycle are outlined below.
 
 ### Initial community announcement 
 An announcement of the date of next release and associated deadlines is posted at the top of the [README](/README.md).
@@ -115,8 +115,9 @@ The CRM team should refer to the [checklist of pre-release and release tasks](cr
 
 ## Timeline
 
-* Releases occur at most quarterly.
-* The CRM team will develop and publish a general timeline for this quarterly process, specifying due dates relative to the final release date for each stage of the process (e.g., one month before release date, etc.). Dates to be scheduled are:
+* bibliotek-o remains frozen at Version 1.1.0 until further notice. 
+
+* When a new version is planned, the CRM team will develop and publish a general timeline for the release process, specifying due dates relative to the final release date for each stage of the process (e.g., one month before release date, etc.). Dates to be scheduled are:
   * Issue submission deadline
   * Issue review complete
   * PR submission deadline

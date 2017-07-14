@@ -25,11 +25,11 @@ After all PRs have been merged to the develop branch (see the documented [change
   * Generate new documentation. Currently we use the [online LODE tool](http://www.essepuntato.it/lode) for auto-generating documentation of bibliotek-o. Follow the [instructions for generating LODE documentation](/doc/lode/readme.md).
   * Update the [change log](/CHANGELOG.md) by reviewing the GitHub history.
   * Update the [README](/README.md). At a minimum, the News section should be updated to include announcement of the new version.
-  * Generate new documentation of the ontology modules using the LD4LOntologyDocBuilder (forked to the GitHub ld4l-labs organization). 
+  * Generate new documentation of the ontology modules using the LD4LOntologyDocBuilder (forked to the GitHub ld4l-labs organization). Copy the generated `overview.html` to the `/site/` directory. 
 
 * Site 
-  * Copy `bibliotek-o.owl` as `ontology.owl` to the appropriate subdirectory of `/site/`, and the generated `/doc/lode/ontology.html` file to the same directory. 
-  * Update the bibliotek-o.org home page, if necessary.
+  * Copy `bibliotek-o.owl` as `ontology.owl` to the appropriate subdirectory of `/site/`. The generated LODE documentation has been copied to the same directory in the previous step of regenerating the documentation, according to the [instructions](/doc/lode/readme.md). 
+  * Update the bibliotek-o.org home page `/site/index.html`, if necessary.
   
 
 ## Release tasks
