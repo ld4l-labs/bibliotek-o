@@ -29,7 +29,7 @@ After all PRs have been merged to the develop branch (see the documented [change
 
 * Site 
   * Copy `bibliotek-o.owl` as `ontology.owl` to the appropriate subdirectory of `/site/`, and the generated `/doc/lode/ontology.html` file to the same directory. 
-  * Update the bibliotek-o.org home page, if necessary.
+  * Update the bibliotek-o.org home page `/site/index.html`, if necessary.
   
 
 ## Release tasks
