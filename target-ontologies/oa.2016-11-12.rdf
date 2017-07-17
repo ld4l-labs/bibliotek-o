@@ -110,6 +110,13 @@
     <rdfs:comment>The resource that the ResourceSelection, or its subclass SpecificResource, is refined from, or more specific than. Please note that the domain ( oa:ResourceSelection ) is not used directly in the Web Annotation model.</rdfs:comment>
   </rdf:Property>
   
+  <rdf:Property rdf:about="http://www.w3.org/ns/oa#hasPurpose">
+    <rdfs:range rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/oa#"/>
+    <rdfs:label>hasPurpose</rdfs:label>
+    <rdfs:comment>The purpose served by the resource in the Annotation.</rdfs:comment>
+  </rdf:Property>
+  
   <rdf:Property rdf:about="http://www.w3.org/ns/oa#motivatedBy">
     <rdfs:range rdf:resource="http://www.w3.org/ns/oa#Motivation"/>
     <rdfs:comment>The relationship between an Annotation and a Motivation that describes the reason for the Annotation's creation.</rdfs:comment>
