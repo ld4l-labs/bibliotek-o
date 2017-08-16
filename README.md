@@ -72,7 +72,7 @@ Please refer to the [Change and Release Management](doc/admin/crm.md) documentat
 
 ## Additional bibliotek-o documentation 
 
-* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](http://bibliotek-o.org/overview.html) 
+* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](http://bibliotek-o.org/overview/overview.html) 
 * An overview of the principles and best practices guiding the development of bibliotek-o (forthcoming)
 * Discussion and diagrams of the principal models and patterns adopted by bibliotek-o (forthcoming)
 * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
