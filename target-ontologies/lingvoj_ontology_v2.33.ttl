@@ -47,16 +47,19 @@
 ###  Language Class ###
 
 :Lingvo 
-	a owl:Class ;    
-	rdfs:label "Sprache"@de , "Language"@en ,"Lingvo"@eo , "Lenguaje"@es , "Kieli"@fi , "Langue"@fr , "Linguaggio"@it , "言語"@ja , "Taal"@nl , "Språk"@no , "Jezyk"@pl , "Idioma"@pt , "Язык"@ru , "Språk"@sv , "Dil"@tr , "语言"@zh ;    
-	owl:equivalentClass <http://schema.org/Language>, <http://d-nb.info/standards/elementset/gnd#Language>, <http://purl.org/linguistics/gold/Language> , <http://www.ontotext.com/proton/protontop#Language> ;
-	rdfs:comment "A language used in spoken or written human communication, or in which a resource is written or recorded. It is recommended to use instances defined on the basis of ISO 639 codes, such as those in examples"@en ;
-	rdfs:comment "Una lengua utilizada en la comunicación oral o escrita entre personas, o en la que se escribe o graba un recurso. Se recomienda el uso de las instancias definidas según los códigos ISO 639, como los que aparecen en los ejemplos"@es ;
-	rdfs:comment "Une langue utilisée dans la communication orale ou écrite entre humains, ou dans laquelle une ressource est écrite ou enregistrée. Il est recommandé d'utiliser des instances définies sur la base d'un code ISO 639, comme dans les exemples"@fr ;
-	rdfs:comment "Een taal gebruikt in geschreven of gesproken communicatie tussen mensen of in welke een bron is geschreven of opgenomen. Het is aan te raden instanties te gebruiken gedefinieerd op basis van de ISO 630 codes, zoals in deze voorbeelden"@nl ;
-	rdfs:comment "会話または記述による人間のコミュニケーションで使用される言語、または資源が記述または記録される言語。例にあるような、ISO 639コードに基づいて定義されたインスタンスを使用することが推奨される"@ja ;
-	rdfs:comment "Um idioma utilizado na comunicação oral ou escrita entre pessoas, ou na que se escreve ou grava um recurso. Recomenda-se a utilização das instâncias definidas segundo os códigos ISO 639, como os que aparecem nos excemplos"@pt .
-	
+    a owl:Class ;    
+    rdfs:label "Sprache"@de , "Language"@en ,"Lingvo"@eo , "Lenguaje"@es , "Kieli"@fi , "Langue"@fr , "Linguaggio"@it , "言語"@ja , "Taal"@nl , "Språk"@no , "Jezyk"@pl , "Idioma"@pt , "Язык"@ru , "Språk"@sv , "Dil"@tr , "语言"@zh ;    
+    rdfs:subClassOf <http://purl.org/dc/terms/LinguisticSystem> , <http://www.loc.gov/mads/rdf/v1#Language> ;
+    owl:equivalentClass <http://schema.org/Language>, <http://d-nb.info/standards/elementset/gnd#Language>, <http://purl.org/linguistics/gold/Language> , <http://www.ontotext.com/proton/protontop#Language> ;
+    lvont:somewhatSameAs <http://lexvo.org/ontology#Language> ;
+    vann:example  <http://lexvo.org/id/iso639-3/fra>, <http://id.loc.gov/vocabulary/iso639-1/ja> ;      
+    rdfs:comment "A language used in spoken or written human communication, or in which a resource is written or recorded. It is recommended to use instances defined on the basis of ISO 639 codes, such as those in examples"@en ;
+    rdfs:comment "Una lengua utilizada en la comunicación oral o escrita entre personas, o en la que se escribe o graba un recurso. Se recomienda el uso de las instancias definidas según los códigos ISO 639, como los que aparecen en los ejemplos"@es ;
+    rdfs:comment "Une langue utilisée dans la communication orale ou écrite entre humains, ou dans laquelle une ressource est écrite ou enregistrée. Il est recommandé d'utiliser des instances définies sur la base d'un code ISO 639, comme dans les exemples"@fr ;
+    rdfs:comment "Een taal gebruikt in geschreven of gesproken communicatie tussen mensen of in welke een bron is geschreven of opgenomen. Het is aan te raden instanties te gebruiken gedefinieerd op basis van de ISO 630 codes, zoals in deze voorbeelden"@nl ;
+    rdfs:comment "会話または記述による人間のコミュニケーションで使用される言語、または資源が記述または記録される言語。例にあるような、ISO 639コードに基づいて定義されたインスタンスを使用することが推奨される"@ja ;
+    rdfs:comment "Um idioma utilizado na comunicação oral ou escrita entre pessoas, ou na que se escreve ou grava um recurso. Recomenda-se a utilização das instâncias definidas segundo os códigos ISO 639, como os que aparecem nos excemplos"@pt .
+    
 
                            
 			 
