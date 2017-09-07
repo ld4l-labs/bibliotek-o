@@ -1,0 +1,43 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix bf:   <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bib:  <http://bibliotek-o.org/1.1/ontology/> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+# add rest of the namespaces in the bibliotek-o framework.
+ex:WorkFormShape
+	a sh:NodeShape ;
+	sh:property [
+		sh:path bib:hasPreferredTitle ;
+		sh:targetClass bf:Work ;
+		sh:name "Title" ;
+		sh:description "Preferred title" ;
+		sh:order 0 ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:class bf:Title ;
+		sh:group ex:TitleGroup ;
+	] ;
+	sh:property [
+		sh:path bf:title ;
+		sh:targetClass bf:Work ;
+		sh:name "Title" ;
+		sh:description "Other titles, not including the preferred title" ;
+		sh:order 1 ;
+		sh:minCount 0 ;
+		sh:class bf:Title ;
+		sh:group ex:TitleGroup ;
+	] ;
+	sh:property [
+		sh:path bib:hasActivity ;
+		sh:name "Author or other role" ;
+		sh:targetClass bf:Work ;
+		sh:description "An activity or contribution by a single agent. For each role, create a new activity with an appropriate role." ;
+		sh:order 0 ;
+		sh:class bib:Activity
+		sh:group ex:ActivityGroup ;
+	] ;
+	sh:property
+	.
