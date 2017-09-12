@@ -1,0 +1,282 @@
+# baseURI: http://example.org/bibliotek-o_shapes
+# imports: file:///TopBraid/target-ontologies/dcterms.2012-06-14.rdf
+# imports: file:///TopBraid/target-ontologies/foaf-0.1.rdf
+# imports: file:///TopBraid/target-ontologies/oa.2016-11-12.rdf
+# imports: file:///TopBraid/target-ontologies/schema.rdf
+# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/TopBraid/target-ontologies/dcelements.2012-06-04.ttl
+# imports: http://bibliotek-o.org/1.1/ontology/
+# imports: http://datashapes.org/dash
+# imports: http://id.loc.gov/ontologies/bibframe/
+# imports: http://rdaregistry.info/Elements/u/
+# imports: http://vivoweb.org/ontology/core
+# imports: http://www.cidoc-crm.org/cidoc-crm/
+# imports: http://www.lingvoj.org/ontology
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/ns/prov
+# prefix: bibliotek-o_shapes
+
+@prefix bibliotek-o_shapes: <http://example.org/bibliotek-o_shapes#> .
+@prefix core: <http://vivoweb.org/ontology/core#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix ontology: <http://bibliotek-o.org/1.1/ontology/> .
+@prefix ontology1: <http://www.lingvoj.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bibliotek-o_shapes>
+  rdf:type owl:Ontology ;
+  owl:imports <file:///TopBraid/target-ontologies/dcterms.2012-06-14.rdf> ;
+  owl:imports <file:///TopBraid/target-ontologies/foaf-0.1.rdf> ;
+  owl:imports <file:///TopBraid/target-ontologies/oa.2016-11-12.rdf> ;
+  owl:imports <file:///TopBraid/target-ontologies/schema.rdf> ;
+  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/TopBraid/target-ontologies/dcelements.2012-06-04.ttl> ;
+  owl:imports ontology: ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://id.loc.gov/ontologies/bibframe/> ;
+  owl:imports <http://rdaregistry.info/Elements/u/> ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:imports <http://www.cidoc-crm.org/cidoc-crm/> ;
+  owl:imports <http://www.lingvoj.org/ontology> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/ns/prov> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
+  rdf:type sh:PropertyGroup ;
+  rdfs:label "Subject and coverage property group" ;
+.
+bibliotek-o_shapes:TitlePropertyGroup
+  rdf:type sh:PropertyGroup ;
+  rdfs:label "Title property group" ;
+  sh:description "To group title information for the resource." ;
+  sh:order "0"^^xsd:decimal ;
+.
+bibliotek-o_shapes:WorkForm
+  rdf:type rdfs:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "Work form" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path ontology:covers ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
+      sh:description "Specifies a time period or location covered in the content of this resource." ;
+      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
+      sh:maxCount 1 ;
+      sh:name "covers" ;
+      sh:nodeKind sh:IRI ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:covers ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
+      sh:description "Specifies a time period or location covered in the content of this resource." ;
+      sh:maxCount 1 ;
+      sh:name "covers" ;
+      sh:nodeKind sh:IRI ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:covers ;
+      sh:class <http://www.w3.org/ns/prov#Location> ;
+      sh:description "Specifies a location covered in the content of this resource." ;
+      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
+      sh:maxCount 1 ;
+      sh:name "Location Covered" ;
+      sh:nodeKind sh:IRI ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:covers ;
+      sh:class <http://www.w3.org/ns/prov#Location> ;
+      sh:description "Specifies a location covered in the content of this resource." ;
+      sh:maxCount 1 ;
+      sh:name "Location Covered" ;
+      sh:nodeKind sh:IRI ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:hasCoverArt ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/StillImage> ;
+      sh:description "Specifies the cover art of the resource." ;
+      sh:name "has cover art" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path ontology:hasCoverArt ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/StillImage> ;
+      sh:description "Specifies the cover art of the resource." ;
+      sh:name "has cover art" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path ontology:hasPreferredTitle ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
+      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "Preferred title" ;
+      sh:nodeKind sh:IRI ;
+      sh:order 0 ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:hasPreferredTitle ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
+      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "Preferred title" ;
+      sh:nodeKind sh:IRI ;
+      sh:order 0 ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path ontology:isSubjectOf ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Specifies other works that this work is the subject of" ;
+      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
+      sh:name "is subject of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path ontology:isSubjectOf ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Specifies other works that this work is the subject of" ;
+      sh:name "is subject of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path ontology:isTargetOf ;
+      sh:class <http://www.w3.org/ns/oa#Annotation> ;
+      sh:description "Relates a resource to its Annotation." ;
+      sh:name "is target of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path ontology:isTargetOf ;
+      sh:class <http://www.w3.org/ns/oa#Annotation> ;
+      sh:description "Relates a resource to its Annotation." ;
+      sh:name "is target of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/accompaniedBy> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that accompanies the described resource." ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/accompaniedBy> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that accompanies the described resource." ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that adds to or is issued with the described resource." ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that adds to or is issued with the described resource." ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/contentAccessibility> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/ContentAccessibility> ;
+      sh:description "Information that assists those with a sensory impairment for greater understanding of content, e.g., captions." ;
+      sh:name "Content accessibility" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/contentAccessibility> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/ContentAccessibility> ;
+      sh:description "Information that assists those with a sensory impairment for greater understanding of content, e.g., captions." ;
+      sh:name "Content accessibility" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/dataSource> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Dataset> ;
+      sh:description "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/dataSource> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Dataset> ;
+      sh:description "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that references the described resource" ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that references the described resource" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/references> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that is referenced by the described resource." ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/references> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Resource that is referenced by the described resource." ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/title> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
+      sh:description "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." ;
+      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+      sh:name "Other title" ;
+      sh:nodeKind sh:IRI ;
+      sh:order 1 ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path <http://id.loc.gov/ontologies/bibframe/title> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
+      sh:description "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." ;
+      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+      sh:name "Other title" ;
+      sh:nodeKind sh:IRI ;
+      sh:order 1 ;
+      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60199> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Is continued in part by" ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "P60199" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60199> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:description "Is continued in part by" ;
+      sh:name "P60199" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
+bibliotek-o_shapes:WorkToWorkPropertyGroup
+  rdf:type sh:PropertyGroup ;
+  rdfs:label "Work to work property group" ;
+.
