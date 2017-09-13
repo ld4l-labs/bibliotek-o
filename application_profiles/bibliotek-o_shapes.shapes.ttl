@@ -102,7 +102,7 @@ bibliotek-o_shapes:WorkForm
       sh:minCount 1 ;
       sh:name "Preferred title" ;
       sh:nodeKind sh:IRI ;
-      sh:order 0 ;
+      sh:order "0"^^xsd:decimal ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
@@ -165,7 +165,7 @@ bibliotek-o_shapes:WorkForm
       sh:group bibliotek-o_shapes:TitlePropertyGroup ;
       sh:name "Other title" ;
       sh:nodeKind sh:IRI ;
-      sh:order 1 ;
+      sh:order "1"^^xsd:decimal ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
