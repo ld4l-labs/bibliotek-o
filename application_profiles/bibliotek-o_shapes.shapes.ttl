@@ -62,19 +62,9 @@ bibliotek-o_shapes:WorkForm
   sh:property [
       sh:path ontology:covers ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
-      sh:description "Specifies a time period or location covered in the content of this resource." ;
-      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
+      sh:description "Specifies a time period covered in the content of this resource." ;
       sh:maxCount 1 ;
-      sh:name "covers" ;
-      sh:nodeKind sh:IRI ;
-      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path ontology:covers ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
-      sh:description "Specifies a time period or location covered in the content of this resource." ;
-      sh:maxCount 1 ;
-      sh:name "covers" ;
+      sh:name "Time period covered" ;
       sh:nodeKind sh:IRI ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
@@ -83,7 +73,7 @@ bibliotek-o_shapes:WorkForm
       sh:class <http://www.w3.org/ns/prov#Location> ;
       sh:description "Specifies a location covered in the content of this resource." ;
       sh:maxCount 1 ;
-      sh:name "Location Covered" ;
+      sh:name "Location covered" ;
       sh:nodeKind sh:IRI ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
@@ -91,7 +81,7 @@ bibliotek-o_shapes:WorkForm
       sh:path ontology:hasCoverArt ;
       sh:class <http://id.loc.gov/ontologies/bibframe/StillImage> ;
       sh:description "Specifies the cover art of the resource." ;
-      sh:name "has cover art" ;
+      sh:name "Has cover art" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -109,24 +99,26 @@ bibliotek-o_shapes:WorkForm
       sh:path ontology:isSubjectOf ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Specifies other works that this work is the subject of" ;
-      sh:name "is subject of" ;
+      sh:name "Is subject of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path ontology:isTargetOf ;
       sh:class <http://www.w3.org/ns/oa#Annotation> ;
       sh:description "Relates a resource to its Annotation." ;
-      sh:name "is target of" ;
+      sh:name "Is target of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/accompaniedBy> ;
+      sh:name "Accompanied by" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that accompanies the described resource." ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
+      sh:name "Accompanies" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that adds to or is issued with the described resource." ;
       sh:nodeKind sh:IRI ;
@@ -140,6 +132,7 @@ bibliotek-o_shapes:WorkForm
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/dataSource> ;
+      sh:name "Data source" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Dataset> ;
       sh:description "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
@@ -148,12 +141,14 @@ bibliotek-o_shapes:WorkForm
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:name "Referenced by" ;
       sh:description "Resource that references the described resource" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/references> ;
+      sh:name "References" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that is referenced by the described resource." ;
       sh:nodeKind sh:IRI ;
@@ -171,8 +166,15 @@ bibliotek-o_shapes:WorkForm
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60199> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Is continued in part by" ;
-      sh:name "P60199" ;
+      sh:name "Is continued in part by" ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+        sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60203> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:name "Is abstracted as" ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
