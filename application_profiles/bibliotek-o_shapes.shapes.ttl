@@ -82,27 +82,10 @@ bibliotek-o_shapes:WorkForm
       sh:path ontology:covers ;
       sh:class <http://www.w3.org/ns/prov#Location> ;
       sh:description "Specifies a location covered in the content of this resource." ;
-      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
       sh:maxCount 1 ;
       sh:name "Location Covered" ;
       sh:nodeKind sh:IRI ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path ontology:covers ;
-      sh:class <http://www.w3.org/ns/prov#Location> ;
-      sh:description "Specifies a location covered in the content of this resource." ;
-      sh:maxCount 1 ;
-      sh:name "Location Covered" ;
-      sh:nodeKind sh:IRI ;
-      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path ontology:hasCoverArt ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/StillImage> ;
-      sh:description "Specifies the cover art of the resource." ;
-      sh:name "has cover art" ;
-      sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path ontology:hasCoverArt ;
@@ -123,36 +106,10 @@ bibliotek-o_shapes:WorkForm
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
-      sh:path ontology:hasPreferredTitle ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
-      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-      sh:name "Preferred title" ;
-      sh:nodeKind sh:IRI ;
-      sh:order 0 ;
-      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path ontology:isSubjectOf ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Specifies other works that this work is the subject of" ;
-      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
-      sh:name "is subject of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
       sh:path ontology:isSubjectOf ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Specifies other works that this work is the subject of" ;
       sh:name "is subject of" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path ontology:isTargetOf ;
-      sh:class <http://www.w3.org/ns/oa#Annotation> ;
-      sh:description "Relates a resource to its Annotation." ;
-      sh:name "is target of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -169,29 +126,9 @@ bibliotek-o_shapes:WorkForm
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/accompaniedBy> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Resource that accompanies the described resource." ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that adds to or is issued with the described resource." ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Resource that adds to or is issued with the described resource." ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/contentAccessibility> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/ContentAccessibility> ;
-      sh:description "Information that assists those with a sensory impairment for greater understanding of content, e.g., captions." ;
-      sh:name "Content accessibility" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -209,28 +146,9 @@ bibliotek-o_shapes:WorkForm
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/dataSource> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Dataset> ;
-      sh:description "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that references the described resource" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Resource that references the described resource" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/references> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Resource that is referenced by the described resource." ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
@@ -249,24 +167,6 @@ bibliotek-o_shapes:WorkForm
       sh:nodeKind sh:IRI ;
       sh:order 1 ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/title> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
-      sh:description "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." ;
-      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
-      sh:name "Other title" ;
-      sh:nodeKind sh:IRI ;
-      sh:order 1 ;
-      sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60199> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:description "Is continued in part by" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:name "P60199" ;
-      sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60199> ;
