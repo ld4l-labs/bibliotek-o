@@ -624,6 +624,7 @@ bibliotek-o_shapes:WorkForm
       sh:class lingvo:Lingvo ;
       sh:name "Subject" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
@@ -649,8 +650,12 @@ bibliotek-o_shapes:AudioForm
     ] ;
 .
   
-  
 bibliotek-o_shapes:WorkToWorkPropertyGroup
   rdf:type sh:PropertyGroup ;
   rdfs:label "Work to work property group" ;
+.
+
+bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
+  rdf:type sh:PropertyGroup ;
+  rdfs:label "Subject and coverage property group" ;
 .
