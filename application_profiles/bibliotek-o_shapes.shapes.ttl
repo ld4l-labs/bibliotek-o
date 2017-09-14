@@ -1,11 +1,11 @@
 # baseURI: http://example.org/bibliotek-o_shapes
-# imports: file:///TopBraid/target-ontologies/dcterms.2012-06-14.rdf
-# imports: file:///TopBraid/target-ontologies/foaf-0.1.rdf
-# imports: file:///TopBraid/target-ontologies/oa.2016-11-12.rdf
-# imports: file:///TopBraid/target-ontologies/schema.rdf
-# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/TopBraid/target-ontologies/dcelements.2012-06-04.ttl
+# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcelements.2012-06-04.ttl
+# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcmitype.2012-06-14.ttl
+# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcterms.2012-06-14.rdf
+# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/foaf-0.1.rdf
+# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/oa.2016-11-12.rdf
+# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/schema.rdf
 # imports: http://bibliotek-o.org/1.1/ontology/
-# imports: http://datashapes.org/dash
 # imports: http://id.loc.gov/ontologies/bibframe/
 # imports: http://rdaregistry.info/Elements/u/
 # imports: http://vivoweb.org/ontology/core
@@ -13,14 +13,15 @@
 # imports: http://www.lingvoj.org/ontology
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.w3.org/ns/prov
+# imports: http://www.w3.org/ns/shacl#
 # prefix: bibliotek-o_shapes
 
+@prefix bib: <http://bibliotek-o.org/1.1/ontology/> .
 @prefix bibliotek-o_shapes: <http://example.org/bibliotek-o_shapes#> .
 @prefix core: <http://vivoweb.org/ontology/core#> .
-@prefix dash: <http://datashapes.org/dash#> .
-@prefix ontology: <http://bibliotek-o.org/1.1/ontology/> .
-@prefix ontology1: <http://www.lingvoj.org/ontology#> .
+@prefix lingvo: <http://www.lingvoj.org/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p1: <http://example.org/file1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -28,13 +29,13 @@
 
 <http://example.org/bibliotek-o_shapes>
   rdf:type owl:Ontology ;
-  owl:imports <file:///TopBraid/target-ontologies/dcterms.2012-06-14.rdf> ;
-  owl:imports <file:///TopBraid/target-ontologies/foaf-0.1.rdf> ;
-  owl:imports <file:///TopBraid/target-ontologies/oa.2016-11-12.rdf> ;
-  owl:imports <file:///TopBraid/target-ontologies/schema.rdf> ;
-  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/TopBraid/target-ontologies/dcelements.2012-06-04.ttl> ;
-  owl:imports ontology: ;
-  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcterms.2012-06-14.rdf> ;
+  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/foaf-0.1.rdf> ;
+  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/oa.2016-11-12.rdf> ;
+  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/schema.rdf> ;
+  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcelements.2012-06-04.ttl> ;
+  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcmitype.2012-06-14.ttl> ;
+  owl:imports bib: ;
   owl:imports <http://id.loc.gov/ontologies/bibframe/> ;
   owl:imports <http://rdaregistry.info/Elements/u/> ;
   owl:imports <http://vivoweb.org/ontology/core> ;
@@ -42,7 +43,28 @@
   owl:imports <http://www.lingvoj.org/ontology> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <http://www.w3.org/ns/prov> ;
+  owl:imports sh: ;
   owl:versionInfo "Created with TopBraid Composer" ;
+.
+bibliotek-o_shapes:AudioForm
+  rdf:type rdfs:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "Audio form" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60242> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Audio> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is arrangement of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60274> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Audio> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is arranged as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
 .
 bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
   rdf:type sh:PropertyGroup ;
@@ -60,7 +82,7 @@ bibliotek-o_shapes:WorkForm
   rdfs:label "Work form" ;
   rdfs:subClassOf rdfs:Resource ;
   sh:property [
-      sh:path ontology:covers ;
+      sh:path bib:covers ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
       sh:description "Specifies a time period covered in the content of this resource." ;
       sh:maxCount 1 ;
@@ -69,7 +91,7 @@ bibliotek-o_shapes:WorkForm
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
-      sh:path ontology:covers ;
+      sh:path bib:covers ;
       sh:class <http://www.w3.org/ns/prov#Location> ;
       sh:description "Specifies a location covered in the content of this resource." ;
       sh:maxCount 1 ;
@@ -78,14 +100,14 @@ bibliotek-o_shapes:WorkForm
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
-      sh:path ontology:hasCoverArt ;
+      sh:path bib:hasCoverArt ;
       sh:class <http://id.loc.gov/ontologies/bibframe/StillImage> ;
       sh:description "Specifies the cover art of the resource." ;
       sh:name "Has cover art" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path ontology:hasPreferredTitle ;
+      sh:path bib:hasPreferredTitle ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
       sh:group bibliotek-o_shapes:TitlePropertyGroup ;
       sh:maxCount 1 ;
@@ -96,14 +118,14 @@ bibliotek-o_shapes:WorkForm
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
-      sh:path ontology:isSubjectOf ;
+      sh:path bib:isSubjectOf ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Specifies other works that this work is the subject of" ;
       sh:name "Is subject of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path ontology:isTargetOf ;
+      sh:path bib:isTargetOf ;
       sh:class <http://www.w3.org/ns/oa#Annotation> ;
       sh:description "Relates a resource to its Annotation." ;
       sh:name "Is target of" ;
@@ -111,16 +133,16 @@ bibliotek-o_shapes:WorkForm
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/accompaniedBy> ;
-      sh:name "Accompanied by" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that accompanies the described resource." ;
+      sh:name "Accompanied by" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/accompanies> ;
-      sh:name "Accompanies" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that adds to or is issued with the described resource." ;
+      sh:name "Accompanies" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -132,25 +154,25 @@ bibliotek-o_shapes:WorkForm
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/dataSource> ;
-      sh:name "Data source" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Dataset> ;
       sh:description "Resource that is a data source to which the described resource is related. It may contain information about other files, printed sources, or collection procedures." ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Data source" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Referenced by" ;
       sh:description "Resource that references the described resource" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Referenced by" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/references> ;
-      sh:name "References" ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Resource that is referenced by the described resource." ;
+      sh:name "References" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
@@ -164,498 +186,465 @@ bibliotek-o_shapes:WorkForm
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
   sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60199> ;
+      sh:path <http://purl.org/dc/terms/isPartOf> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is continued in part by" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is part of" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60203> ;
+      sh:path <http://purl.org/dc/terms/subject> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Instance> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Item> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is abstracted as" ;
+      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60205> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is summarized as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60214> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is imitated as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60216> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is expanded as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60220> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Has prequel" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60224> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is abstract of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60225> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is dramatization of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60238> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is digest of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60241> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is adaptation of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60243> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is free translation of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60244> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is translation of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60245> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is revised as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60246> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is parodied as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60247> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is absorbed by" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60248> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is absorbed in part by" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60250> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is derivative" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60260> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is adapted as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60275> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is abridged as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60276> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is continuation in part of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60277> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is separated from" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Subject" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60088> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is dramatized as" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is dramatized as" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60102> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is sequel" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is sequel" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60104> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is replaced by" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is replaced by" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60106> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Text> ;
-      sh:name "Is adapted in verse as" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted in verse as" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60110> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/MovingImage> ;
-      sh:name "Is adapted as motion picture" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as motion picture" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60138> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Text> ;
-      sh:name "Is adapted as novel" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as novel" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60177> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Audio> ;
-      sh:name "Is abstracted in" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is abstracted in" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60178> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Text> ;
-      sh:name "Is indexed in" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is indexed in" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60180> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/NotetatedMovement> ;
-      sh:name "Is adapted as choreography" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as choreography" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60185> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Text> ;
-      sh:name "Is adapted as screenplay" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as screenplay" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60188> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Text> ;
-      sh:name "Is adapted as radio script" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as radio script" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60189> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is freely translated as" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is freely translated as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60199> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is continued in part by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60203> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is abstracted as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60205> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is summarized as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60214> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is imitated as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60216> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is expanded as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60220> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Has prequel" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60224> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is abstract of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60225> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is dramatization of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60238> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is digest of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60241> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adaptation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60243> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is free translation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60244> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is translation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60245> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is revised as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60246> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is parodied as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60247> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is absorbed by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60248> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is absorbed in part by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60250> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is derivative" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60260> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60275> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is abridged as" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60276> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is continuation in part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60277> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is separated from" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60278> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is succeeded by" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is succeeded by" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60279> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is digested as" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is digested as" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60280> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is translated as" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is translated as" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60289> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:name "Is summary of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60295> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is remake of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60296> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is paraphrase of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60303> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is revision of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60305> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is based on" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60306> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is continued by" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60308> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is abstracts for" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60309> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is indexing for" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60310> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is prequel to" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60311> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is imitation of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60312> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is parody of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60354> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/MovingImage> ;
-      sh:name "Is adapted as television program" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60361> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/MovingImage> ;
-      sh:name "Is adapted as video" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60480> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is replacement of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60503> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is split into" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60504> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Iss merged to form" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60505> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is merger of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60574> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is absorption of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60575> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is absorption in part of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60576> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is continuation of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60577> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is sequel to" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60743> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is graphic novelization of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60831> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/NotatedMusic> ;
-      sh:name "Is adapted as oratorio" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60832> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is inspired by" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60833> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is inspiration for" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60293> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/NotatedMovement> ;
-      sh:name "Is choreographic adaptation of" ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is choreographic adaptation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60295> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is remake of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60296> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is paraphrase of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60303> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is revision of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60305> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is based on" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60306> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is continued by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60308> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is abstracts for" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60309> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is indexing for" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60310> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is prequel to" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60311> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is imitation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60312> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is parody of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60354> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/MovingImage> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as television program" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60361> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/MovingImage> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as video" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60480> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is replacement of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60503> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is split into" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60504> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Iss merged to form" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60505> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is merger of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60574> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is absorption of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60575> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is absorption in part of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60576> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is continuation of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60577> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is sequel to" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60743> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is graphic novelization of" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60831> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/NotatedMusic> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is adapted as oratorio" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60832> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is inspired by" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+  sh:property [
+      sh:path <http://rdaregistry.info/Elements/u/P60833> ;
+      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
+      sh:name "Is inspiration for" ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
       sh:path <ttp://purl.org/dc/terms/hasPart> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:name "Has part" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://purl.org/dc/terms/isPartOf> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:name "Is part of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://purl.org/dc/terms/subject> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ,
-      sh:class <http://id.loc.gov/ontologies/bibframe/Instance> ,
-      sh:class <http://id.loc.gov/ontologies/bibframe/Item> ,
-      sh:class foaf:Agent ,
-      sh:class schema:Event ,
-      sh:class skos:Concept ,
-      sh:class prov:Location ,
-      sh:class bf:Temporal ,
-      sh:class lingvo:Lingvo ;
-      sh:name "Subject" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
 .
-
-bibliotek-o_shapes:AudioForm
-  rdf:type rdfs:Class ;
-  rdf:type sh:NodeShape ;
-  rdfs:label "Work form" ;
-  rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60242> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Audio> ;
-      sh:name "Is arrangement of" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:property [
-      sh:path <http://rdaregistry.info/Elements/u/P60274> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Audio> ;
-      sh:name "Is arranged as" ;
-      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-.
-  
 bibliotek-o_shapes:WorkToWorkPropertyGroup
   rdf:type sh:PropertyGroup ;
   rdfs:label "Work to work property group" ;
-.
-
-bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
-  rdf:type sh:PropertyGroup ;
-  rdfs:label "Subject and coverage property group" ;
 .
