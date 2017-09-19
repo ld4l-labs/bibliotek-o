@@ -260,19 +260,42 @@ bibliotek-o_shapes:WorkForm
     ] ;
   sh:property [
       sh:path <http://purl.org/dc/terms/subject> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Instance> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Item> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
-      sh:class <http://schema.org/Event> ;
-      sh:class <http://www.lingvoj.org/ontology/Lingvo> ;
-      sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
-      sh:class <http://www.w3.org/ns/prov#Location> ;
-      sh:class <http://xmlns.com/foaf/0.1/Agent> ;
       sh:group bibliotek-o_shapes:SubjectAndCoveragePropertyGroup ;
       sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:name "Subject" ;
       sh:nodeKind sh:IRI ;
+      sh:or (
+          [
+            sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
+          ]
+          [
+            sh:class <http://id.loc.gov/ontologies/bibframe/Instance> ;
+          ]
+          [
+            sh:class <http://id.loc.gov/ontologies/bibframe/Item> ;
+          ]
+          [
+            sh:class <http://id.loc.gov/ontologies/bibframe/Temporal> ;
+          ]
+          [
+            sh:class <http://xmlns.com/foaf/0.1/Agent> ;
+          ]
+          [
+            sh:class <http://schema.org/event> ;
+          ]
+          [
+            sh:class <http://www.lingvoj.org/ontology/Lingvo> ;
+          ]
+          [
+            sh:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+          ]
+          [
+            sh:class <http://www.w3.org/ns/prov#Location> ;
+          ]
+          [
+            sh:class <http://schema.org/event> ;
+          ]
+        ) ;
     ] ;
   sh:property [
       sh:path <http://rdaregistry.info/Elements/u/P60088> ;
