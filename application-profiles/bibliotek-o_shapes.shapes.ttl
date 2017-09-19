@@ -104,6 +104,19 @@ bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
   rdf:type sh:PropertyGroup ;
   rdfs:label "Subject and coverage property group" ;
 .
+bibliotek-o_shapes:TitleForm
+  rdf:type rdfs:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "Title form" ;
+  rdfs:subClassOf rdfs:Resource ;
+  sh:property [
+      sh:path <http://purl.org/dc/terms/hasPart> ;
+      sh:class bib:TitleElement ;
+      sh:description "Has title part" ;
+      sh:name "has part" ;
+      sh:nodeKind sh:IRI ;
+    ] ;
+.
 bibliotek-o_shapes:TitlePropertyGroup
   rdf:type sh:PropertyGroup ;
   rdfs:label "Title property group" ;
@@ -209,6 +222,7 @@ bibliotek-o_shapes:WorkForm
       sh:path <http://id.loc.gov/ontologies/bibframe/hasExpression> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/Work> ;
       sh:description "Work that is an expression of a described Work. For use to relate Works under FRBR/RDA rules." ;
+      sh:group bibliotek-o_shapes:WorkToWorkPropertyGroup ;
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
