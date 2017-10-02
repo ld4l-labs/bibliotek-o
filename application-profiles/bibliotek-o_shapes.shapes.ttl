@@ -116,6 +116,7 @@ bibliotek-o_shapes:TitleForm
       sh:name "has part" ;
       sh:nodeKind sh:IRI ;
     ] ;
+  sh:targetClass <http://id.loc.gov/ontologies/bibframe/Title> ;
 .
 bibliotek-o_shapes:TitlePropertyGroup
   rdf:type sh:PropertyGroup ;
@@ -307,7 +308,7 @@ bibliotek-o_shapes:WorkForm
             sh:class <http://www.w3.org/ns/prov#Location> ;
           ]
           [
-            sh:class <http://schema.org/event> ;
+            sh:class <http://schema.org/Event> ;
           ]
         ) ;
     ] ;
