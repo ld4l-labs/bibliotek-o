@@ -110,6 +110,49 @@ bibliotek-o_shapes:AudioForm
         ) ;
     ] ;
   sh:property [
+      sh:path bib:hasInstance ;
+      sh:name "Physical Instance or Manifestation" ;
+      sh:nodeKind sh:IRI ;
+      sh:or (
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioDisc> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioRoll> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioCassette> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioBelt> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioCylinder> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudioWireReel> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/AudiotapeReel> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/Cassette> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/SoundTrackReel> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/ComputerTapeReel> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/Disc> ;
+          ]
+          [
+            sh:class <http://bibliotek-o.org/1.0/ontology/Reel> ;
+          ]
+        ) ;
+    ] ;
+  sh:property [
       sh:path <http://id.loc.gov/ontologies/bibframe/ensemble> ;
       sh:class <http://id.loc.gov/ontologies/bibframe/MusicEnsemble> ;
       sh:description "Ensemble for which a musical work is appropriate." ;
