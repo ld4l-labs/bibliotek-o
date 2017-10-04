@@ -1,0 +1,110 @@
+Type,BIBFRAME Term,Term in bibliotek-o application profile,Structural Modification / Complex Mapping,Related / Contextual Terms,Reasoning,Relevant Pattern Doc
+Class,bf:AbbreviatedTitle,bib:AbbreviatedTitle,no,,Class hierarchy issue,Title
+ObjectProperty,bf:absorbed,rdau:P60574,no,,Reuse,Relations
+ObjectProperty,bf:absorbedBy,rdau:P60247,no,,Reuse,Relations
+ObjectProperty,bf:acquisitionSource,bib:hasActivity,yes,bib:AcquisitionActivity |bib:OfferActivitiy,Generic Predicate|Open Range,Activities
+Class,bf:AcquisitionSource,foaf:Agent,yes,bib:AcquisitionActivity |bib:OfferActivitiy,Generic Predicate|Reuse,Activities
+DatatypeProperty,bf:acquisitionTerms,rdfs:comment or schema:description on an bib:OfferActivity,yes,bib:AcquisitionActivity |bib:OfferActivitiy,Generic Predicate,Activities
+ObjectProperty,bf:agent,bib:hasAgent,no,,Open Range,Activities
+Class,bf:Agent,foaf:Agent,no,,Reuse,Activities
+ObjectProperty,bf:barcode,bf:identifiedBy,no,,Generic Predicate,Identifiers
+ObjectProperty,bf:capture,bib:hasActivity,yes,,Generic Predicate,Activities
+Class,bf:Capture,bib:CaptureActivity,yes,,Generic Predicate,Activities
+ObjectProperty,bf:carrier,rdf:type,yes,,Single Pattern|subclasses of bf:Instance,Content/Carrier/Media
+Class,bf:Carrier,--,yes,,Single Pattern|subclasses of bf:Instance,Content/Carrier/Media
+Class,bf:CollectiveTitle,bib:CollectiveTitle,no,,Class hierarchy issue,Title
+ObjectProperty,bf:content,rdf:type,yes,,Single Pattern|subclasses of bf:Work,Content/Carrier/Media
+Class,bf:Content,subclasses of bf:Work,yes,,Single Pattern|subclasses of bf:Work,Content/Carrier/Media
+ObjectProperty,bf:continuedBy,rdau:P60306,no,,Reuse,Relations
+ObjectProperty,bf:continuedInPartBy,rdau:P60199,no,,Reuse,Relations
+ObjectProperty,bf:continues,rdau:P60102,no,,Reuse,Relations
+ObjectProperty,bf:continuesInPart,rdau:P60277,no,,Reuse,Relations
+ObjectProperty,bf:contribution,bib:hasActivity,yes,,Generic Predicate,Activities
+Class,bf:Contribution,bib:ContributorActivity,yes,,Generic Predicate,Activities
+DatatypeProperty,bf:copyrightDate,dcterms:date,yes,bib:CopyrightHolderActivity,Reuse,Activities
+ObjectProperty,bf:coverArt,bib:hasCoverArt,no,,Open Range,
+Class,bf:CoverArt,bf:StillImage,no,,Single Pattern,
+DatatypeProperty,bf:credits,bib:isTargetOf,yes,http://www.w3.org/ns/oa#Annotation (with bib:listingCredits motivation),Single Pattern,Notes & Annotations|See Activities when information captured as data rather than notes
+DatatypeProperty,bf:custodialHistory,bib:isTargetOf,yes,http://www.w3.org/ns/oa#Annotation (with bib:specifyingCustodialHistory motivation),Single Pattern,Notes & Annotations|See Activities when information captured as data rather than notes
+DatatypeProperty,bf:date,dcterms:date,no,,Reuse,
+ObjectProperty,bf:derivativeOf,rdau:P60305,no,,Reuse,Relations
+Class,bf:Distribution,bib:DistributorActivity,yes,,Generic Predicate,Activities
+Class,bf:Event,schema:Event,yes,,Reuse,
+ObjectProperty,bf:eventContent,schema:recordedAt,yes,,,
+ObjectProperty,bf:eventContentOf,schema:recordedIn,yes,,,
+ObjectProperty,bf:geographicCoverage,bib:covers,no,,Generic Predicate,
+Class,bf:GeographicCoverage,prov:Location,no,,Reuse,
+ObjectProperty,bf:grantingInstitution,bib:grantedBy,no,,Generic Predicate,
+ObjectProperty,bf:hasDerivative,rdau:P60250,no,,Reuse,Relations
+SymmetricProperty,bf:hasEquivalent,rdau:P60191,no,,Reuse,Relations
+ObjectProperty,bf:hasPart,dcterms:hasPart,no,,Reuse,Relations
+ObjectProperty,bf:hasReproduction,rdau:P60272,no,,Reuse,Relations
+ObjectProperty,bf:heldBy,bib:heldBy,no,,Range definition,
+DatatypeProperty,bf:historyOfWork,bib:isTargetOf,yes,http://www.w3.org/ns/oa#Annotation (with bib:specifyingHistoryOfWork motivation),Single Pattern,Notes & Annotations|See Activities when information captured as data rather than notes
+ObjectProperty,bf:immediateAcquisition,bib:hasActivity,yes,bib:AcquisitionActivity|bib:OfferActivitiy,Single Pattern,Activities
+Class,bf:ImmediateAcquisition,--,yes,bib:AcquisitionActivity|bib:OfferActivitiy,Single Pattern,Activities
+Class,bf:KeyTitle,bib:KeyTitle,no,,Class hierarchy issue,Title
+ObjectProperty,bf:language,dcterms:language,no,,Reuse,
+Class,bf:Language,lingvoj:Lingvo,no,,Reuse,
+DatatypeProperty,bf:legalDate,dcterms:date,no,,Single Pattern,
+DatatypeProperty,bf:mainTitle,bf:title,yes,bf:Title (with dcterms:hasPart bib:MainTitleElement),Object Property (Title Part Ordering Use Cases),Title
+Class,bf:Manufacture,bib:ManufacturerActivity,yes,,Single Pattern,Activities
+ObjectProperty,bf:media,rdf:type,yes,bf:Instance Subclasses,Generic Predicate|Single Pattern,Content/Carrier/Media
+Class,bf:Media,--,yes,bf:Instance Subclasses,Single Pattern,Content/Carrier/Media
+Class,bf:Meeting,bib:Meeting,no,,Class hierarchy issue,
+ObjectProperty,bf:mergedToForm,rdau:60504,no,,Reuse,Relations
+ObjectProperty,bf:mergerOf,rdau:60505,no,,Reuse,Relations
+Class,bf:Multimedia,"bib:Software, bib:SourceCode",yes,bib:Software|bib:SourceCode,Class definition issue,
+DatatypeProperty,bf:natureOfContent,bib:specifyingNatureOfContent,yes,http://www.w3.org/ns/oa#Motivation,Single Pattern,Notes & Annotations
+ObjectProperty,bf:note,oa:isTargetOf,yes,,Single Pattern,Notes & Annotations
+Class,bf:Note,oa:Annotation,yes,,Single Pattern,Notes & Annotations
+DatatypeProperty,bf:noteType,oa:motivatedBy,yes,,Single Pattern,Notes & Annotations
+Class,bf:Organization,foaf:Organization,no,,Reuse,
+ObjectProperty,bf:originalVersion,rdau:60250,no,,Reuse,Relations
+ObjectProperty,bf:originalVersionOf,rdau:60305,no,,Reuse,Relations
+DatatypeProperty,bf:originDate,dcterms:date,no,bib:CreatorActivity,Reuse|SinglePattern,Activities
+ObjectProperty,bf:originPlace,bib:atLocation,no,bib:CreatorActivity,SinglePattern,Activities
+SymmetricProperty,bf:otherPhysicalFormat,rdau:P60191 (plus Instance-type to identify the format),no,,Reuse,Relations
+Class,bf:ParallelTitle,bib:ParallelTitle,no,,Class hierarchy issue,Title
+DatatypeProperty,bf:part,dcterms:hasPart,no,,Reuse,
+DatatypeProperty,bf:partName,bf:title,yes,bf:Title (with dcterms:hasPart bib:PartNameElement),Object Property (Title Part Ordering Use Cases),Title
+DatatypeProperty,bf:partNumber,bf:title,yes,bf:Title (with dcterms:hasPart bib:PartNumberElement),Object Property (Title Part Ordering Use Cases),Title
+ObjectProperty,bf:partOf,dcterms:isPartOf,no,,Reuse,
+Class,bf:Person,foaf:Person,no,,Reuse,
+DatatypeProperty,bf:physicalLocation,bib:atLocation,no,,Single Pattern | Object Property,Activities
+ObjectProperty,bf:place,bib:atLocation,no,,Broader Range,Activities
+Class,bf:Place,prov:Location,no,,Reuse,
+ObjectProperty,bf:precededBy,rdau:P60261,no,,Reuse,Relations
+DatatypeProperty,bf:preferredCitation,bib:specifyingPreferredCitation,yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+Class,bf:Production,bib:ProductionActivity,yes,,,Activities
+ObjectProperty,bf:provisionActivity,bib:hasActivity,yes,,Single Pattern,Activities
+Class,bf:ProvisionActivity,,yes,,Single Pattern,Activities
+Class,bf:Publication,bib:PublisherActivity,yes,,,Activities
+DatatypeProperty,bf:qualifier,--,yes,,n.a. (not creating Authorized Access Points),
+ObjectProperty,bf:replacedBy,rdau:P60104,no,,Reuse,Relations
+ObjectProperty,bf:replacementOf,rdau:P60278,no,,Reuse,Relations
+ObjectProperty,bf:reproductionOf,rdau:P60297,no,,Reuse,Relations
+ObjectProperty,bf:review,"bib:reviewing, bib:ReviewerActivity",yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+Class,bf:Review,"oa:Annotation, bib:ReviewerActivity",yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+ObjectProperty,bf:role,--,yes,Activity subclasses,Single Pattern (Using bib:Activity Subclasses to capture roles),Activities
+Class,bf:Role,--,yes,Activity subclasses,Single Pattern (Using bib:Activity Subclasses to capture roles),Activities
+ObjectProperty,bf:separatedFrom,rdau:P60277,no,,Reuse,Relations
+ObjectProperty,bf:shelfMark,bf:identifiedBy,no,,Single Pattern,Identifiers
+ObjectProperty,bf:source,bib:hasSource,no,,,
+Class,bf:Source,--,no,,,
+ObjectProperty,bf:splitInto,rdau:P60503,no,,Reuse,Relations
+ObjectProperty,bf:subject,dcterms:subject,no,,Reuse,
+DatatypeProperty,bf:subtitle,bf:title,yes,bf:Title (with dcterms:hasPart bib:SubtitleElement),Object Property (Title Part Ordering Use Cases),Title
+ObjectProperty,bf:succeededBy,rdau:P60278,,,Reuse,Relations
+ObjectProperty,bf:summary,bib:summarizing,yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+Class,bf:Summary,oa:Annotation,yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+ObjectProperty,bf:tableOfContents,bib:linkingTableOfContents,yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+Class,bf:TableOfContents,oa:Annotation,yes,http://www.w3.org/ns/oa#Motivation,Reuse | Single Pattern,Notes & Annotations
+Class,bf:Tactile,bib:Tactile,no,,,
+DatatypeProperty,bf:temporalCoverage,bib:covers,no,,Generic Predicate,
+Class,bf:Topic,skos:Concept,no,,Reuse,
+ObjectProperty,bf:translation,rdau:P60280,no,,Reuse,Relations
+ObjectProperty,bf:translationOf,rdau:P60244,no,,Reuse,Relations
+Class,bf:VariantTitle,bf:Title,yes,,,Title
+DatatypeProperty,bf:variantType,bib:hasOrigin,yes,,,Title
+DatatypeProperty,bf:version,oa:Annotation,yes,,,
