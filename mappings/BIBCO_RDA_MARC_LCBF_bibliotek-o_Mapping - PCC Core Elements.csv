@@ -1,0 +1,560 @@
+"RDA Instructions & Elements
+
+The name of the RDA instruction or data element, as presented in the RDA Toolkit (http://access.rdatoolkit.org/).
+(T)= Transcribed element",RDA No.,BSR Notes,MARC Coding,"RDA-RDF
+
+The rda-rdf property, as defined by the RDA registry (http://www.rdaregistry.info/)","Context
+
+each triple needed for the mapping listed separately: 
+Subject > predicate > Object
+
+Subjects = BF Classes (distinguished by uppercase)
+predicates  = BF properties (distinguished by lowercase)
+Objects either BF classes or Literal
+
+, indicates subclass/subproperty of the preceding class/property 
+
+prefixes included for non-BIBFRAME properties/classes","LC BF 2.0
+
+The BIBFRAME property used to encode the RDA data element",Anticipated Value,"LD4P bibliotek-o Context
+
+if no prefix assume bf:","LD4P bibliotek-o
+
+The bibliotek-o property used to encode the RDA data element",LD4P bibliotek-o Anticipated Value,LD4P Pattern Recommendation,TG Notes on BF 2.0,Questions
+Identifying Manifestations & Items,,,,,,,,,,,,,
+Title proper (T),2.3.2,,"245 $a, $n, $p",rdam:titleProper(p30156),"Instance > title > Title
+Title > mainTitle > Literal
+Title > partNumber > Literal
+Title > partName > Literal",mainTitle; partNumber; partName,Literal,"bf:Instance > bib:hasPreferredTitle > bf:Title
+bf:Title > rdfs:label > Literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement 
+bf:Title > dcterms:hasPart > bib:NonSortElement
+bf:Title > dcterms:hasPart > bib:PartNumberElement
+bf:Title > dcterms:hasPart > bib:PartNameElement 
+bf:Title > bib:hasSourceStatus > [bib:namedIndividual]","bib:hasPreferredTitle;
+dcterms:hasPart;
+bib:hasSourceStatus","Literal, Class, Named Individual",Title Pattern ,,
+Parallel title proper (T),2.3.3,Record all,"245 $b, 246",rdam:parallelTitlePoper (P30203),"Instance > title > Title, VariantTitle, ParallelTitle
+ParallelTitle > mainTitle > Literal",ParallelTitle,Literal,"bf:Instance > bib:hasPreferredTitle > bf:Title 
+bf:Title > rdfs:label > literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement
+bf:Title > dcterms:hasPart > bf:ParallelTitle","bib:hasPreferredTitle
+dcterms:hasPart
+bib:hasSourceStatus","Literal, Class, Named Individual",Title Pattern , ,
+Other title information (T),2.3.4,,245 $b ,rdam:otherTitleInformation(P30142),"Instance > title > Title
+Title > subtitle > Literal
+or
+Work > title > Title
+Title > subtitle > Literal",subtitle,Literal,"bf:Instance > bib:hasPreferredTitle > bf:Title 
+bf:Title > rdfs:label > literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement
+bf:Title > dcterms:hasPart > bib:SubTitleElement","bib:hasPreferredTitle
+dcterms:hasPart
+bib:hasSourceStatus","Literal, Class, Named Individual",Title Pattern ,,
+Variant title (T),2.3.6,"PCC recommends additional variant titles that are deemed important to identification or access, according to cataloger judgment and/or local policy.
+
+PCC Core for rare materials; record variant titles that are required by the appropriate DCRM module.",246,rdam:variantTitle (P30128),"Instance > title > Title, VariantTitle 
+VariantTitle > mainTitle > Literal",VariantTitle,Literal,"bf:Instance > bf:title > bf:Title
+bf:Title > rdfs:label > Literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement
+bf:Title > bib:hasSourceStatus > bib:transcribed
+bf:Title > rdfs:comment > Literal 
+bib:MainTitleElement > rdfs:label > Literal
+bib:MainTitleElement > bib:hasSource > [500 note]","bf:title
+rdfs:label
+dcterms:hasPart
+bib:hasSourceStatus
+rdfs:comment
+bib:hasSource","Literal, Class, Named Individual",Title Pattern ,"There are 4 subclasses under VariantTitle: KeyTitle, AbbreviatedTitle, ParallelTitle,
+CollectiveTitle; and a property variantType to define the types of variation: acronym, cover, spine, earlier, later, series version",
+Later title proper (T),2.3.8,,246,rdam:laterTitleProper(P30129),"Instance > title > Title, VariantTitle
+VariantTitle > mainTitle > Literal
+VariantTitle > variantType > Literal","VariantTitle with variantType property ""Later title proper""",Literal,"bf:Instance > bf:title > bf:Title
+bf:Title > rdfs:label > Literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement
+bf:Title > bib:hasSourceStatus > bib:transcribed
+bf:Title > rdfs:comment > Literal 
+bib:MainTitleElement > rdfs:label > Literal
+bib:MainTitleElement > bib:hasSource > [500 note]","bf:title
+rdfs:label
+dcterms:hasPart
+bib:hasSourceStatus
+rdfs:comment
+bib:hasSource","Literal, Class, Named Individual",Title Pattern ,"The variantTitle property can be used for the following: ""Type of title variation, e.g., acronym, cover, spine, earlier, later, series version""",
+Statement of responsibility relating to title proper (T),2.4.2,"If more than one, only the first recorded is required by RDA, but catalogers are encouraged to transcribe (or record in a note) any other statements of responsibility that aid in resource discovery, identification, and selection.
+Rare materials: Generally transcribe all statements of responsibility relating to title proper found in the preferred source of information.
+Rare atlases, rare books, and rare music: If a title and statement of responsibility as recorded have been transposed from their presentation in the source, see also 2.17.3.",245 $c,rdam:statmentOfResponsibilityRelatingtoTitleProper (P30105),Instance > responsibilityStatement > Literal,responsibilityStatement,Literal,Instance > responsibilityStatement > Literal,responsibilityStatement,Literal,,,
+Designation of edition (T),2.5.2,Rare music: Transcribe as an edition statement the music presentation statement as defined by DCRM(M) 3B.,250,rdam:designationOfEdition(P30133),Instance > editionEnumeration > Literal ,editionEnumeration,Literal,Instance > editionEnumeration > Literal ,editionEnumeration,Literal,,Bf 2.0 also has propery edition which speficially refers to Classification,
+Statement of responsibility relating to the edition (T),2.5.4,PCC Core for rare materials.,250,rdam:statementOfResponsibilityRelatingToTheEdition (P30121),Instance > editionStatement > Literal,editionStatement;,Literal,Instance > editionStatement > Literal,editionStatement;,Literal,,editionStatement combines the RDA elements of designation of edition and the statement of responsibility relating to the edition,
+Designation of a named revision of an edition (T),2.5.6,,250,rdam:designationOfANamedRevisionOfAnEdition(P30133) ,Instance > editionEnumeration > Literal ,editionEnumeration,Literal,Instance > editionEnumeration > Literal ,editionEnumeration,Literal,,"Assumes that it is acceptable to include in editionEnumeration phrases such as reprinted with corrections, augmented, etc.","Based on RDA 2.5.6, Designation of named revision of an edition is beyond just enumeration, should we use editionStatement instead?"
+ Place of production (T),2.7.2,PCC Core for rare materials in unpublished form.,008/15-17; ;264 $a (second indicator: 0),rdam:placeOfProduction (P30086),"Instance > provisionActivity > ProvisionActivity, Production
+Production > place > Place",Place,Place ,"bf:Instance > bib:hasActivity > bib:ProductionActivity
+bib:ProductionActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal","bib:hasActivity
+bib:atLocation",Literal or URI,Activities Pattern,, 
+Date of production,2.7.6,"Record date of production for a resource in unpublished form.
+Archival materials: Additional guidance may be found in DACS 2.4.
+Rare materials: Transcribe date(s) of production found in the resource.",264 $c (second indicator: 0),rdam:dateOfProduction(P30009),"Instance > provisionActivity > ProvisionActivity, Production
+Production > date > Literal",date,Literal,"bf:Instance > bib:hasActivity > bib:ProductionActivity
+bib:ProductionActivity > dcterms:date > Literal 
+","bib:hasActivity
+dcterms:date",Literal,Activities Pattern,, 
+Place of publication (T),2.8.2,"For cataloging purposes, all online resources are considered published.
+If more than one, only the first recorded is required.
+Also transcribe current place if it differs (for multipart monographs).
+Rare materials: Generally transcribe all places of publication (see DCRM(B,C,G,M) 4B6). If a place of publication is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4B9).",008/15-17; 264 $a (second indicator: 1),rdam:placeOfPublication(P30088),"Instance > provisionActivity > ProvisionActivity, Publication
+Publication > place > Place",Place,Place ,"bf:Instance > bib:hasActivity > bib:PublisherActivity
+bib:PublisherActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal","bib:hasActivity
+bib:atLocation",Literal or URI,Activities Pattern, , 
+Publisher's name (T),2.8.4,"If more than one, only the first recorded is required.
+Also transcribe current publisher if it differs (for multipart monographs).
+Rare materials: Generally transcribe all publishers’ names (see DCRM(B,C,G,M) 4C6). If a publisher’s name is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4C5).",264 $b(second indicator: 1),rdam:publishersName(P30176),"Instance > provisionActivity > ProvisionActivity, Publication
+Publication > agent > Agent",Agent,Agent ,"bf:Instance > bib:hasActivity > bib:PublisherActivity
+bib:PublisherActivity > bib:hasAgent > foaf:Agent
+foaf:Agent > rdfs:label > Literal","bib:hasActivity
+bib:hasAgent",Literal or URI,Activities Pattern,, 
+Date of publication,2.8.6,"Record the publication date(s) found in the resource, supply date(s) in brackets, or record “[date of publication not identified].”
+Rare materials: Transcribe date(s) found in the resource (see DCRM(B,C,G,M) 4D1). If a date of publication is known to be fictitious or incorrect, supply the correct year in square brackets (see DCRM(B,C,G,M) 4D2.4).",264 $c (second indicator: 1),rdam:dateOfPublication(P30011),"Instance > provisionActivity > ProvisionActivity, Publication
+Publication > date > Literal",date,Literal,"bf:Instance > bib:hasActivity > bib:PublisherActivity
+bib:PublisherActivity > dcterms:date > Literal ","bib:hasActivity
+dcterms:date",Literal,Activities Pattern,,"Should we change this to start date and end date now; how should this be modeled? Could one create a single ""dateSpan"" as a sub-property of ""date""? "
+Place of distribution (T),2.9.2,"PCC Core for rare materials when present in the resource. Generally transcribe all places of distribution (see DCRM(B,C,G,M) 4B6). If a place of distribution is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4B9). If no place of distribution appears in the resource, supplying the place of distribution or recording “[Place of distribution not identified]” is not required.",264 $a (second indicator: 2),rdam:placeOfDistribution(P30085),"Instance > provisionActivity > ProvisionActivity, Distribution
+Distribution > place > Place",Place,Place ,"bf:Instance > bib:hasActivity > bib:DistributorActivity
+bib:DistributorActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal","bib:hasActivity
+bib:atLocation",Literal or URI,Activities Pattern,, 
+Distributor's name (T),2.9.4,"PCC Core for rare materials when present in the resource. Generally transcribe all distributors’ names (see DCRM(B,C,G,M) 4C6). If a distributor’s name is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4C5). If no distributor’s name appears in the resource, supplying the distributor’s name or recording “[distributor not identified]” is not required.",264 $b (Second indicator: 2),rdam:distributorsName(P30173),"Instance > provisionActivity > ProvisionActivity, Distributor
+Distributor > agent > Agent",Agent,Agent ,"bf:Instance > bib:hasActivity > bib:DistributorActivity
+bib:DistributorActivity > bib:hasAgent > foaf:Agent
+foaf:Agent > rdfs:label > Literal","bib:hasActivity
+bib:hasAgent
+",Literal or URI,Activities Pattern,, 
+Date of distribution,2.9.6,"PCC Core for rare materials when present in the resource. Generally transcribe all dates of distribution (see DCRM(B,C,G,M) 4D1). If a date of distribution is known to be fictitious or incorrect, supply the correct year in square brackets (see DCRM(B,C,G,M) 4D2.4). If no date of distribution appears in the resource, supplying the date of distribution or recording “[date of distribution not identified]” is not required.",264 $c (Second indicator: 2),rdam:dateOfDistribution (P30008),"Instance > provisionActivity > ProvisionActivity, Distribution
+Distribution > date > Literal",date,Literal,"bf:Instance > bib:hasActivity > bib:DistributorActivity
+bib:DistributorActivity > dcterms:date > Literal ","bib:hasActivity
+dcterms:date",Literal,Activities Pattern,,
+Place of manufacture (T),2.10.2,"PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all places of manufacture if appropriate (see DCRM(B,C,G,M) 4E). If a place of manufacture is known to be fictitious or incorrect, supply a correction in square brackets. If no place of manufacture appears in the resource, supplying the place of manufacture or recording “[Place of manufacture not identified]” is not required.",264 $a(Second indicator: 3),rdam:placeOfManufacture(P30087),"Instance > provisionActivity > ProvisionActivity, Manufacture
+Manufacture > place > Place",Place,Place ,"bf:Instance > bib:hasActivity > bib:ManufacturerActivity
+bib:ManufacturerActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal","bib:hasActivity
+bib:atLocation",Literal or URI,Activities Pattern,, 
+Manufacturer's name (T),2.10.4,"PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all manufacturers’ names if appropriate (see DCRM(B,C,G,M) 4F). If a manufacturer’s name is known to be fictitious or incorrect, supply a correction in square brackets. If no manufacturer’s name appears in the resource, supplying the manufacturer’s name or recording “[manufacturer not identified]” is not required.",264 $b (Second indicator: 3),rdam:manufacturersName(P30175),"Instance > provisionActivity > ProvisionActivity,Manufacture
+Manufacture > agent > Agent",Agent,Agent,"bf:Instance > bib:hasActivity > bib:ManufacturerActivity
+bib:ManufacturerActivity > bib:hasAgent > foaf:Agent
+foaf:Agent > rdfs:label > Literal","bib:hasActivity
+bib:hasAgent",Literal or URI,Activities Pattern,, 
+Date of manufacture,2.10.6,"PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all dates of manufacture if appropriate (see DCRM(B,C,G,M) 4G). If a date of manufacture is known to be fictitious or incorrect, supply the correct year in square brackets. If no date of manufacture appears in the resource, supplying the date of manufacture or recording “[date of manufacture not identified]” is not required.",264 $c (Second indicator: 3),rdam:dateOfManufacture(P30010),"Instance > provisionActivity > ProvisionActivity, Manufacture
+Manufacture > date > Literal",date,Literal,"bf:Instance > bib:hasActivity > bib:ManufacturerActivity
+bib:ManufacturerActivity > dcterms:date > Literal ","bib:hasActivity
+dcterms:date",Literal,Activities Pattern,,
+Copyright date (T),2.11,"Rare materials: PCC recommends recording the year of copyright when present in the resource. If a full transcription of the copyright statement is desired, record it in a note.",264 $c (Second indicator: 4),rdam:copyrightDate(P30007),"Work > date, copyrightDate > Literal
+or
+Instance > date, copyrightDate > Literal",copyrightDate,Literal,"bf:Instance > bib:hasActivity > bib:CopyrightHolderActivity
+bib:CopyrightHolderActivity > dcterms:date > Literal ","bib:hasActivity
+dcterms:date",Literal,Activities Pattern, Can be used with: Work or Instance, 
+Title proper of series (T),2.12.2,,490 $a,rdam:titleProperOfSeries (P30157),Instance > seriesStatement > Literal,seriesStatement,Literal,Instance > seriesStatement > Literal,seriesStatement ,Literal,,Definition says: includes the ISSN if applicable. , 
+Other title information of series (T),2.12.4,PCC Core for rare materials.,490 $a,rdam:otherTitleInformationOfSeries (P30143),,Not Found,,Not found? ,Not found? ,,Title Pattern? ,,"In the current BF 2.0, this would apparently be included in the seriesStatement property. Do we need a new property for this? This element is PCC core for rare materials only. (the question partially resolved based on the discussion in the group on Jan., 17, 2017, ""not recommending to add a new term unless rare book cataloging community request; can add RDA registry terms if needed"")"
+Statement of responsibility relating to series (T),2.12.6,PCC Core for rare materials.,490 $a,rdam:statementOfResponsibilityRelatingToSeries(P30119),,Not Found,,Not found? ,Not found? ,,,,"In the current BF 2.0, this would apparently be included in the seriesStatement property. Do we need a new property for this? This element is PCC core for rare materials only."
+ISSN of series (T),2.12.8,,490 $x,rdam:issnOfSeries(P30166),Instance > seriesStatement > Literal,seriesStatement,Literal,?,?,?,,Definition says: includes the ISSN if applicable. ,
+Numbering within series (T),2.12.9,,490 $v,rdam:numberingWithinSeries(P30014),Instance > seriesEnumeration > Literal,seriesEnumeration ,Literal,Instance > seriesEnumeration > Literal,seriesEnumeration ,,,,
+Title proper of subseries (T),2.12.10,,490 $a,rdam:titleProperOfSubseries(P30158),Instance > subseriesStatement > Literal ,subseriesStatement  ,Literal,Instance > subseriesStatement > Literal ,subseriesStatement ,Literal,,"Definition says: includes the ISSN if applicable.  Converter Observations: this will be converted into the seriesStatement property, not the subseriesStatement property.  Subseries title proper info resides in 490 $a, either in the same $a as the series statement, or a separate $a.  The converter converts anything in 490 $a into the seriesStatement property.",
+ISSN of subseries (T),2.12.16,Transcribe both ISSN of series and ISSN of subseries if both are present.,490 $x,rdam:issnOfSubseries(P30167),Instance > subseriesStatement > Literal ,subseriesStatement  ,Literal,,,,,"Definition says: includes the ISSN if applicable. Converter Observations: this will be converted into the seriesStatement property, not the subseriesStatement property.  Subseries ISSN resides in 490 $x.  The converter converts anything in 490 $x into the seriesStatement property.",
+Numbering within subseries (T),2.12.17,,490 $v,rdam:numberingWithinSuberies(P30015),Instance > subseriesEnumeration > Literal ,subseriesEnumeration   ,Literal,Instance > subseriesEnumeration > Literal ,subseriesEnumeration   ,Literal,,"Converter Observations: this will be converted into the seriesEnumeration property, not the subseriesEnumeration property.  Subseries enumeration info resides in 490 $v, just like series enumeration.  The converter converts anything in 490 $v into the seriesEnumeration property.",
+Mode of issuance,2.13,,Ldr/07,rdam:modeOfIssuance(P30003),Instance > issuance > Issuance,issuance,Issuance,Instance > issuance > Issuance,issuance,Issuance,,"Per LC Marc to BF specifications for the Leader, use URIs from http://id.lc.gov/vocabulary/issuance/",
+Identifier for the manifestation,2.15,Rare music: Record publisher & plate numbers for rare notated music; record issue numbers for rare audio.,"020, 024, 026-028, 074, 088",rdam:identifierForTheManifestation(P30004),"Instance > identifiedBy > Identifier, [Specific subclass of identifier]
+[Specific subclass of identifier] > rdf:value > Literal","isbn;  Fingerprint; Strn; PublisherNumber ;  ReportNumber 
+Entire list is at  http://id.loc.gov/ontologies/bibframe.html#c_Identifier
+","Literal (Should we define the value type here as Literal only, or keep it open to any type, including URI?)","bf:Instance > bf:identifiedBy > bf:Isbn 
+bf:Isbn > rdf:value > ""0877790019""",bf:identifiedBy,Literal or URI,Identifier pattern,Also see specification on indentifiers at http://www.loc.gov/bibframe/docs/pdf/bf2-identifiers-apr2016.pdf,"
+"
+Preferred citation ,2.16,PCC Core for archival materials.,524,rdam:preferredCitation(P30005),"Work > preferredCitation > Literal
+or
+Instance > preferredCitation > Literal",preferredCitation,Literal,"Work > preferredCitation > Literal
+or
+Instance > preferredCitation > Literal",preferredCitation,Literal,, Can be used with: Work or Instance,
+Note on title,2.17.2,"Make a note giving the source of title, if applicable.
+Online resources: Always give this note using a MARC 588 field. See PCC Provider-Neutral E-Resource MARC Record Guide: P-N/RDA Version for full explanation.
+Rare graphics: Always make a note giving the source of title.","500, 588",rdam:noteOnTitle(P30063),"Instance > note > Note
+Note > rdfs:label > Literal
+Note > noteType> Literal
+",Note; noteType,Note; Literal,"bf:Instance > bib:hasPreferredTitle > bf:Title
+bf:Title > bib:isTargetOf > oa:Annotation 
+oa:Annotation > oa:motivatedBy > [Named Individual]
+oa:Annotation > oa:hasBody > oa:TextualBody, bf:Note
+oa:TextualBody, bf:Note > rdfs:label > Literal ","bib:hasPreferredTitle
+bib:isTargetOf
+oa:motivatedBy
+oa:hasBody
+rdfs:label",oa:TexuatualBody; Literal,Notes and Annotation pattern," See specifications on Notes http://www.loc.gov/bibframe/docs/pdf/bf2-notes-june2016.pdf
+Per LC MARC to BF Specs if the note is currently coded as 500 it will convert as generic Bf:Note.
+"," BF does define any specific note types but rather expects that if specificity is desired, an external vocabulary should be used.   Should we recommend using an external vocabulary of note types, or just use bf:noteType with a literal as in their example of ""binding""?"
+Note on statement of responsibility ,2.17.3,"PCC Core for rare atlases, rare books, and rare music if a title and statement of responsibility as recorded have been transposed from their presentation in the source. Make a note indicating the transposition.",500,rdam:noteOnStatementOfResponsibility(P30057),"Instance > note > Note
+Note > rdfs:label > Literal
+Note > noteType> Literal",Note; noteType,Note; Literal,"bf:Instance > bib:isTargetOf > oa:Annotation 
+oa:Annotation > oa:motivatedBy > [Named Individual]
+oa:Annotation > oa:hasBody > oa:TextualBody, bf:Note
+oa:TextualBody, bf:Note > rdfs:label > Literal ","bib:isTargetOf
+oa:motivatedBy
+oa:hasBody
+rdfs:label",oa:TexuatualBody; Literal,Notes and Annotation pattern, See comment on Note on title,
+"Note on issue, part, or iteration used as the basis for identification of the resource ",2.17.13,"PCC Core for all online monographs.
+PCC Core for print multipart monographs, when applicable.",588,rdam:noteOnIssuePartOrOtherIterationUsedAsTheBasisForTheIdentificationOfTheResource (P30050),"Instance > note > Note
+Note > rdfs:label > Literal
+Note > noteType> Literal",Note; noteType,Note; Literal,Forthcoming?,Forthcoming?,oa:TexuatualBody; Literal,Notes and Annotation pattern," Per LC Marc to BF Specs Notes currently in the 588 field will convert as bf:Note with noteType ""description source""; see Example 4 in http://www.loc.gov/bibframe/docs/pdf/bf2-notes-june2016.pdf
+",
+Custodial history of item ,2.18,PCC Core for archival materials; additional guidance may be found in DACS 5.1.,561,rdai:custodialHistoryOfItem(P40026),Item > custodialHistory > Literal, custodialHistory     ,Literal,Forthcoming?,Forthcoming?,,Forthcoming Provenance and Custodial History pattern,,
+Immediate source of acquisition of item ,2.19,PCC Core for archival materials; additional guidance may be found in DACS 5.2.,541,rdai:immediateSourceOfAcquisitionOfItem(P40050),Item > immediateAcquisition > Literal,immediateAcquisition  ,Literal,"bf:Item > bib:hasActivity > bib:AquisitionActivity 
+
+",bib:hasActivity,bib:AquisitionActivity ,Activities Pattern,,
+Describing Carriers,,,,,,,,,,,,,
+Media type,3.2,,337,rdam:mediaType(P30002),"Work > media > Media
+Instance > media > Media",media,Media,bf:Instance > rdf:type > [rdamt:],rdf:type,RDA Media Types Named Individuals,Content/Carrier/Media Type pattern,,"Y when controlled via an established vocab agreed upon by the user community
+$2 rdamedia refers to 2 vocab sources for URI: id.loc and rdaregistry.info"
+Carrier type,3.3,"Always record in 338. For some resource types, 007 field(s) will also be required, including the Specific Material Designation (007/01) for resources other than textual monographs.","007/01, 338",rdam:carrierType(P30001),Instance > carrier > Carrier,carrier,Carrier,bf:Instance > rdf:type > [rdact:],rdf:type,RDA Carrier Types Named Individuals,Content/Carrier/Media Type pattern,,"Y for URI when controlled via an established vocab agreed upon by the user community
+$2 rdamedia refers to 2 vocab sources for URI: id.loc and rdaregistry.info"
+Extent,3.4,"Always record extent, even though RDA only considers extent to be core if the resource is complete or the total extent is known. Use RDA elements under 3.4.1-3.4.6, as appropriate to the resource.
+Online resources: Record extent as “1 online resource” followed by either pagination (for textual materials) or format-specific terminology when applicable (e.g., vocal score, videodisc, slide, atlas). Record the subunits only if readily ascertainable and considered important for identification. Example: 1 online resource (1 vocal score (28 pages)).
+Cartographic resources: Include accompanying material ($e), if applicable.
+Rare materials: Apply Descriptive Cataloging of Rare Materials (DCRM) conventions when recording extent; however, do not use abbreviations.",300 $a,rdam:extent(P30182),"bf:Instance > bf:extent > bf:Extent
+bf:Extent > rdfs:label > Literal",extent,Extent; Literal,Instance > extent > Extent,extent,Extent ,,,"(based on the BF example, seems the value can be literal? http://bibframe.org/vocab/extent.html   Also it's kind of interesting, why extent has both a property and a Class, but dimensions has only a property, one question accordingly would be for those elements with both property and class type, should anticipated value be further discussed for the Class type?)"
+Dimensions,3.5,"PCC Core for audio recordings, notated music, moving images, still images, cartographic resources, direct-access electronic resources, and rare materials (for rare graphic materials, always specify what was measured). Use RDA elements under 3.5-3.5.3, as appropriate to the resource.","007/04, 
+300 $c, 
+340 $b",rdam:dimensions(P30169),Instance > dimensions > Literal,dimensions,Literal,"bf:Instance > :hasMeasurementGroup > :MeasurementGroup
+:MeasurementGroup > :hasMeasurement > :Measurement 
+:MeasurementGroup > :dcterms:description > Literal
+:Measurement > :hasUnit > [named individual]
+:Measurement > rdf:value > [Numerical literal]
+",":hasMeasurementGroup
+:hasMeasurement        
+dcterms:description        
+:hasUnit 
+rdf:value",":MeasurementGroup
+:Measurement         
+Literal        
+[Named individual]
+[Numerical literal]        ",Measurements pattern,,
+Base material,3.6,"PCC Core for graphic materials.
+PCC recommends for historical audio recordings.","007/04, 300, 340",rdam:baseMaterial(P30208),Instance> baseMaterial > BaseMaterial, baseMaterial,BaseMaterial,"bf:Instance >:hasPhysicalCharacteristic > :Material
+:Material > :baseMaterial > Literal or Named Individual 
+
+",":hasPhysicalCharacteristic
+:baseMaterial        
+
+",":Material
+Literal or Named Individual ",Physical Characteristics pattern,,"Y for URI when controlled via an established vocab agreed upon by the user community
+
+$2 rdamedia refers to 2 vocab sources for URI: id.loc and rdaregistry.info
+
+value vocab decaprecated: http://www.rdaregistry.info/termList/RDAbaseMaterial/"
+Applied material,3.7,PCC Core for graphic materials.,"300, 340",rdam:appliedMaterial(P30084),Instance > appliedMaterial > AppliedMaterial,appliedMaterial ,Appliedmaterial,"bf:Instance >:hasPhysicalCharacteristic > :Material
+:Material > :appliedMaterial > Literal or Named Individual 
+
+",":hasPhysicalCharacteristic     
+:appliedMaterial        
+",":Material
+Literal or Named Individual ",Physical Characteristics pattern, ,
+Mount,3.8,PCC Core for graphic materials.,"007/05, 300, 340",rdam:mount(P30186),Instance > mount > Mount,mount,Mount,"bf:Instance >:hasPhysicalCharacteristic > :Material
+:Material > :mount > Literal or Named Individual ",":hasPhysicalCharacteristic     
+:mount",":Material
+Literal or Named Individual ",Physical Characteristics pattern, ,
+Production method,3.9.2,"PCC Core for rare cartographic manuscripts and rare music manuscripts, when applicable.","300, 340, 500",rdam:productionMethodForManuscript(P30189) ,Instance > productionMethod > ProductionMethod,productionMethod,ProductionMethod,Instance > productionMethod > ProductionMethod,productionMethod,ProductionMethod,,,
+Layout,3.11,PCC Core for cartographic resources.,"007/00
+300 $a ($e)",rdam:layout (P30155),Instance > layout > Layout,layout,Layout,Instance > layout > Layout,layout,Layout,,,
+Bibliographic format,3.12,"Rare books, rare music, rare atlases: PCC recommends this element when it is applicable and can be determined.","300, 340",rdam:bookFormat(P30197),Instance > bookFormat > BookFormat,bookFormat ,BookFormat,Instance > bookFormat > BookFormat,bookFormat ,BookFormat,,,
+Sound characteristic ,3.16,PCC Core for audio recordings.,"300, 344",rdam:soundCharacteristic(P30125),Instance > soundCharacteristic > SoundCharacteristic ,soundCharacteristic ,SoundCharacteristic,Instance > soundCharacteristic > SoundCharacteristic ,soundCharacteristic ,SoundCharacteristic,," subclassed as: RecordingMethod
+RecordingMedium, PlayingSpeed, GrooveCharacteristic,TrackConfig, TapeConfig, PlaybackChannels,PlaybackCharacteristic
+", 
+Video characteristic ,3.18,"PCC Core for moving images, when applicable.","300, 346",rdam:videoCharacteristic(P30126),Instance > videoCharacteristic > VideoCharacteristic ,videoCharacteristic,VideoCharacteristic,Instance > videoCharacteristic > VideoCharacteristic ,videoCharacteristic,VideoCharacteristic,," subclassed as : VideoFormat, BroadcastStandard",
+Digital file characteristic ,3.19,PCC Core for cartographic resources. Use RDA 3.19.1-3.19.8 as appropriate to the resource.,"300, 347, 352",rdam:digitalFileCharacteristic (P30124),Instance > digitalCharacteristic > DigitalCharacteristic,digitalCharacteristic,DigitalCharacteristic,Instance > digitalCharacteristic > DigitalCharacteristic,digitalCharacteristic,DigitalCharacteristic,," subclassed as: FileType, EncodingFormat, FileSize, Resolution, RegionalEncoding, EncodedBitrate, CartographicDataType, CartographicObjectType, ObjectCount",
+File type,3.19.2,"PCC Core for audio recordings, notated music, and moving images, when applicable.","300, 347",rdam:fileType(P30018),"Instance > digitalCharacteristic >DigitalCharacteristic, FileType
+FileType > rdfs:value > Literal",FileType,Literal,"Instance > digitalCharacteristic >DigitalCharacteristic, FileType
+FileType > rdfs:value > Literal",FileType,Literal,, , 
+Encoding format,3.19.3,"PCC Core for audio recordings and moving images, when applicable.","300, 347",rdam:encodingFormat(P30096),"Instance > digitalCharacteristic > DigitalCharacteristic, EncodingFormat
+EncodingFormat > rdfs:value > Literal",EncodingFormat,Literal,"Instance > digitalCharacteristic > DigitalCharacteristic, EncodingFormat
+EncodingFormat > rdfs:value > Literal",EncodingFormat,Literal,, ,
+Regional encoding,3.19.6,"PCC Core for moving images, when applicable.","300, 347",rdam:regionalEncoding(P30006),"Instance > digitalCharacteristic > DigitalCharacteristic, RegionalEncording
+RegionalEncoding > rdfs:value > Literal",RegionalEncoding,Literal,"Instance > digitalCharacteristic > DigitalCharacteristic, RegionalEncording
+RegionalEncoding > rdfs:value > Literal",RegionalEncoding,Literal,, ,
+Digital representation of cartographic content ,3.19.8,PCC Core for digital cartographic resources.,"300, 347, 352",rdam:digitalRepresentationOfCartographicContent(P30102)," Instance > digitalCharacteristic > DigitalCharacteristic, CartographicDataType  
+CartographicDataType > rdfs:value > Literal
+Instance > digitalCharacteristic > Digital Characteristic, CartographicObjectType
+CartographicObjectType > Literal", CartographicDataType; CarographicObjectType,Literal," Instance > digitalCharacteristic > DigitalCharacteristic, CartographicDataType  
+CartographicDataType > rdfs:value > Literal
+Instance > digitalCharacteristic > Digital Characteristic, CartographicObjectType
+CartographicObjectType > Literal", CartographicDataType; CarographicObjectType,Literal,,,
+Equipment or system requirement,3.2,See RDA 3.20.1.3. Use judgment to determine whether systems requirements go beyond the normal or obvious.,"340, 538",rdam:equipmentOrSystemRequirement(P30162),"Instance > systemRequirement > SystemRequirement
+SystemRequirement > rdf:label > Literal",systemRequirement,SystemRequirement,"Instance > systemRequirement > SystemRequirement
+SystemRequirement > rdf:label > Literal",systemRequirement,SystemRequirement,,,
+Providing Acquisition & Access Information,,,,,,,,,,,,,
+Contact Information,4.3,PCC Core for archival materials.,852,rdam:contactInformation(P30141),"Instance > acquisitionSource > AcquisitionSource
+AcquisitionSource > rdf:label > Literal                                                                         ",acquisitionSource (AcquisitionSource is close to the meaning of RDA 4.3. ,AcquisitionSource,"bf:Item > bib:hasActivity > bib:AquisitionActivity 
+
+",bib:hasActivity,bib:AquisitionActivity ,Activities Pattern,,
+Restrictions on use ,4.5,PCC Core for archival materials; absence of restrictions should be noted.,506,rdam:restrictionOnUseOfManifestation (P30146) ,"Instance > usageAndAccessPolicy > UsageAndAccessPolicy, UsePolicy
+UsePolicy > Rdf:label > Literal",UsePolicy,Literal,"Instance > usageAndAccessPolicy > UsageAndAccessPolicy, UsePolicy
+UsePolicy > Rdf:label > Literal",UsePolicy,Literal,,"
+",
+Uniform resource locator,4.6,"Do not record URLs that are restricted for use at a specific institution (e.g., proxy URLs) in a master utility record unless it is the only URL available.",856 $u,rdam:uniformResourceLocator(P30154),Item > electronicLocator > Resource,electronicLocator,Resource ,Item > electronicLocator > Resource,electronicLocator,Resource ,,,
+Identifying Works & Expressions,,,,,,,,,,,,,
+"Preferred title for the work
+-- Musical work
+-- Legal work 
+-- Religious work
+-- Official communication
+","6.2.2
+6.14.2
+6.19.2
+6.23.2
+6.26.2
+",Record as part of an authorized access point if the preferred title for work differs from the title proper (245 $a $n $p) or if additional differentiating elements are needed.,"130, 240, 7XX",rdaw:preferredTitleForTheWork(P10223),"Work> title > Title
+Title > mainTitle > Literal
+Title > partNumber > Literal
+Title > partName > Literal",mainTitle; partNumber; partName,Literal,"bf:Work > bf:title > bf:Title
+bf:Title > rdfs:label > Literal
+bf:Title > dcterms:hasPart > bib:MainTitleElement 
+bf:Title > dcterms:hasPart > bib:NonSortElement
+bf:Title > dcterms:hasPart > bib:PartNumberElement
+bf:Title > dcterms:hasPart > bib:PartNameElement 
+bf:Title > bib:hasSourceStatus > [bib:namedIndividual]
+bf:Title > vivo:rank > [Numerical Value]","bf:title
+rdfs:label
+dcterms:hasPart
+bib:hasSourceStatus
+vivo:rank","Literal, Class, Named Individual",Title pattern,, 
+Form of work,6.3,Record if needed to differentiate.,"130, 240, 380, 7XX",rdaw:formOfWork(P10004),Work > genreForm > GenreForm,genreForm  ,GenreForm,Work > genreForm > GenreForm,genreForm  ,GenreForm,,,Should MARC 655 be included in Form of work which mapps to genreForm?  
+"Date of work
+-- Legal work
+-- Treaty
+","6.4
+6.20
+6.20.3
+",Record if needed to differentiate. Always record the date of a treaty.,"046, 130, 240, 7XX",rdaw:dateOfWork(P10219),"Work > date, originDate > Literal",originDate,Literal,"bf:Work> bib:hasActivity > bib:CreationActivity
+bib:CreationActivity > dcterms:date > Literal","bib:hasActivity
+dcterms:date",Literal,Activities Pattern? ,,For imprecise dates or date ranges see Sec 4.2 of ISO/DIS 8601 
+Place of origin of the work,6.5,Record if needed to differentiate.,"130, 240, 7XX",rdaw:placeOfOriginOfTheWork(P10218),"Work > place, originPlace > Place",originPlace,Place,"bf:Work> bib:hasActivity > bib:CreationActivity
+bib:CreationActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal","bib:hasActivity
+bib:atLocation",prov:Location,Activities Pattern? ,,
+"Other distinguishing characteristic of the work
+-- Legal work
+","6.6
+
+6.21
+",Record if needed to differentiate.,"130, 240, 381, 7XX",rdaw:otherDistinguishingCharacteristicOfTheWork(P10003),, Not found,,Not found?,,,,,"The ""other distinguishing characteristic"" is a fairly open-ended category and can take a number of different forms:  a word or words taken from the title proper of a manifestation of the work; a commonly used brief title; the name of editor; name of publisher; etc. (See, e.g., Chan & Salaba, 2015, pp. 290-291; Maxwell, 2013, pp. 497-499). Can we break out the different options? Also note that some elements (name of publisher; name of editor) could take a URI while others (title words) may be better dealt with as literals. 
+The major question to be answered here is whether we elect to try to break out the different options that can fall under the ""Other distinguishing characteristic"" (e.g., title words; name of editor; name of publisher; etc.) or not. "
+Content type,6.9,"Always record in Ldr/06 and 336. Also record as part of an authorized access point if needed to differentiate.
+Rare cartographic resources, rare graphics: Do not follow DCRM(C,G) 1C instructions for recording general material designations.","Ldr/06, 130 , 240, 336, 7XX ",rdae:contentType(P20001),Work > content > Content,content ,Content,bf:Work > rdf:type > [rdact:] ,rdf:type,RDA Content Types Named Individuals,Content/Carrier/Media Type pattern,,
+"Date of expression
+-- Religious work
+","6.10
+6.24
+",Record if needed to differentiate.,"046, 130, 240, 7XX",rdae:dateOfExpression(P20214),"Work > date, originDate > Literal",originDate,Literal,"bf:Work > bib:hasActivity > bib:CreationActivity
+bib:CreationActivity > dcterms:date > Literal","bib:hasActivity
+dcterms:date",Literal,Activities Pattern? ,"BibFrame Work =  RDA work + expression; for all intents and purposes, this category is identical to ""Date of Expression--Legal work--Treaty"", save for the nature of the work (religious vs. legal). ","How do we deal with imprecise dates or date ranges (e.g., an Ancient or Medieval work may not be dated to a single year but to a range of dates within which its creation is believed to fall. (e.g., it may be dated to the ""9th century"" or ""ca. 800-810""). Will we need to cater for dates with multiple years? )"
+Language of expression,6.11,Always record in 008/35-37. Record in 041/546 as needed. Record in authorized access point if needed to differentiate.,"008/35-37, 041, 546, 130, 240, 7XX",rdae:languageOfExpression(P20006),Work > language > Language,language,Language,Work > language > Language,language,Language,,,
+"Other distinguishing characteristic of the expression
+-- Musical work
+-- Religious work
+","6.12
+
+6.18
+6.25
+",Record if needed to differentiate.,"130, 240, 381, 7XX",rdae:otherDistinguishingCharacteristicOfTheExpression (P20003),,Not Found,,Not found?,,,,,"For musical works, can be indication whether work is arranged; whether it is a sketch; whether it is a vocal score or a chorus score (RDA 6.18); For religious works, ""other characteristic"" can be names of Bible versions or names of editors/translators (RDA 6.25). ""Arranged"" and ""Sketches"" could presumably treated as literals; names of Bible versions and of editors/translators could conceivably treated as URIs. Is this a field that we want to break out into its different alternatives? The situation here is the same as that for ""Other distinguishing characteristic of the work--Legal work.""
+The major question to be answered here is whether we elect to try to break out the different options that can fall under the ""Other distinguishing characteristic"" (e.g., for Music, phrases such as ""Arranged"", ""Sketches"", ""Vocal Scores"", and ""Choral Scores""; name of editor; name of publisher; etc.) or not.  "
+Medium of performance ,6.15,Record if needed to differentiate. See also RDA 7.21.,"130, 240, 382, 7XX",rdaw:mediumOfPerformance (P10220),Work > musicMedium > MusicMedium,musicMedium ,MusicMedium ,Work > musicMedium > MusicMedium,musicMedium ,MusicMedium ,,,"In some cases, they will be same; in other cases, different.  Do we need a property or class to distinguish cases where they differ? TMD: agree that this issue needs to be determined: to my mind, it seems most logical to have two subclasses of ""MusicMedium""-- OriginalMusicMedium and PerformedMusicMedium. What's the difference between Medium of Performance and Medium of Performance of the music content?"
+Numeric designation of a musical work,6.16,Record if needed to differentiate.,"130, 240, 383, 7XX",rdaw:numericDesignationOfAMusicalWork (P10079),"Work > musicOpusNumber > Literal
+or
+Work > musicSerialNumber > Literal
+or
+Work > musicThematicNumber > Literal","musicOpusNumber  
+musicSerialNumber
+musicThematicNumber",Literal,"Work > musicOpusNumber > Literal
+or
+Work > musicSerialNumber > Literal
+or
+Work > musicThematicNumber > Literal","musicOpusNumber  
+musicSerialNumber
+musicThematicNumber",Literal,,,
+Key,6.17,Record if needed to differentiate.,"130, 240, 384, 7XX",rdaw:key(P10221),Work > musicKey > Literal,musicKey   ,Literal,Work > musicKey > Literal,musicKey   ,Literal,,,
+Describing Content,,,,,,,,,,,,,
+Coverage of the content ,7.3,PCC recommends for rare cartographic resources unless the geographic and chronological coverage are apparent from the rest of the description.,"045, 500, 522",rdaw:coverageOfTheContent(P10216),"Work > geographicCoverage > GeographicCoverage
+Work > temporalCoverage > Literal",geographicCoverage ; temporalCoverage,GeographicCoverage ; Literal,"bf:Work > bib:hasActivity > bib:CreationActivity
+bib:CreationActivity > bib:atLocation > prov:Location 
+prov:Location > rdfs:label > Literal
+
+OR 
+
+bf:Work > bib:hasActivity > bib:CreationActivity
+bib:CreationActivity > dcterms:date > Literal","bib:atLocation; dcterms:date
+",,Notes and Annotation pattern,,
+Longitude and latitude ,7.4.2,"PCC Core for cartographic resources.
+Rare cartographic resources: Additional guidance in determining longitude and latitude may be found in DCRM(C) 3D and Appendix K.","034, 255",rdaw:longitudeAndLatitude(P10081),"Work > cartographicAttributes > Cartographic
+Cartographic > coordinates > Literal
+or
+Instance > cartographicAttributes > Cartographic
+Cartographic > coordinates > Literal ",coordinates,Literal,"Work > cartographicAttributes > Cartographic
+Cartographic > coordinates > Literal
+or
+Instance > cartographicAttributes > Cartographic
+Cartographic > coordinates > Literal ",coordinates,Literal,,,
+System of organization ,7.8,PCC Core for archival materials; additional guidance may be found in DACS 3.2.,351,rdaw:systemOfOrganization(P10084),"Work > arrangement > Arrangement
+or
+Instance > arrangement > Arrangement",arrangement,Arrangement,"Work > arrangement > Arrangement
+or
+Instance > arrangement > Arrangement",arrangement,Arrangement,,,
+Dissertation or thesis information,7.9,,502,rdaw:dissertationOrThesisInformation (P10209),"Work > dissertation > Dissertation
+or
+Instance > dissertation > Dissertation", dissertation   ,Dissertation,"Work > dissertation > Dissertation
+or
+Instance > dissertation > Dissertation", dissertation   ,Dissertation,,properties of Dissertation include: grantingInstitution; degree; dissertationIdentifier,
+Summarization of the content,7.1,"PCC Core for archival materials; additional guidance may be found in DACS 3.1.
+PCC recommends for other resource types when useful to support user tasks.",520,rdae:summarizationOfTheContent (P20069),"Work > summary > Summary
+or
+Instance > summary > Summary",summary,Summary,"bf:Work > bib:isTargetOf > oa:Annotation
+oa:Annotation > oa:motivatedBy > bib:summarizing
+oa:Annotation > oa:hasBody > oa:TextualBody, bf:Summary 
+oa:TextualBody > rdfs:label > Literal","bib:isTargetOf
+oa:motivatedBy
+oa:hasBody
+rdfs:label ","oa:Annotation, literal",Notes and Annotation pattern,,
+Date of capture,7.11.3,PCC recommends for audio recordings.,"033, 518",rdae:dateOfCapture (P20004),"Work > capture > Capture
+or
+Instance > capture > Capture ",capture,Capture,"bf:Work > dcterms:date, dc:terms:created > Literal","dcterms:date
+dcterms:created	",Literal,, ,
+Language of the content,7.12,Always record language of primary content in 008/35-37. Also record languages of other content in 041/546 if it will assist identification and selection.,"008/35-37; 041, 546",rdae:languageOfTheContent (P20007),"Work > content > Content
+Content > language > Language",language ,Language,"bf:Work > bf:language > bf:Language
+",language ,Language,,,
+Script,7.13.2,PCC Core for resources in some languages (see examples at LC-PCC PS for 7.13.2.3).,546,rdae:script (P20065),"Work > notation > Notation, Script
+Script > rdfs:value > Literal
+or
+Instance > notation > Notation, Script
+Script > rdfs:value > Literal",Script,Literal,"Work > notation > Notation, Script
+Script > rdfs:value > Literal
+or
+Instance > notation > Notation, Script
+Script > rdfs:value > Literal",Script,Literal,,,
+Form of musical notation ,7.13.3,,546,rdae:formOfMusicalNotation (P20064),"Work > notation > Notation, MusicNotation
+MusicNotation > rdfs:value > Literal
+or
+Instance > notation > MusicNotation
+MusicNotation > rdfs:value > Literal", MusicNotation ,Literal,"Work > notation > Notation, MusicNotation
+MusicNotation > rdfs:value > Literal
+or
+Instance > notation > MusicNotation
+MusicNotation > rdfs:value > Literal", MusicNotation ,Literal,,,"Anticipated values for the form come from the ""RDA Form of Musical Notation"" vocabulary in RDA Registry.  MLA BP shows form being recorded in the 546.  Converter Observations: Form of musical notation will not be converted into MusicNotation class, it will be converted into the  Notation class instead. Form of musical notation resides in MARC 546 $b, along with information on alphabets, scripts, and other notation systems.  The converter does not distinguish between these different forms and puts everything in the Notation class."
+Format of notated music ,7.2,,"006/03-04; 008/20-21; 300, 348, 500",rdae:formatOfNotatedMusic (P20209),"Work > musicFormat > MusicFormat
+or
+Instance > musicFormat > MusicFormat ", musicFormat ,MusicFormat,"Work > musicFormat > MusicFormat
+or
+Instance > musicFormat > MusicFormat ", musicFormat ,MusicFormat,,,"Anticipated values for the format come from the ""RDA Format of Musical Notation"" vocabulary in RDA Registry.  Converter Notes: the class MusicFormat is populated from either 008/20-21 and/or 348.  For 008 conversion, the label is the text associated with the corresponding code in the MARC21 bibliographic format, not the term from the RDA vocabulary."
+Medium of performance of musical content,7.21,,"048, 382, 500",rdae:mediumOfPerformanceOfMusicContent(P20215) , Work > musicMedium > MusicMedium,musicMedium ,MusicMedium , Work > musicMedium > MusicMedium,musicMedium ,MusicMedium ,,," The difference between RDA 6.15 and 7.21 is that 6.15 deals with how a musical work was originally conceived, whereas 7.21 deals with the performance of musical content.  In some instances, they could be the same; e.g., a work originally conceived for piano and performed by piano. In other instances, they could be different; e.g., a work originally conceived for piano but performed by guitar.  Converter observations: content recorded in the 382 field appears to convert to the class MusicMedium.  The property ""musicMedium"" does double-duty, covering both ""medium of performance for which a musical resource was originally conceived, written or performed.""  The class MusicMedium also seemingly covers both works and expressions; i.e., how it was originally conceived and performed. I'm not sure if ths matters, maybe MLA should be consulted."
+Duration,7.22,PCC Core for audio recordings and moving images when readily available.,"008, 300, 306, 500, 505",rdae:duration (P20219),"Work > duration > Literal
+or
+Instance > duration > Literal ",duration,Literal,"Work > duration > Literal
+or
+Instance > duration > Literal ",duration,Literal,schema:duration for machine actionable data," Converter Observations: Durations coded in the 008 and 306 fields convert to the property ""duration"" as expected. Durations coded in other fields of the MARC record will convert according to specs for those fields, but will not convert to the ""duration"" property. ",
+Scale,7.25,"Required only for cartographic resources. Use RDA elements under 7.25.1-7.25.5, as appropriate to the resource (7.25.3 and 7.25.4 are always core under RDA for cartographic resources).
+Rare cartographic resources: Follow DCRM(C) 3B and Appendix J; however, use ""approximately"" rather than the abbreviation ""ca.""","034, 255",rdae:scale (P20228),"Work > scale > Scale
+or
+Instance > scale > Scale", scale ,Scale,"Work > scale > Scale
+or
+Instance > scale > Scale", scale ,Scale,,,
+Horizontal scale of cartographic content  ,7.25.3,,"034, 255",rdae:horizontalScaleOfCartographicContent(P20226),"Work > scale > Scale
+or
+Instance > scale > Scale",scale,Scale,"Work > scale > Scale
+or
+Instance > scale > Scale",scale,Scale,, ,
+Vertical scale of cartographic content ,7.25.4,,"034, 255",rdae:verticalScaleOfCartographicContent (P20230),"Work > scale > Scale
+or
+Instance > scale > Scale",scale,Scale,"Work > scale > Scale
+or
+Instance > scale > Scale",scale,Scale,,,
+Projection of cartographic content ,7.26,"Rare cartographic resources: Follow DCRM(C) 3C; however, use ""projection"" rather than the abbreviation ""proj.""",255,rdae:projectionOfCartographicContent(P20216),"Work > cartographicAttributes > Cartographic
+Cartographic > projection > Literal
+or
+Instance > cartographicAttributes > Cartographic
+Cartographic > projection > Literal", projection   ,Literal,"Work > cartographicAttributes > Cartographic
+Cartographic > projection > Literal
+or
+Instance > cartographicAttributes > Cartographic
+Cartographic > projection > Literal", projection   ,Literal,,,
+Other details of cartographic content ,7.27,PCC Core for rare cartographic resources if required by DCRM(C).,"342, 343, 500",rdae:otherDetailsOfCartographicContent (P20210), ,Not found,,Not found?,,,,,
+"Persons, Families, and Corporate Bodies Associated with a Work",,,,,,,,,,,,,
+Relationship Designator,18.5,Follow PCC Training Manual for Applying Relationship Designators in Bibliographic Records – 1XX/7XX $e $i or $j as appropriate,"1XX, 7XX","[Individual role designators listed individually qua properties in rdae, rdam, and rdaw (try searching contributor in rdae, but this may not return a comprehensive result)]; Note also that inverses of individual role designators are treated individually qua properties in rda.","Work >contribution > Contribution
+Contribution > role > Role",role,Role,"bf:Instance > bib:hasActivity > [bibliotek-o Activity Classes]
+[bibliotek-o Activity Classes] > bib:hasAgent > foaf:Agent",bib:hasActivity; bib:hasAgent,bibliotek-o Activity Classes; foaf:Agent,Activities pattern,https://www.loc.gov/bibframe/docs/pdf/bf2-roles-apr2016.pdf,"Given that relationship designators presumably will have their own URIs, wouldn't it make sense to treat them as a class in BIBFRAME? Thus far, the closest that one can get to them is through the ""role"" property which, however, has the anticipated value of a literal. "
+Creator,19.2,"If more than one, only the creator having principal responsibility named first in resources embodying the work or in reference sources is required; if principal responsibility is not indicated, only the first-named creator is required.
+After satisfying the RDA core requirement, catalogers may provide additional authorized access points for creators according to cataloger’s judgment.
+Archival materials: Additional guidance for recording creators may be found in DACS 9.","1XX, 7XX",rdaw:creator (P10065),"Work >contribution > Contribution
+Contribution > role > Role
+Role > agent > Agent",roll; agent, Agent,"bf:Instance > bib:hasActivity > [bibliotek-o Activity Classes]
+[bibliotek-o Activity Classes] > bib:hasAgent > foaf:Agent",bib:hasActivity; bib:hasAgent,bibliotek-o Activity Classes; foaf:Agent,Activities pattern," https://www.loc.gov/bibframe/docs/pdf/bf2-roles-apr2016.pdf; Agent is defined in BIBFRAME as ""Entity associated with a resource or element of description, such as the name of the entity responsible for the content or of the publication, printing, distribution, issue, release or production of a resource"": the phrase ""... entity responsible for the content"" would seem to correspond to RDA's creator as ""a person, family or corporate body responsible for the creation of a work"", though otherwise ""Agent"" is much semantically broader than ""Creator"". ","Given the importance of ""Creator"" in RDA, it would seem worth considering whether ""Creator"" shouldn't be added as a subproperty of ""Agent"" in BIBFRAME to align it with RDA, which has ""Work>hasCreator>Agent"".  Do we really wish to treat a central RDA category such as ""Creator"" as an ""external property"" in BIBFRAME, especially when ""Contributor"" is defined as a property within BIBFRAME? "
+Other agent associated with a work,19.3,"Include if the authorized access point representing that agent is used to construct the authorized access point representing the work.
+After satisfying the RDA core requirement, catalogers may provide additional authorized access points according to cataloger’s judgment.","1XX, 7XX",rdaw:otherPFCWork  (P10047),"Work >contribution > Contribution
+Contribution > role > Role
+Role > agent > Agent", agent, Agent,"bf:Instance > bib:hasActivity > [bibliotek-o Activity Classes]
+[bibliotek-o Activity Classes] > bib:hasAgent > foaf:Agent",bib:hasActivity; bib:hasAgent,bibliotek-o Activity Classes; foaf:Agent,Activities pattern,https://www.loc.gov/bibframe/docs/pdf/bf2-roles-apr2016.pdf, 
+"Persons, Families, and Corporate Bodies Associated with an Expression",,,,,,,,,,,,,
+Contributor,20.2,PCC recommends cataloger’s judgment for providing authorized access points for contributors.,7XX,rdae:contributor(P20053),"Work >contribution > Contribution
+Contribution > role > Role
+Role > agent > Agent",roll; agent,Agent,"bf:Instance > bib:hasActivity > [bibliotek-o Activity Classes]
+[bibliotek-o Activity Classes] > bib:hasAgent > foaf:Agent",bib:hasActivity; bib:hasAgent,bibliotek-o Activity Classes; foaf:Agent,Activities pattern,"BibFrame Work =  RDA work + expression; ""Contributor no longer exists"" according to LC Change to Contribution. ", 
+Related Works,,,,,,,,,,,,,
+Related work,25.1,"PCC recommends providing a contents note (no limit on number of works in the contents note unless burdensome). Give an analytical authorized access point for the predominant or first work in the compilation. Additional access points for other related works may also be included at the discretion of the cataloger. See section above for elements used to identify works and expressions.
+Moving images and audio recordings: Give a full contents note and/or analytical authorized access points for all works in a compilation, when feasible.
+If local institutional cataloging policy is to trace a series, use the authorized access point form of the series established in the LC/NACO Authority File.
+Archival materials: Provide a reference to finding aids describing the collection, either through notes, access points, and/or URLs, as appropriate.
+Rare materials: Citation notes and references to published descriptions are encouraged. Record in the form prescribed by Standard Citation Forms for Rare Materials Cataloging. For notated music, see also Appendix H of DCRM(M).","5XX, 7XX
+7XX
+8XX, 856
+510
+",rdaw:relatedWork(P10198),Work > relatedTo > Work,relatedTo,Work,Work > relatedTo > Work,relatedTo,Work,,,
+Related Expressions,,,,,,,,,,,,,
+Related expression,26.1,"PCC Core for compilations. Give a contents note (no limit on number of expressions in the contents note; use cataloger’s judgment). Give an analytical authorized access point for the predominant or first expression in the compilation. Additional access points for other related expressions may also be included at the discretion of the cataloger. See section above for elements used to identify works and expressions.
+Audio recordings, notated music, and rare music: Give a full contents note and/or analytical authorized access points for all works in a compilation, when feasible.
+If local institutional cataloging policy is to trace an expression of a series, use the authorized access point form of the expression of the series established in the LC/NACO Authority File.","5XX, 7XX
+
+8XX
+","rdae: relatedExpression
+P20205",,relatedTo,Resource ,,relatedTo,Resource ,,Expressions do exist in BF,Not necessary if have related work and related manifestation?
+Related Manifestations,,,,,,,,,,,,,
+Related manifestation ,27.1,"PCC Core for reproductions.
+Rare materials: If making separate descriptions for resources that were issued together by the publisher, make a reference to the related manifestation in a “with” note.","5XX,
+76X-787
+","rdam: relatedManifestation
+P30048",Instance > relatedTo > Instance,relatedTo,Instance,Instance > relatedTo > Instance,relatedTo,Instance,,,
+Related Items,,,,,,,,,,,,,
+Related item ,28.1,"PCC recommends for reproductions, bound-withs, and for special relationships for rare materials if warranted.
+Rare materials: If making separate descriptions for resources bound together after publication, make a reference to the related item in a local “with” note.","5XX,
+76X-787
+501 + $5 or 590
+","rdai:relatedItemOfItem(P40046)
+rdam:relatedItem  (P30140)",Item > relatedTo > Item,relatedTo,Item,Item > relatedTo > Item,relatedTo,Item,,,
+Subject Relationship,,,,,,,,,,,,,
+Subject Relationship,23.4,,"6XX, 050, 060, 082, 090",rdaw:subjectRelationship (P10256),"Work > subject > Resource
+or 
+Instance > subject > Resource
+or
+Item > subject > Resource
+
+Work > classification > Classification
+or
+ Instance > classification > Classification
+or
+Item > classification > Classification
+","subject; classification
+Subclassed as ClassificationDdC; ClassificationLcc; ClassificationUdc; ClassificationNlm",Resource; Classification,"Work > subject > Resource
+or 
+Instance > subject > Resource
+or
+Item > subject > Resource
+
+Work > classification > Classification
+or
+ Instance > classification > Classification
+or
+Item > classification > Classification
+","subject; classification
+Subclassed as ClassificationDdC; ClassificationLcc; ClassificationUdc; ClassificationNlm",Resource; Classification,,In RDA classification is included in Subject whereas in the BSR and in BF 2.0 they are separate elements.,
+END MAPPING,,,,,,,,,,,,,
