@@ -1,40 +1,22 @@
-# baseURI: http://example.org/bibliotek-o_shapes
-# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcelements.2012-06-04.ttl
-# imports: file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcmitype.2012-06-14.ttl
-# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcterms.2012-06-14.rdf
-# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/foaf-0.1.rdf
-# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/oa.2016-11-12.rdf
-# imports: file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/schema.rdf
-# imports: http://bibliotek-o.org/1.1/ontology/
-# imports: http://id.loc.gov/ontologies/bibframe/
-# imports: http://rdaregistry.info/Elements/u/
-# imports: http://vivoweb.org/ontology/core
-# imports: http://www.cidoc-crm.org/cidoc-crm/
-# imports: http://www.lingvoj.org/ontology
-# imports: http://www.w3.org/2004/02/skos/core
-# imports: http://www.w3.org/ns/prov
-# imports: http://www.w3.org/ns/shacl#
-# prefix: bibliotek-o_shapes
-
 @prefix bib: <http://bibliotek-o.org/1.1/ontology/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix bibliotek-o_shapes: <http://example.org/bibliotek-o_shapes#> .
-@prefix core: <http://vivoweb.org/ontology/core#> .
 @prefix lingvo: <http://www.lingvoj.org/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix p1: <http://example.org/file1#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/bibliotek-o_shapes>
   rdf:type owl:Ontology ;
-  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcterms.2012-06-14.rdf> ;
-  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/foaf-0.1.rdf> ;
-  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/oa.2016-11-12.rdf> ;
-  owl:imports <file:///bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/schema.rdf> ;
-  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcelements.2012-06-04.ttl> ;
-  owl:imports <file:/Users/sf433/Desktop/SHACLAppProfiles/topbraidworkspace/bibliotek-o_shapes/target-ontologies-renamed-for-TopBraid/dcmitype.2012-06-14.ttl> ;
+  owl:imports <http://purl.org/dc/terms/> ;
+  owl:imports <http://xmlns.com/foaf/0.1/> ;
+  owl:imports <http://www.w3.org/ns/oa#> ;
+  owl:imports <http://schema.org> ;
+  owl:imports <http://purl.org/dc/elements/1.1/> ;
+  owl:imports <http://dublincore.org/documents/2012/06/14/dcmi-terms/> ;
   owl:imports bib: ;
   owl:imports <http://id.loc.gov/ontologies/bibframe/> ;
   owl:imports <http://rdaregistry.info/Elements/u/> ;
@@ -43,7 +25,7 @@
   owl:imports <http://www.lingvoj.org/ontology> ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:imports <http://www.w3.org/ns/prov> ;
-  owl:imports sh: ;
+  owl:imports <http://www.w3.org/ns/shacl#> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 bibliotek-o_shapes:AudioForm
@@ -205,26 +187,7 @@ bibliotek-o_shapes:SubjectAndCoveragePropertyGroup
   rdf:type sh:PropertyGroup ;
   rdfs:label "Subject and coverage property group" ;
 .
-bibliotek-o_shapes:TitleForm
-  rdf:type rdfs:Class ;
-  rdf:type sh:NodeShape ;
-  rdfs:label "Title form" ;
-  rdfs:subClassOf rdfs:Resource ;
-  sh:property [
-      sh:path <http://purl.org/dc/terms/hasPart> ;
-      sh:class bib:TitleElement ;
-      sh:description "Has title part" ;
-      sh:name "has part" ;
-      sh:nodeKind sh:IRI ;
-    ] ;
-  sh:targetClass <http://id.loc.gov/ontologies/bibframe/Title> ;
-.
-bibliotek-o_shapes:TitlePropertyGroup
-  rdf:type sh:PropertyGroup ;
-  rdfs:label "Title property group" ;
-  sh:description "To group title information for the resource." ;
-  sh:order "0"^^xsd:decimal ;
-.
+
 bibliotek-o_shapes:WorkForm
   rdf:type rdfs:Class ;
   rdf:type sh:NodeShape ;
@@ -254,12 +217,7 @@ bibliotek-o_shapes:WorkForm
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path bib:hasPreferredTitle ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
-      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
-      sh:minCount 1 ;
-      sh:name "Preferred title" ;
-      sh:nodeKind sh:IRI ;
+      a bibliotek-o_shapes:HasPreferredTitlePropertyShape ;
       sh:order "0"^^xsd:decimal ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
     ] ;
@@ -358,14 +316,9 @@ bibliotek-o_shapes:WorkForm
       sh:nodeKind sh:IRI ;
     ] ;
   sh:property [
-      sh:path <http://id.loc.gov/ontologies/bibframe/title> ;
-      sh:class <http://id.loc.gov/ontologies/bibframe/Title> ;
-      sh:description "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." ;
-      sh:group bibliotek-o_shapes:TitlePropertyGroup ;
-      sh:name "Other title" ;
-      sh:nodeKind sh:IRI ;
-      sh:order "1"^^xsd:decimal ;
+      a bibliotek-o_shapes:HasTitlePropertyShape ;
       sh:target <http://id.loc.gov/ontologies/bibframe/Work> ;
+      sh:order "1"^^xsd:decimal ;
     ] ;
   sh:property [
       sh:path <http://purl.org/dc/terms/isPartOf> ;

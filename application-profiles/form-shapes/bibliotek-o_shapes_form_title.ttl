@@ -1,0 +1,95 @@
+#####
+#
+# bibliotek-o Title Form Shapes
+#
+# NOTES / TODO for bibliotek-o_shapes.ttl and bibliotek-o_form_shapes_title.ttl
+#
+# - Decide on namespace - use http://bibliotek-o.org/shapes/?
+# - Import of non-versioned ontologies (BF) - can we import from file system?
+# - Do we give these terms a different namespace from the main file, and do 
+#       imports, or does it work to just put them in the same namespace? 
+#       (latter preferred if it works).
+# - Change all blank nodes to URI resources
+# - Make sure use of HasTitlePropertyShape to define the title property shape
+#       on a work form works
+#  - Directory structure and naming conventions
+#  - Should implementations import these files or copy them into a 
+#        "target-shapes" directory?
+#
+#####
+
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix bib: <http://bibliotek-o.org/1.1/ontology/> .
+@prefix bibliotek-o_shapes: <http://example.org/bibliotek-o_shapes#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lingvo: <http://www.lingvoj.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+
+
+#####
+#                                         
+############### NODE SHAPES ###############
+#
+#####
+
+bibliotek-o_shapes:TitleForm
+  a sh:NodeShape ;
+  rdfs:label "Title form" ;
+  sh:property bibliotek-o_shapes:TitlePartShape ;
+  sh:targetClass bf:Title
+.
+
+
+#####
+#
+############### PROPERTY SHAPES ###############
+#
+#####
+
+bibliotek-o_shapes:TitlePartShape
+  a sh:PropertyShape ;
+  sh:path <http://purl.org/dc/terms/hasPart> ;
+  sh:class bib:TitleElement ;
+  sh:description "Has title part" ;
+  sh:name "has part" ;
+  sh:nodeKind sh:IRI ;
+.
+    
+bibliotek-o_shapes:HasPreferredTitlePropertyShape
+  a sh:PropertyShape ;
+  sh:path bib:hasPreferredTitle ;
+  sh:class bf:Title ;
+  sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:name "Preferred title" ;
+  sh:nodeKind sh:IRI ;
+.
+
+bibliotek-o_shapes:HasTitlePropertyShape
+  a sh:PropertyShape ;
+  sh:path bf:hasTitle ;
+  sh:class bf:Title ;
+  sh:description "Record non-PreferredTitles here. Use Preferred Title to capture a preferred title." ;
+  sh:group bibliotek-o_shapes:TitlePropertyGroup ;
+  sh:name "Other title" ;
+  sh:nodeKind sh:IRI ;
+.
+
+#####
+#
+############### PROPERTY GROUPS ###############
+#
+#####
+
+bibliotek-o_shapes:TitlePropertyGroup
+  rdf:type sh:PropertyGroup ;
+  rdfs:label "Title property group" ;
+  sh:description "To group title information for the resource." ;
+  sh:order "1"^^xsd:decimal ;
+.
