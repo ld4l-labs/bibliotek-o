@@ -2,7 +2,7 @@
 #
 # bibliotek-o Title Form Shapes
 #
-# NOTES / TODO for bibliotek-o_shapes.ttl and bibliotek-o_form_shapes_title.ttl
+# NOTES / TODO for bibliotek-o_shapes.ttl and bibliotek-o_shapes_form_title.ttl
 #
 # - Decide on namespace - use http://bibliotek-o.org/shapes/?
 # - Import of non-versioned ontologies (BF) - can we import from file system?
@@ -12,9 +12,16 @@
 # - Change all blank nodes to URI resources
 # - Make sure use of HasTitlePropertyShape to define the title property shape
 #       on a work form works
-#  - Directory structure and naming conventions
-#  - Should implementations import these files or copy them into a 
-#        "target-shapes" directory?
+# - Directory structure and naming conventions
+# - Should implementations import these files or copy them into a 
+#       "target-shapes" directory?
+# - Should each file be a separate shapes module with a different namespace?
+#      Then need to use imports between files.
+# - Conventions for form shapes vs validation shapes. Using form-shapes
+#       directory for now, later if we do validation can have sibling
+#       validation-shapes directory. But will it be possible to maintain
+#       complete bifurcation?
+#       
 #
 #####
 
