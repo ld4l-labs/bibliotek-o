@@ -15,6 +15,12 @@
     <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
     <rdfs:isDefinedBy rdf:resource="http://schema.org/Event"/>
   </rdf:Description>
+  
+  <rdfs:Description rdf:about="http://schema.org/EventSeries">
+    <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
+    <rdfs:label>EventSeries</rdfs:label>
+  </rdfs:Description>
 
   <rdf:Description rdf:about="http://schema.org/birthDate">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
