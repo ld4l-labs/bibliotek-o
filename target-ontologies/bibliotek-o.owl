@@ -2919,7 +2919,7 @@
 
     <owl:NamedIndividual rdf:about="http://bibliotek-o.org/1.1/ontology/cancelled">
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Status"/>
-        <rdfs:label xml:lang="en">status</rdfs:label>
+        <rdfs:label xml:lang="en">cancelled</rdfs:label>
         <skos:definition xml:lang="en">Applies to an identifier or other resource that has been cancelled.</skos:definition>
         <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
         <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
