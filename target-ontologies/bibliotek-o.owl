@@ -2648,6 +2648,8 @@
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/title"/>
         <owl:inverseOf rdf:resource="http://bibliotek-o.org/1.1/ontology/isPreferredTitleOf"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:ObjectProperty>
 
     <owl:ObjectProperty rdf:about="http://bibliotek-o.org/1.1/ontology/hasSource">
@@ -2714,6 +2716,8 @@
         <rdfs:subPropertyOf rdf:resource="http://bibliotek-o.org/1.1/ontology/isTitleOf"/>
         <owl:inverseOf rdf:resource="http://bibliotek-o.org/1.1/ontology/hasPreferredTitle"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+        <dcterms:issued>2017-04-22T00:00:00-04:00</dcterms:issued>
+        <dcterms:modified>2017-04-22T00:00:00-04:00</dcterms:modified>
     </owl:ObjectProperty>
     
     <owl:ObjectProperty rdf:about="http://bibliotek-o.org/1.1/ontology/isSourceOf">
