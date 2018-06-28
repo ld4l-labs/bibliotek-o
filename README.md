@@ -78,6 +78,12 @@ Please refer to the [Change and Release Management](doc/admin/crm.md) documentat
 * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
 * Application profiles for original data modeling using the bibliotek-o recommendation (forthcoming)
 
+## Rights
+
+![cc0_88x31.png](https://creativecommons.org/publicdomain/zero/1.0/) 
+
+This work in provided under a [CC0 waiver](https://creativecommons.org/publicdomain/zero/1.0/), it is published from the United States.
+
 
 
 
