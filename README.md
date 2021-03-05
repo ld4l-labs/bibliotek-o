@@ -37,9 +37,9 @@ The following protocols are used to version and record changes to the ontology.
   
 ### Ontology versioning
 * The use of OWL versioning predicates follows the [OWL 2 specification](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI).
-* `owl:ontologyIRI` identifies the ontology; e.g., `http://bibliotek-o.org/ontology/`.
+* The ontology IRI (i.e., the IRI used in the `owl:Ontology` declaration) identifies the ontology; e.g., `http://bibliotek-o.org/ontology/`.
 * `owl:versionIRI` identifies a particular version of the ontology; e.g., `http://bibliotek-o.org/1.1/ontology/`. 
-* The `owl:ontologyIRI` redirects to the `owl:versionIRI` of the current version of the ontology.
+* The ontology IRI redirects to the `owl:versionIRI` of the current version of the ontology.
 * Previous versions of the ontology continue to be available at their `owl:versionIRI`.
 * By importing or referencing terms from a particular `owl:versionIRI`, users are insulated from non-backward-compatible changes in newer published versions until they decide to upgrade.
 * Version numbering convention (`MAJOR.MINOR.PATCH`):
