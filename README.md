@@ -13,7 +13,8 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 ## News
 
 * **2017-07-06** Release of Version 1.1.0 
-* bibliotek-o remains frozen at Version 1.1.0 until further notice.  
+* **2017-07-14** bibliotek-o remains frozen at Version 1.1.0 until further notice.
+* **2023-11-01** Archiving this repository and discontinuing the <http://bibliotek-o.org/> website. There has been no further work on this ontology since 2017. Subsequent LD4P project work has focused on the BIBFRAME ontology.
 
 
 ## Repository contents
