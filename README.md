@@ -4,7 +4,7 @@
 
 bibliotek-o is an ontology framework for modeling bibliographic metadata based on the [Library of Congress BIBFRAME ontology](http://id.loc.gov/ontologies/bibframe). It includes:
 
-* The [bibliotek-o ontology](http://bibliotek-o.org/ontology/), which defines extensions and modifications to BIBFRAME and is intended to be used as a supplement to the core BIBFRAME ontology.
+* The **bibliotek-o ontology**, which defines extensions and modifications to BIBFRAME and is intended to be used as a supplement to the core BIBFRAME ontology.
 * A set of external ontology fragments (including BIBFRAME) intended for use with the bibliotek-o ontology.
 * A data model and application profile - i.e., a set of recommended models and patterns for expressing bibliographic metadata using BIBFRAME, the bibliotek-o ontology, and other external ontologies.
 
@@ -14,7 +14,7 @@ bibliotek-o is a joint product of the Mellon Foundation-funded Linked Data for L
 
 * **2017-07-06** Release of Version 1.1.0 
 * **2017-07-14** bibliotek-o remains frozen at Version 1.1.0 until further notice.
-* **2023-11-01** Archiving this repository and discontinuing the <http://bibliotek-o.org/> website. There has been no further work on this ontology since 2017. Subsequent LD4P project work has focused on the BIBFRAME ontology.
+* **2023-11-01** Archiving this repository and discontinuing the `http://bibliotek-o.org/` website. There has been no further work on this ontology since 2017. Subsequent LD4P project work has focused on the BIBFRAME ontology.
 
 
 ## Repository contents
@@ -38,8 +38,8 @@ The following protocols are used to version and record changes to the ontology.
   
 ### Ontology versioning
 * The use of OWL versioning predicates follows the [OWL 2 specification](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI).
-* `owl:ontologyIRI` identifies the ontology; e.g., `http://bibliotek-o.org/ontology/`.
-* `owl:versionIRI` identifies a particular version of the ontology; e.g., `http://bibliotek-o.org/1.1/ontology/`. 
+* `owl:ontologyIRI` identifies the ontology; e.g., `http:///ontology/`.
+* `owl:versionIRI` identifies a particular version of the ontology; e.g., `http:///1.1/ontology/`. 
 * The `owl:ontologyIRI` redirects to the `owl:versionIRI` of the current version of the ontology.
 * Previous versions of the ontology continue to be available at their `owl:versionIRI`.
 * By importing or referencing terms from a particular `owl:versionIRI`, users are insulated from non-backward-compatible changes in newer published versions until they decide to upgrade.
@@ -47,7 +47,7 @@ The following protocols are used to version and record changes to the ontology.
     * `MAJOR`: non-backward-compatible modifications
     * `MINOR`: backward-compatible semantic modifications
     * `PATCH`: non-semantic modifications, such as changing an rdfs:label.
-* The `owl:versionIRI` is updated for `MAJOR` and `MINOR` versions, but not `PATCH` versions. It thus includes only the `MAJOR` and `MINOR` version numbers, as in `http://bibliotek-o.org/1.1/ontology/`.
+* The `owl:versionIRI` is updated for `MAJOR` and `MINOR` versions, but not `PATCH` versions. It thus includes only the `MAJOR` and `MINOR` version numbers, as in `http:///1.1/ontology/`.
 * To avoid an unnecessary proliferation of `MAJOR` versions, `owl:deprecated` is applied to terms slated for removal. A term deprecated in a `MINOR` version will be removed in the next `MAJOR` version. 
 * `owl:versionInfo` provides a label containing the version number, formatted as "Version n.n.n"; e.g., "Version 1.1.0". This version number is also used to tag the repository, in this case `v1.1.0`. 
 * `owl:priorVersion` provides the URI of the previous MAJOR.MINOR version of the ontology, if any.
@@ -73,7 +73,7 @@ Please refer to the [Change and Release Management](doc/admin/crm.md) documentat
 
 ## Additional bibliotek-o documentation 
 
-* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](http://bibliotek-o.org/overview/overview.html) 
+* A [diagrammatic overview of the bibliotek-o application profile with an index of terms](https://github.com/ld4l-labs/bibliotek-o/blob/master/doc/overview/bibliotek-o.overview.png) 
 * An overview of the principles and best practices guiding the development of bibliotek-o (forthcoming)
 * Discussion and diagrams of the principal models and patterns adopted by bibliotek-o (forthcoming)
 * Mapping tables from current catalog formats to the ontology recommendation (forthcoming)
